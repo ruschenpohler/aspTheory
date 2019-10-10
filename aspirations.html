@@ -15,7 +15,7 @@
 class: center, middle, inverse, title-slide
 
 # Aspirations in Economics
-## An introduction to Aspirations Theory
+## An Introduction to Aspirations Theory
 ### Julius Ruschenpohler
 ### 09 October 2019
 
@@ -31,7 +31,7 @@ class: inverse, middle
 
 ### THEORY
 I. Aspirations Failures (Dalton et al., 2016)  
-II. Social Aspirations and Aspiration Frustration (Genicot and Ray, 2017)  
+II. Social Aspirations (Genicot and Ray, 2017)  
 III. A Unified Theory (La Ferrara, 2019)
  
 ]
@@ -47,7 +47,7 @@ III. A Unified Theory (La Ferrara, 2019)
 
 ---
 
-name: aspfail1
+name: aspfail1a
 
 # I. Aspirations Failure
 
@@ -55,7 +55,30 @@ name: aspfail1
 
 ### Production Fct
 
+An agent is endowed with initial capital `\(k\)`.
+
+To maximize utility, the agent decides whether or not to exert costly effort `\(e \in \{ 0,1 \}\)` to produce final wealth `\(y_{c}\)` according to the production fct:
+
+`$$y_{c} = f(e, k) = (1 + e) k$$`
+
+Hence, effort `\(e\)` and initial capital `\(k\)` are complementary.
+
+---
+
+name: aspfail1b
+
+# I. Aspirations Failure
+
+
 ### Objective Fct
+
+The agent derives utility from two additively separable components: (i) final wealth `\(y_{c}\)` and its relative level with respect to her aspirations `\(y_{c} - a_{c}\)`.
+
+Aspirations `\(a_{c}\)` can be thought of as a level of `\(y_{c}\)` that the agent desires to attain.
+
+The agent maximizes utility according to the objective fct:
+
+`$$U _ { c } \left( e , a _ { c } , y _ { c } \right) = b \left( y _ { c } \right) + v \left( \frac { y _ { c } - a _ { c } } { y _ { c } } \right) - c ( e )$$`
 
 
 ---
@@ -66,9 +89,22 @@ name: aspfail2
 
 ## Types of Agents
 
+The model assumes two types of agents with two ways of endogenizing aspirations `\(a_{c}\)` in the production of final wealth `\(y_{c}\)`.
+
 ### Rational Agent
 
+A rational agent, when choosing aspirations `\(a_{c}\)`, **internalizes the feedback from effort `\(e\)` onto aspirations `\(a_{c}\)`** (through realized outcomes).
+
+That is, `\(a_{c} = f(e, k)\)`.
+
+In effect, while maximizing utility, the rational agent consistently adjusts
+aspirations to exerted effort.
+
+
 ### Behavioral Agent
+
+
+A behavioral agent, when choosing aspirations `\(a_{c}\)`, **takes aspirations `\(a_{c}\)` as exogenously given**.
 
 
 ---
@@ -79,7 +115,18 @@ name: aspfail3a
 
 ## Solutions
 
-### Unique Rational Solution
+### Rational Solution
+
+Given `\(k\)`, an effort-aspirations pair `\(\left(e^{*} , a_{c}^{*} \right)\)` is a rational solution if:
+
+`$$e ^ { * } \in \arg \max_{e\in \{0,1\} } U_{c} (e, f(e,k), f(e,k))$$`
+And if:
+
+`$$a_{c}^{*} = f\left( e^{*}, k\right)$$`
+
+Then there exists a level of initial capital `\(k^{*}\)` such that, whenever `\(k &gt; k^{*}\)`, the **unique rational solution** is (high effort, high aspirations).  
+
+That is, `\(e^{*}=1\)` and `\(a^{*}=2k\)`.
 
 
 ---
@@ -90,6 +137,21 @@ name: aspfail3b
 
 ### Behavioral Solutions
 
+Given `\(k\)`, an effort-aspirations pair `\(\left(\tilde{e}, \tilde{a}_{ c } \right)\)` is a behavioral solution if:
+
+`$$\tilde { e } \in \arg \max _ { e \in \{ 0,1 \} } U _ { c } \left( e , \tilde { a } _ { c } , f ( e , k ) \right)$$`
+
+And if:
+
+`$$\tilde { a } _ { c } = f ( \tilde { e } , k )$$`
+
+Then there exist `\(k_{h}\)` and `\(k_{l}\)`, where `\(k_{h} &gt; k &gt; k_{l}\)` [1], such that, 
+
+* if `\(k &gt; k_{h}\)`, the unique behavioral solution is (high effort, high aspirations).
+* if `\(k &lt; k_{l}\)`, the unique behavioral solution is (low effort, low aspirations).
+* if `\(k_{l} &lt; k &lt; k_{h}\)`, there is no unique behavioral solution (both high and low effort-aspirations pairs are behavioral solutions).
+
+[1] Under additional assumptions
 
 ---
 
@@ -99,8 +161,18 @@ name: aspfail4a
 
 ## Poverty Traps
 
+This gives us two types of poverty traps.
+
 ### Classical Poverty Trap
 
+Arises when `\(k &lt; k^{*}\)` (due to lack of resources).
+
+
+### Behavioral Poverty Trap
+
+Arises when `\(k^{*} &lt; k &lt; k_{h}\)`.
+
+Where a **sufficiently poor** agent with **sufficiently low aspirations** chooses suboptimally **low effort** (*because* they **started with low aspirations**)
 
 
 ---
@@ -109,10 +181,18 @@ name: aspfail4b
 
 # I. Aspirations Failure
 
-### Behavioral Poverty Trap
+### Intuition of Behavioral Poverty Trap
 
+A poor agent will exert less effort than a rich agent.
 
-### Intuition
+Two reasons:
+
+1. **Marginal return to effort lower for the poor**
+  + Also in a rational equilibrium
+  + Due to assumption of capital-effort complementarity (remember, `\(y_{c} = f(e, k) = (1 + e) k\)`)
+
+1. **Feedback from effort onto aspirations** (through realized outcomes)
+  + Lowers marginal return to effort further
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
