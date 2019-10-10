@@ -316,7 +316,7 @@ Two reasons:
 
 1. **Marginal return to effort lower for the poor**
   + Also in a rational equilibrium
-  + Due to assumption of capital-effort complementarity (remember, $y_{c} = f(e, k) = (1 + e) k$)
+  + Due to assumption of capital-effort complementarity (recall, $y_{c} = f(e, k) = (1 + e) k$)
 
 1. **Feedback from effort onto aspirations** (through realized outcomes)
   + Lowers marginal return to effort further
@@ -332,14 +332,6 @@ name: aspfrust1
 
 ### Objective Fct
 
-An agent leaves an inheritanc
-
-derives utility from 
-
-An agent derives utility from their own consumption $x$ and from leaving inheritance $k$ to their offspring. Moreover, the parent has an aspiration
-threshold, ap, on the level of wealth that her child will inherit.6 Crossing the threshold
-creates a discontinuity in marginal returns that increase after the threshold. 
-
 An agent is endowed with initial capital $k$.
 
 The agent can choose to make investment $i$ to achieve future income $y$.
@@ -351,3 +343,38 @@ $e_{k} = max \{y - a_{y}, 0\}$ is the excess of outcome $y$ over aspiration thre
 The agent maximizes utility according to the objective fct:
 
 $$U _ { p } \left( i , a _ { y } , k, y \right) = u ( k, i ) + w _ { 0 } \left( y \right) + w _ { 1 } \left( \max \left\{ y - a _ { y } , 0 \right\} \right)$$
+
+
+---
+
+name: aspfrust2a
+
+
+## Graphical Illustrations
+
+Additively seperable components of the utility fct:
+
+```{r, fig.width=6, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+---
+
+name: aspfrust2b
+
+
+## Graphical Illustrations
+
+Multiple aspiration thresholds:
+
+```{r, fig.width=5, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsMultiRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
