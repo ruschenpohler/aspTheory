@@ -157,9 +157,8 @@ tidy_table <- function(x, terms, highlight_row = 1, highlight_color = "black", h
 .smaller[
 
 ### THEORY
-I. Experience-based Aspirations  
-II. Socially Determined Aspirations  
-III. Towards a Unifying Theory (TBD)
+I. Aspirations Failures (Dalton, Ghosal, Mani)  
+II. Aspiration Frustration (Genicot, Ray)  
  
 ]
 ]
@@ -167,9 +166,8 @@ III. Towards a Unifying Theory (TBD)
 .pull-right[
 .smaller[
   
-### EMPIRICS
-
-TBD
+### DISCUSSION
+III. Discussion Points
 
 ]
 ]
@@ -178,7 +176,7 @@ TBD
 
 name: aspfail1a
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 ## General Set-up of Dalton et al. (2016)
 
@@ -196,7 +194,7 @@ Hence, effort $e$ and initial capital $k$ are complementary.
 
 name: aspfail1b
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 
 ### Objective Fct
@@ -214,7 +212,7 @@ $$U _ { c } \left( e , a _ { c } , y _ { c } \right) = b \left( y _ { c } \right
 
 name: aspfail2
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 ## Types of Agents
 
@@ -240,7 +238,7 @@ A behavioral agent, **takes aspirations $a_{c}$ as exogenously given**!
 
 name: aspfail3a
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 ## Solutions
 
@@ -262,7 +260,7 @@ Then there exists a level of initial capital $k^{*}$ such that, whenever $k > k^
 
 name: aspfail3b
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 ### 2. Behavioral Solutions
 
@@ -286,7 +284,7 @@ Then there exist $k_{h}$ and $k_{l}$, where $k_{h} > k > k_{l}$ [1], such that:
 
 name: aspfail4a
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 ## Poverty Traps
 
@@ -308,7 +306,7 @@ A **sufficiently poor** agent with **sufficiently low aspirations** chooses subo
 
 name: aspfail4b
 
-# I. Experience-based Aspirations
+# I. Aspirations Failures
 
 ### Intuition of Behavioral Poverty Trap
 
@@ -328,7 +326,7 @@ Two reasons:
 
 name: aspfrust1
 
-# II. Social Aspirations
+# II. Aspiration Frustration
 
 ## General Set-up of Genicot and Ray (2017)
 
@@ -352,6 +350,8 @@ $$U _ { p } \left( i , a _ { z } , k, z \right) = u ( k, i ) + w _ { 0 } \left( 
 name: aspfrust2a
 
 
+# II. Aspiration Frustration
+
 ## Graphical Illustrations
 
 ### Components of the utility fct (additively seperable)
@@ -368,6 +368,7 @@ grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height 
 
 name: aspfrust2b
 
+# II. Aspiration Frustration
 
 ## Graphical Illustrations
 
@@ -385,6 +386,7 @@ grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height 
 
 name: aspfrust2b
 
+# II. Aspiration Frustration
 
 ## Graphical Illustrations
 
@@ -403,6 +405,7 @@ grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height 
 
 name: aspfrust2d
 
+# II. Aspiration Frustration
 
 ## Graphical Illustrations
 
@@ -414,4 +417,22 @@ library(grid)
 meat <- readPNG("pics/aspsMultiRay2019.png")
 grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
 ```
+
+
+---
+
+name: discuss1
+
+# III. Discussion Points
+
+### 1. How does psychology view aspirations 
+Snyder's **hope** theory  
+Bandura's **self-efficacy and locus of control**
+### 2. What is the difference between hope and aspirations?
+### 3. How does agency fit into aspirations theory?
+### 4. How to measure aspirations?
+### 5. What are potentially fruitful areas of study?
+### 6. Any new ideas?
+
+
 
