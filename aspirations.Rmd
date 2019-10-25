@@ -158,8 +158,8 @@ tidy_table <- function(x, terms, highlight_row = 1, highlight_color = "black", h
 
 ### THEORY
 I. Experience-based Aspirations  
-II. Social Aspirations  
-III. Towards a Unifying Theory
+II. Socially Determined Aspirations  
+III. Towards a Unifying Theory (TBD)
  
 ]
 ]
@@ -168,6 +168,8 @@ III. Towards a Unifying Theory
 .smaller[
   
 ### EMPIRICS
+
+TBD
 
 ]
 ]
@@ -199,7 +201,7 @@ name: aspfail1b
 
 ### Objective Fct
 
-The agent derives utility from two additively separable components: (i) final wealth $y_{c}$ and its relative level with respect to her aspirations $y_{c} - a_{c}$.
+The agent derives utility from two additively separable components: (i) final wealth $y_{c}$ and (ii) its relative level with respect to her aspirations $y_{c} - a_{c}$.
 
 Aspirations $a_{c}$ can be thought of as a level of $y_{c}$ that the agent desires to attain.
 
@@ -253,7 +255,7 @@ $$a_{c}^{*} = f\left( e^{*}, k\right)$$
 
 Then there exists a level of initial capital $k^{*}$ such that, whenever $k > k^{*}$, the **unique rational solution** is (high effort, high aspirations).  
 
-That is, $e^{*}=1$ and $a^{*}=2k$.
+(That is, $e^{*}=1$ and $a^{*}=2k$.)
 
 
 ---
@@ -272,7 +274,7 @@ And if:
 
 $$\tilde { a } _ { c } = f ( \tilde { e } , k )$$
 
-Then there exist $k_{h}$ and $k_{l}$, where $k_{h} > k > k_{l}$ [1], such that, 
+Then there exist $k_{h}$ and $k_{l}$, where $k_{h} > k > k_{l}$ [1], such that:  
 
 * if $k > k_{h}$, the unique behavioral solution is (high effort, high aspirations).
 * if $k < k_{l}$, the unique behavioral solution is (low effort, low aspirations).
@@ -315,8 +317,8 @@ A poor agent will exert less effort than a rich agent.
 Two reasons:
 
 1. **Marginal return to effort lower for the poor**
-  + Also in a rational equilibrium
-  + Due to assumption of capital-effort complementarity (recall, $y_{c} = f(e, k) = (1 + e) k$)
+    + Due to assumption of capital-effort complementarity (recall, $y_{c} = f(e, k) = (1 + e) k$)
+    + Also in a rational equilibrium
 
 1. **Feedback from effort onto aspirations** (through realized outcomes)
   + Lowers marginal return to effort further
@@ -334,15 +336,15 @@ name: aspfrust1
 
 An agent is endowed with initial capital $k$.
 
-The agent can choose to make investment $i$ to achieve future income $y$.
+The agent can choose to make investment $i$ to achieve future income $z$.
 
-Aspirations $a_{z}$ can be thought of as a level of $y$ that the agent desires to attain.
+Again, aspirations $a_{z}$ can be thought of as a level of $z$ that the agent desires to attain.
 
-$e_{k} = max \{y - a_{y}, 0\}$ is the excess of outcome $y$ over aspiration threshold $a_{z}$. Crossing this threshold yields a separable payoff
+$e_{k} = max \{z - a_{z}, 0\}$ is the excess of outcome $y$ over aspiration threshold $a_{z}$. Crossing this threshold yields a separable payoff
 
 The agent maximizes utility according to the objective fct:
 
-$$U _ { p } \left( i , a _ { y } , k, y \right) = u ( k, i ) + w _ { 0 } \left( y \right) + w _ { 1 } \left( \max \left\{ y - a _ { y } , 0 \right\} \right)$$
+$$U _ { p } \left( i , a _ { z } , k, z \right) = u ( k, i ) + w _ { 0 } \left( z \right) + w _ { 1 } \left( \max \left\{ z - a _ { z } , 0 \right\} \right)$$
 
 
 ---
@@ -352,7 +354,7 @@ name: aspfrust2a
 
 ## Graphical Illustrations
 
-Additively seperable components of the utility fct:
+### Components of the utility fct (additively seperable)
 
 ```{r, fig.width=6, fig.height=4, echo=FALSE}
 library(png)
@@ -369,7 +371,42 @@ name: aspfrust2b
 
 ## Graphical Illustrations
 
-Multiple aspiration thresholds:
+### Decision problem
+
+```{r, fig.width=5, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsDecRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+---
+
+name: aspfrust2b
+
+
+## Graphical Illustrations
+
+### Shifting aspirations and resulting frustration
+
+```{r, fig.width=9, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsFrustRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+
+---
+
+name: aspfrust2d
+
+
+## Graphical Illustrations
+
+### Multiple aspiration thresholds
 
 ```{r, fig.width=5, fig.height=4, echo=FALSE}
 library(png)
