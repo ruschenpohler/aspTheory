@@ -1,0 +1,439 @@
+---
+title: "Aspirations in Economics"
+subtitle: "An Introduction to Aspirations Theory"
+author: "Julius Ruschenpohler"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'my-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: inline
+---
+class: inverse, middle
+
+```{R, setup, include = F}
+# devtools::install_github("dill/emoGG")
+library(pacman)
+p_load(
+  broom, tidyverse,
+  ggplot2, ggthemes, ggforce, ggridges,
+  latex2exp, viridis, extrafont, gridExtra,
+  kableExtra, snakecase, janitor,
+  data.table, dplyr, estimatr,
+  lubridate, knitr, parallel,
+  lfe, here, magrittr
+)
+# Define pink color
+red_pink <- "#e64173"
+turquoise <- "#20B2AA"
+orange <- "#FFA500"
+red <- "#fb6107"
+blue <- "#3b3b9a"
+green <- "#8bb174"
+grey_light <- "grey70"
+grey_mid <- "grey50"
+grey_dark <- "grey20"
+purple <- "#6A5ACD"
+slate <- "#314f4f"
+# Dark slate grey: #314f4f
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F
+)
+opts_chunk$set(dev = "svg")
+options(device = function(file, width, height) {
+  svg(tempfile(), width = width, height = height)
+})
+options(crayon.enabled = F)
+options(knitr.table.format = "html")
+# A blank theme for ggplot
+theme_empty <- theme_bw() + theme(
+  line = element_blank(),
+  rect = element_blank(),
+  strip.text = element_blank(),
+  axis.text = element_blank(),
+  plot.title = element_blank(),
+  axis.title = element_blank(),
+  plot.margin = structure(c(0, 0, -0.5, -1), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_simple <- theme_bw() + theme(
+  line = element_blank(),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  strip.text = element_blank(),
+  axis.text.x = element_text(size = 18, family = "STIXGeneral"),
+  axis.text.y = element_blank(),
+  axis.ticks = element_blank(),
+  plot.title = element_blank(),
+  axis.title = element_blank(),
+  # plot.margin = structure(c(0, 0, -1, -1), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_axes_math <- theme_void() + theme(
+  text = element_text(family = "MathJax_Math"),
+  axis.title = element_text(size = 22),
+  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
+  axis.title.y = element_text(vjust = .95, margin = margin(0, 0.15, 0, 0, unit = "lines")),
+  axis.line = element_line(
+    color = "grey70",
+    size = 0.25,
+    arrow = arrow(angle = 30, length = unit(0.15, "inches")
+  )),
+  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_axes_serif <- theme_void() + theme(
+  text = element_text(family = "MathJax_Main"),
+  axis.title = element_text(size = 22),
+  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
+  axis.title.y = element_text(vjust = .95, margin = margin(0, 0.15, 0, 0, unit = "lines")),
+  axis.line = element_line(
+    color = "grey70",
+    size = 0.25,
+    arrow = arrow(angle = 30, length = unit(0.15, "inches")
+  )),
+  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_axes <- theme_void() + theme(
+  text = element_text(family = "Fira Sans Book"),
+  axis.title = element_text(size = 18),
+  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
+  axis.title.y = element_text(vjust = .95, margin = margin(0, 0.15, 0, 0, unit = "lines")),
+  axis.line = element_line(
+    color = grey_light,
+    size = 0.25,
+    arrow = arrow(angle = 30, length = unit(0.15, "inches")
+  )),
+  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_set(theme_gray(base_size = 20))
+# Column names for regression results
+reg_columns <- c("Term", "Est.", "S.E.", "t stat.", "p-Value")
+# Function for formatting p values
+format_pvi <- function(pv) {
+  return(ifelse(
+    pv < 0.0001,
+    "<0.0001",
+    round(pv, 4) %>% format(scientific = F)
+  ))
+}
+format_pv <- function(pvs) lapply(X = pvs, FUN = format_pvi) %>% unlist()
+# Tidy regression results table
+tidy_table <- function(x, terms, highlight_row = 1, highlight_color = "black", highlight_bold = T, digits = c(NA, 3, 3, 2, 5), title = NULL) {
+  x %>%
+    tidy() %>%
+    select(1:5) %>%
+    mutate(
+      term = terms,
+      p.value = p.value %>% format_pv()
+    ) %>%
+    kable(
+      col.names = reg_columns,
+      escape = F,
+      digits = digits,
+      caption = title
+    ) %>%
+    kable_styling(font_size = 20) %>%
+    row_spec(1:nrow(tidy(x)), background = "white") %>%
+    row_spec(highlight_row, bold = highlight_bold, color = highlight_color)
+}
+```
+
+
+.pull-left[
+.smaller[
+
+### THEORY
+I. Aspirations Failures (Dalton, Ghosal, Mani)  
+II. Aspiration Frustration (Genicot, Ray)  
+ 
+]
+]
+
+.pull-right[
+.smaller[
+  
+### DISCUSSION
+III. Discussion Points
+
+]
+]
+
+---
+
+name: aspfail1a
+
+# I. Aspirations Failures
+
+## General Set-up of Dalton et al. (2016)
+
+### Production Fct
+
+An agent is endowed with initial capital $k$.
+
+To maximize utility, the agent decides whether or not to exert costly effort $e \in \{ 0,1 \}$ to produce final wealth $y_{c}$ according to the production fct:
+
+$$y_{c} = f(e, k) = (1 + e) k$$
+
+Hence, effort $e$ and initial capital $k$ are complementary.
+
+---
+
+name: aspfail1b
+
+# I. Aspirations Failures
+
+
+### Objective Fct
+
+The agent derives utility from two additively separable components: (i) final wealth $y_{c}$ and (ii) its relative level with respect to her aspirations $y_{c} - a_{c}$.
+
+Aspirations $a_{c}$ can be thought of as a level of $y_{c}$ that the agent desires to attain.
+
+The agent maximizes utility according to the objective fct:
+
+$$U _ { c } \left( e , a _ { c } , y _ { c } \right) = b \left( y _ { c } \right) + v \left( \frac { y _ { c } - a _ { c } } { y _ { c } } \right) - c ( e )$$
+
+
+---
+
+name: aspfail2
+
+# I. Aspirations Failures
+
+## Types of Agents
+
+The model assumes two types of agents with two ways of endogenizing aspirations $a_{c}$ in the production of final wealth $y_{c}$.
+
+### 1. Rational Agent
+
+A rational agent, when choosing aspirations $a_{c}$, **internalizes the feedback from effort $e$ onto aspirations $a_{c}$** (through realized outcomes).
+
+That is, $a_{c} = f(e, k)$.
+
+In effect, while maximizing utility, the rational agent consistently adjusts
+aspirations to exerted effort.
+
+
+### 2. Behavioral Agent
+
+
+A behavioral agent, **takes aspirations $a_{c}$ as exogenously given**!
+
+
+---
+
+name: aspfail3a
+
+# I. Aspirations Failures
+
+## Solutions
+
+### 1. Rational Solution
+
+Given $k$, an effort-aspirations pair $\left(e^{*} , a_{c}^{*} \right)$ is a rational solution if:
+
+$$e ^ { * } \in \arg \max_{e\in \{0,1\} } U_{c} (e, f(e,k), f(e,k))$$
+And if:
+
+$$a_{c}^{*} = f\left( e^{*}, k\right)$$
+
+Then there exists a level of initial capital $k^{*}$ such that, whenever $k > k^{*}$, the **unique rational solution** is (high effort, high aspirations).  
+
+(That is, $e^{*}=1$ and $a^{*}=2k$.)
+
+
+---
+
+name: aspfail3b
+
+# I. Aspirations Failures
+
+### 2. Behavioral Solutions
+
+Given $k$, an effort-aspirations pair $\left(\tilde{e}, \tilde{a}_{ c } \right)$ is a behavioral solution if:
+
+$$\tilde { e } \in \arg \max _ { e \in \{ 0,1 \} } U _ { c } \left( e , \tilde { a } _ { c } , f ( e , k ) \right)$$
+
+And if:
+
+$$\tilde { a } _ { c } = f ( \tilde { e } , k )$$
+
+Then there exist $k_{h}$ and $k_{l}$, where $k_{h} > k > k_{l}$ [1], such that:  
+
+* if $k > k_{h}$, the unique behavioral solution is (high effort, high aspirations).
+* if $k < k_{l}$, the unique behavioral solution is (low effort, low aspirations).
+* if $k_{l} < k < k_{h}$, there is no unique behavioral solution (both high and low effort-aspirations pairs are behavioral solutions).
+
+[1] Under additional assumptions
+
+---
+
+name: aspfail4a
+
+# I. Aspirations Failures
+
+## Poverty Traps
+
+This gives us two types of poverty traps.
+
+### 1. Classical Poverty Trap
+
+Arises when $k < k^{*}$ (due to lack of resources).
+
+
+### 2. Behavioral Poverty Trap
+
+Arises when $k^{*} < k < k_{h}$.
+
+A **sufficiently poor** agent with **sufficiently low aspirations** chooses suboptimally **low effort** (*because they started with low aspirations*!)
+
+
+---
+
+name: aspfail4b
+
+# I. Aspirations Failures
+
+### Intuition of Behavioral Poverty Trap
+
+A poor agent will exert less effort than a rich agent.
+
+Two reasons:
+
+1. **Marginal return to effort lower for the poor**
+    + Due to assumption of capital-effort complementarity (recall, $y_{c} = f(e, k) = (1 + e) k$)
+    + Also in a rational equilibrium
+
+1. **Feedback from effort onto aspirations** (through realized outcomes)
+  + Lowers marginal return to effort further
+
+
+---
+
+name: aspfrust1
+
+# II. Aspiration Frustration
+
+## General Set-up of Genicot and Ray (2017)
+
+### Objective Fct
+
+An agent is endowed with initial capital $k$.
+
+The agent can choose to make investment $i$ to achieve future income $z$.
+
+Again, aspirations $a_{z}$ can be thought of as a level of $z$ that the agent desires to attain.
+
+$e_{k} = max \{z - a_{z}, 0\}$ is the excess of outcome $y$ over aspiration threshold $a_{z}$. Crossing this threshold yields a separable payoff
+
+The agent maximizes utility according to the objective fct:
+
+$$U _ { p } \left( i , a _ { z } , k, z \right) = u ( k, i ) + w _ { 0 } \left( z \right) + w _ { 1 } \left( \max \left\{ z - a _ { z } , 0 \right\} \right)$$
+
+
+---
+
+name: aspfrust2a
+
+
+# II. Aspiration Frustration
+
+## Graphical Illustrations
+
+### Components of the utility fct (additively seperable)
+
+```{r, fig.width=6, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+---
+
+name: aspfrust2b
+
+# II. Aspiration Frustration
+
+## Graphical Illustrations
+
+### Decision problem
+
+```{r, fig.width=5, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsDecRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+---
+
+name: aspfrust2b
+
+# II. Aspiration Frustration
+
+## Graphical Illustrations
+
+### Shifting aspirations and resulting frustration
+
+```{r, fig.width=9, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsFrustRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+
+---
+
+name: aspfrust2d
+
+# II. Aspiration Frustration
+
+## Graphical Illustrations
+
+### Multiple aspiration thresholds
+
+```{r, fig.width=5, fig.height=4, echo=FALSE}
+library(png)
+library(grid)
+meat <- readPNG("pics/aspsMultiRay2019.png")
+grid.raster(meat, x = unit(0.5, "npc"), y = unit(0.5, "npc"), width = 1, height = 1,)
+```
+
+
+---
+
+name: discuss1
+
+# III. Discussion Points
+
+### 1. How does psychology view aspirations 
+Snyder's **hope** theory  
+Bandura's **self-efficacy**  
+Rotter's **locus of control**
+### 2. What is the difference between hope and aspirations?
+### 3. How does agency fit into aspirations theory?
+### 4. What is the difference between expecations and aspirations?
+### 5. How to measure aspirations? Expectations? Hope?
+### 6. What are potentially fruitful areas of study?
+
+
+
