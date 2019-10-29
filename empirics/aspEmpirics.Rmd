@@ -1,0 +1,15 @@
+---
+---
+
+# Database of Publications on Aspirations
+
+### Publications in 2019
+
+No.|    Authors    |          Title          | Journal|               Summary              |
+|--|---------------|-------------------------|--------|------------------------------------|
+| 1| Ray, Genicot  | Aspirations: A Review   |   WP   |[Link](https://bit.ly/2BPzqCW)  |
+| 2|   |   |   |   |   |
+| 3|   |   |   |   |   |
+
+
+
