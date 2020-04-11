@@ -2,7 +2,7 @@
 title: "Aspirations in Economics"
 subtitle: "An Introduction to Aspirations Theory"
 author: "Julius Ruschenpohler"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+date: #"`r format(Sys.time(), '%d %B %Y')`"
 output:
   xaringan::moon_reader:
     css: ['default', 'metropolis', 'metropolis-fonts', 'my-css.css']
@@ -146,7 +146,6 @@ tidy_table <- function(x, terms, highlight_row = 1, highlight_color = "black", h
       digits = digits,
       caption = title
     ) %>%
-    kable_styling(font_size = 20) %>%
     row_spec(1:nrow(tidy(x)), background = "white") %>%
     row_spec(highlight_row, bold = highlight_bold, color = highlight_color)
 }
@@ -157,8 +156,8 @@ tidy_table <- function(x, terms, highlight_row = 1, highlight_color = "black", h
 .smaller[
 
 ### THEORY
-I. Aspirations Failures (Dalton, Ghosal, Mani)  
-II. Aspiration Frustration (Genicot, Ray)  
+I. Aspirations Failures (Dalton et al., 2016)  
+II. Aspiration Frustration (Genicot, Ray, 2017)  
  
 ]
 ]
@@ -199,7 +198,9 @@ name: aspfail1b
 
 ### Objective Fct
 
-The agent derives utility from two additively separable components: (i) final wealth $y_{c}$ and (ii) its relative level with respect to her aspirations $y_{c} - a_{c}$.
+The agent derives utility from two additively separable components: <br> <br>
+(i) final wealth $y_{c}$ and <br>
+(ii) its relative level with respect to her aspirations $y_{c} - a_{c}$.
 
 Aspirations $a_{c}$ can be thought of as a level of $y_{c}$ that the agent desires to attain.
 
@@ -278,7 +279,7 @@ Then there exist $k_{h}$ and $k_{l}$, where $k_{h} > k > k_{l}$ [1], such that:
 * if $k < k_{l}$, the unique behavioral solution is (low effort, low aspirations).
 * if $k_{l} < k < k_{h}$, there is no unique behavioral solution (both high and low effort-aspirations pairs are behavioral solutions).
 
-[1] Under additional assumptions
+[1] Omitting additional assumptions
 
 ---
 
