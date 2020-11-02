@@ -1,0 +1,13 @@
+	12mth aspirations for daily sales (USD PPP)	12mth aspirations gap for daily sales	Importance to reach sales asps	Subj likelihood to reach sales asps	Self-efficacy to reach sales asps	Locus of control to reach sales asps	Aspired educ for son (Years)	Aspired educ for son at least MA (Yes=1)	Aspired educ for daughter (Years)	Aspired educ for daughter at least MA (yes=1)	Aspired educ for children (Years)	Aspired educ for children at least MA (Yes=1)	
+12mth aspirations for daily sales (USD PPP)	1.00	
+12mth aspirations gap for daily sales	0.17	1.00	
+Importance to reach sales asps	-0.01	0.07	1.00	
+Subj likelihood to reach sales asps	0.05	-0.05	0.28	1.00	
+Self-efficacy to reach sales asps	0.05	-0.05	0.23	0.54	1.00	
+Locus of control to reach sales asps	-0.00	0.04	0.33	0.25	0.21	1.00	
+Aspired educ for son (Years)	0.18	0.08	0.01	0.13	0.14	0.01	1.00	
+Aspired educ for son at least MA (Yes=1)	0.16	0.05	0.02	0.12	0.13	-0.02	0.73	1.00	
+Aspired educ for daughter (Years)	0.08	0.01	0.07	0.14	0.08	0.00	0.64	0.54	1.00	
+Aspired educ for daughter at least MA (yes=1)	0.06	-0.05	0.09	0.12	0.10	-0.01	0.54	0.75	0.70	1.00	
+Aspired educ for children (Years)	0.14	0.05	0.04	0.13	0.09	0.01	0.96	0.71	0.96	0.70	1.00	
+Aspired educ for children at least MA (Yes=1)	0.12	0.01	0.06	0.12	0.11	-0.01	0.71	0.97	0.65	0.93	0.71	1.00	

@@ -1,0 +1,588 @@
+\documentclass[11.5pt]{article}
+
+\usepackage{amssymb, amsmath, amsthm, amsfonts, eurosym, geometry, ulem, graphicx, caption, color, setspace, footmisc, pdflscape, array, todonotes, subfig, adjustbox, booktabs, pdfpages, siunitx, setspace, multirow, tikz, appendix}
+
+\usepackage[flushleft]{threeparttable}
+%\usepackage{hyperref}
+\usepackage{natbib}
+\bibliographystyle{econometrica}
+%\usepackage[round]{natbib}
+\usepackage[applemac]{inputenc}
+\usepackage{hyperref}
+%\usepackage{xcolor}
+%\hypersetup{
+%  colorlinks   = true, %Colours links instead of ugly boxes
+%  urlcolor     = red, %Colour for external hyperlinks
+%  linkcolor    = blue, %Colour of internal links
+%  citecolor   = blue %Colour of citations
+%}
+
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
+
+\captionsetup{justification=justified}
+
+\setlength{\textwidth}{6in}
+\setlength{\oddsidemargin}{.22in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-0.10in}
+\setlength{\headheight}{0.02in}
+
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{remark}{Remark}
+
+%\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\captionsetup{justification=justified}
+\renewcommand{\baselinestretch}{1.3}
+\newcounter{marginparcounter}
+\newcommand{\patopar}[1]{\stepcounter{marginparcounter}$^{(\roman{marginparcounter})}$\marginpar{\color{red}\renewcommand{\baselinestretch}{0.8}\scriptsize$^{(\roman{marginparcounter})}$ PD: #1}}
+\renewcommand{\baselinestretch}{1.3}
+\setlength{\textwidth}{6in}
+\setlength{\oddsidemargin}{.22in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-0.10in}
+\setlength{\headheight}{0.02in}
+%\setlength{\parskip}{0.4cm}
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\newcommand{\appendixpagenumbering}{
+  \break
+  \pagenumbering{arabic}
+  \renewcommand{\thepage}{\thesection-\arabic{page}}
+}
+
+% ---------------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------------
+
+\begin{document}
+\title{\Large \textbf{Shocking Business Aspirations: \\
+Experimental Evidence from Small-scale Entrepreneurs in a Developing Economy}\thanks {\scriptsize We thank the Abdul Latif Jameel Poverty Action Lab (J-PAL) for hosting our study, in particular Raisa Annisa, Ni Luh Putu Satyaning Pradnya Paramita, Lukman Edwindra, and Dwitri Amalia for excellent research assistance. This paper was produced under the framework of the \textquotedblleft Enabling Innovation and Productivity Growth in Low Income Countries (EIP-LIC/PO5639)" project, funded by the Department for International Development (DFID) of the United Kingdom and implemented by Tilburg University. Additional funding was received by The World Bank and Tilburg Economics Department. Research on the ground was conducted in cooperation with J-PAL South-East Asia and SurveyMETER.}}
+
+\author{Patricio S. Dalton\thanks{\scriptsize Tilburg University, Department of Economics and CentER, Warandelaan 2, 5037 AB, Tilburg, The Netherlands. E-mail corresponding author: \texttt{p.s.dalton@uvt.nl} (corresponding author), \texttt{j.ruschenpohler@uvt.nl}}
+\and Julius R\"uschenp\"ohler\footnotemark[2]
+\and Bilal Zia\thanks{\scriptsize The World Bank, Development Research Group, 1818 H St. N.W. Washington, D.C. 20433. E-mail: \texttt{bzia@worldbank.org}.}}
+
+
+\date{\today}
+\maketitle
+\singlespace
+
+\begin{abstract}
+\noindent {Are the growth aspirations of small-scale entrepreneurs responsive to shocks? If so, does initial distance from the efficient frontier determine the direction of change? In a randomized controlled trial in Indonesia, we study an informational shock to entrepreneurial aspirations by distributing a handbook of key business practices implemented by successful local peers. The handbook is complemented with two psychological and implementation nudges: a movie with business role models from the local area who demonstrate their path to success; and personalized business assistance to help entrepreneurs with individual implementation challenges. In line with the theoretical literature, we find that initial distance to the frontier matters. Entrepreneurs with high business aspirations at baseline respond positively to the treatments and increase business aspirations, sales, and profits; while those with low initial aspirations respond negatively and decrease their business aspirations and performance. We find similar heterogeneity in complementary aspirations for children's education and satisfaction with household finances. These results confirm that initial levels of aspirations are crucial in determining how entrepreneurs respond to exogenous aspirational shocks. }\\
+
+
+
+\noindent\textbf{Keywords:} Aspirations, Aspirations Failure, Aspirations Frustration, Small-business Growth, Business Performance, Subjective Well-Being, Randomized Control Trial.\\
+\noindent\textbf{JEL Codes:};
+\end{abstract}
+\vfill
+
+\thispagestyle{empty}
+
+\pagebreak
+
+\doublespacing
+
+\setcounter{page}{1}
+
+
+\section{\textbf{Introduction}}
+
+It is a long-standing puzzle in development economics why poor individuals and small-scale businesses often do not exploit productive investment opportunities \citep[see,][]{Banerjee2014, deMel2008, McKenzie2008, Karlan2010}. Beyond classical work on imperfections in the markets for credit and insurance \citep[e.g.,][]{Banerjee2015a, Banerjee2018}, lack of formal saving instruments \citep[e.g.,][]{Dupas2013, Dupas2013a}, dearth of human capital \citep[e.g.,][]{Anderson2018, McKenzie2014}, or institutional constraints \citep[e.g.,][]{Bardhan1997}, a more recent literature points towards psychological constraints as a possible explanation for foregone investments both at the individual- and at the firm-level \citep[see, e.g.,][]{Duflo2012, Bernheim2015, Banerjee2008, Ashraf2006, Bertrand2004}. One important psychological factor highlighted in an emerging literature is a constraint to aspirations \citep{Ray2006, Genicot2017, Dalton2016, Bogliacino2014, Lybbert2018}.
+
+As argued by \citet{Appadurai2004} and \citet{Ray2006}, poverty may affect the individual's capacity to aspire in order to contest and alter their own conditions, in turn discouraging investment in self-betterment and hampering their ability to grow. In their view, the capacity to aspire is socially determined by the agent's aspirations window, comprising the achievements of spatially, economically, and socially similar others with whom the agent engages in social comparisons. An important question is to what extent widening aspirations windows can become an effective policy to help people escape poverty. \citet{Ray2006} and \citet{Genicot2017} provide a clear answer: It depends on the extent to which the aspirations window is open. In the words of \citet[][p.4]{Ray2003} ``If economic betterment is an important goal, the aspirations window must be opened, for otherwise there is no drive to self-betterment. Yet it should not be open too wide: there is the curse of frustrated aspirations. There must be individuals in our immediate cognitive neighborhood who do better than we do, yet if they do a lot better, there will be no investments made..."  Dalton et al. (2016) arrives to a similar prediction with a different model. Their model shows that a positive shock to aspirations will be an effective policy to move people out of an aspirations-based poverty trap only if their initial aspirations are high enough and resources to satisfy rising aspirations are available. In contrast, a policy aiming at raising aspirations of people with too low aspirations will not be effective.
+
+
+%Ray (2006) and Genicot and Ray (2017) predict that business owners with high initial aspiration levels will benefit most from a widening of their aspirations windows. In contrast, and in line with this literature, entrepreneurs too far from the frontier may feel frustrated and will either not revise their aspirations or revise them downwards. Dalton's et al. (2016) model predicts that in a world in which resources to satisfy aspirations are not binding, a positive shock to aspirations will be an effective policy to move people out of a behavioral poverty trap as long as their initial aspirations are close to the aspirations threshold. However, the model also predicts that individuals with initially low aspirations will not benefit from policies shocking aspirations.
+
+%This literature models aspirations as reference points which increase the marginal benefit of exerting effort in the pursuit of a goal and affect utility flowing from realized outcomes.
+%These models show the existence of an threshold below which aspirations fail and optimal investment plummets (Bogliacino and %Ortoleva (2014), Dalton et al. (2016)) or above which aspirations become frustrated and investment equally falters.
+
+%Dalton et al. (2016) develop a framework in which poverty exacerbates existing cognitive biases creating a behavioral poverty trap %in which suboptimally low levels of aspirations and investment reinforce each other to yield ever lower levels of achievement. Their model predicts that policies which exogenously shock aspirations can help the poor escape a behavioral poverty trap, provided that initial aspiration levels are not too low and that resources to satisfy aspirations are available.
+
+%Galiani et al. (2018) extend this by showing how changes in aspirations may be short-lived if resource constraints are binding.
+
+Despite its potential for explaining patterns of persistent poverty, to the best of our knowledge, these predictions have not been empirically tested. With notable exceptions in the domain of household and educational aspirations \citep[see,][]{Bernard2014, Riley2017, Macours2014, Beaman2012}, evidence on the relationship between aspirations windows, aspirations, and achievement is mostly correlational and based on household-level cross-sections and panel data. In a recent empirical study, \citep{Dalton2018} shows that aspirations of small-scale retailers in Jakarta are strong predictors of savings, plans for credit, business expansion, and business innovation. What remains unclear is whether the business aspirations of small-scale entrepreneurs are amenable to an exogenous widening of their business aspirations windows and how this can be done. Do aspiration levels change at all? If so, does the direction of this change depend on initial aspiration levels, as theory predicts? More generally, what is the impact of a shock to business aspirations on business performance, the entrepreneurs' aspirations for their family, and their subjective well-being? %Are business and family aspirations complement or substitutes?
+
+%Despite its importance, there is little empirical evidence on the causal effect of enlarging the aspirations windows of small-scale business entrepreneurs. Most are correlational or using panel data and household aspirations. Empirical evidence shows that aspirations and effort are correlated. Related to this paper, Dalton et al. (2018) map out the determinants of small-scale shop owners' business aspirations in urban Indonesia and show that business aspirations and aspirations-based behavioral biases are strong predictors of savings, plans for credit, business expansion, and innovation. In this paper, we ask the following research questions: The research questions should be exactly the ones derived from theory and what we answer. How aspirational shocks influence business aspirations as well as business outcomes. Are business aspirations complement or substitute to aspirations for children's education. What is the overall effect of shocking aspirations on subjective well-being.
+
+These are all important outstanding questions for research and policy. Evidence for the usefulness of alleviating psychological constraints in the context of small-business growth has implications for broad strands of the literature studying pathways to economic development.  
+%business mentoring, business counseling and training, as well as on business plan competitions, among others. 
+%It has the potential to contribute to understanding low average levels of take-up and effectiveness of policy interventions as well as the conditions for remedying these shortcomings.
+Specifically, it speaks to the importance of targeting policies using baseline levels of aspirations. In this, it has implications for empowerment programs targeted at women and marginalized social groups and for efforts to identify firms with the potential for generating employment and rapid growth. 
+
+%On a conceptual level, it ties in with arguments about the usefulness of jointly alleviating economic and psychological constraints to satisfying rising aspirations.
+
+%Specifically, while widening the aspirations window can be an effective policy tool for those who are already close to achieving the frontier level of business practices, highlighting the same for entrepreneurs further away from the frontier may lead to opposite impacts.
+
+%This has implications also for strands of this literature which focus on business mentoring (e.g., Brooks et al., 2018; Cai and Szeidl, 2016), business counseling, consulting, and training (for reviews, see Carpena et al., 2017; McKenzie and Woodruff, 2014), and business plan competitions (e.g., McKenzie, 2017; Bjorvatn et al., 2015). Lastly, our findings speak to a recent literature on the identification of businesses with potential for rapid growth (see Fafchamps and Quinn, 2016; Fafchamps and Woodruff, 2017). We provide evidence on the conditions through which exogenous change in aspirations windows does indeed cause business growth. In particular, the heterogeneity we show in treatment effects highlights the potential for initial aspiration levels to inform both targeting efforts for and the design of policy interventions.
+
+%Specifically, while widening the aspirations window can be an effective policy tool for those who are already close to achieving the frontier level of business practices, highlighting the same for entrepreneurs further away from the frontier may lead to opposite impacts.
+
+%First, we provide evidence for the general usefulness of interventions to widen the aspirations windows of small business owners in fostering business aspirations and small-business growth. Second, the distance of the entrepreneur's aspirations to the frontier mediates the effect on aspirations and business performance such that only entrepreneurs with high aspirations to begin with may benefit from the intervention. This speaks to the importance of targeting efforts prior to the roll-out of policies and the essential role of intervention design to match characteristics of the target population with those of the treatment material. In particular, empowerment programs aimed at women or marginalized groups of the population will benefit from prior efforts to measure aspirations levels lest they run the risk of worsening the situation. Third, complementary to Galiani et al. (2018), the study highlights that effects on aspirations and business performance may only persist in the long-term if economic constraints are not binding. This brings home the point that aspirations-based policy initiatives may only meet sustainable success if several constraints are being tackled simultaneously. Fourth, and expanding the previous point, regarding the effects on business performance, informational shocks to aspirations alone may not be suited to bring about positive change without complementary treatments that provide additional psychological resources, such as the opportunity to learn from role models or being assisted in implementation to foster agency. Fifth, the interventions to provide additional psychological resources are scalable and comparably low-cost. With most costs being fixed, delivery of larger-scale efforts along the same lines is only going to be more effective in costs per person treated. Hence, while this paper provides clear evidence for the usefulness of aspirations research in the field of small-business growth, it also offers a cautionary tale on the potential of unintended consequences if the distance of the target population to the frontier and related constraints are not taken into account.
+
+We address the research questions by providing an exogenous shock to the aspirations windows of small-scale entrepreneurs. To do so, we distribute a handbook of profitable and easy to implement business practices used by successful local peers (hereafter \emph{Handbook}). The \emph{Handbook} was developed by combining the results from an extensive baseline survey with qualitative interviews on implementation practices. We interpret the \emph{Handbook} as a pure shock to the information available to the entrepreneur on local pathways to business growth implemented by relevant peers. Using the jargon of the aspirations literature, the \emph{Handbook} aims at ``populating the cognitive neighborhood" of the small-scale retailers in our sample with the practices used by their best-performing peers. Crucially, the practices depicted in the handbook are adapted to the background in suitability and simplicity and are implementable at essentially no economic costs.
+
+%with all physical resources necessary such that the economic costs of adoption are very low.
+
+The \emph{Handbook} treatment is complemented with two psychological and implementation nudges aimed at improving the capacity to aspire and achieve. First, a randomly selected subgroup of business owners are invited to watch a documentary movie (hereafter \emph{Movie}) broadcasting five successful role models showing their experiences implementing business practices and demonstrating how these practices helped them grow. 
+%Exposure to the \emph{Movie} provides variation in the extent to which entrepreneurs can engage in social learning from role models who embody the usefulness of the set of practices outlined in the \emph{Handbook}.  
+Second, another random subgroup of businesses is offered two sessions of personalized, hands-on implementation assistance on topics related to the \emph{Handbook} (hereafter \emph{Assistance}). 
+%The \emph{Assistance} varies the extent to which entrepreneurs can engage in practical first-hand learning. 
+Both the \emph{Movie} and the \emph{Assistance} aim at fostering the agency of the entrepreneur to adopt the business practices and develop their capacity to aspire and achieve. The former does so by providing vivid examples of how peers have successfully implemented particular practices; and the latter by demonstrating the applicability of the practices in the entrepreneur's own idiosyncratic environment. Finally, a group of businesses is offered both the \emph{Movie} and \emph{Assistance} to test for possible complementarities. Since all entrepreneurs are exposed to the same frontier of practices, we use predictions from theory to test how initial distance of the entrepreneurs' aspirations to the frontier affects changes in their aspirations window. As predicted by theory, we expect that the effectiveness of our interventions will depend on how distant the entrepreneurs perceive they are from the examples they get exposed to with the treatments.
+
+Six and eighteen months after the interventions, we find statistically significant and economically meaningful effects on several dimensions of business aspirations as well as on business sales and profits. Importantly, these effects sharply follow the divergence predicted by \citet{Ray2006}, \citet{Genicot2017}, and \citet{Dalton2016}. Entrepreneurs whose business aspirations are above the median at baseline increase their aspirations, especially for customers and business sales, in reaction to both \emph{Movie} and \emph{Assistance} and show considerable gains in monthly profits of USD 405.00 to 578.00 PPP (33 to 47 percent) and in business sales of USD 1329.00 to 1598.00 PPP (15 to 18 percent) over the control. In contrast, entrepreneurs who report below-median aspirations at baseline lower their aspirations further and report significant reductions in business sales by USD 1088.00 PPP (41 percent) in reaction to the \emph{Handbook}. .
+
+We also study complementary impacts of shocking business aspirations on other aspiration dimensions of the entrepreneur, specifically aspirations for their children's education and their own valuations of well-being. We find that the divergence predicted for business aspirations is also reflected in their family aspirations. At endline, entrepreneurs assigned to treatment with above-median baseline aspirations aspire to almost one year more educational attainment for their children than the control group, and are more likely to aspire for their children to reach, on average, Masters-level university education. In contrast, entrepreneurs with below-median aspirations at baseline lower their aspirations further and report reductions in educational aspirations. This evidence suggests that business and family aspirations of the small-scale entrepreneurs in our sample are complements, rather than substitutes.
+
+Finally, we find significant and sustained positive effects on overall financial satisfaction with entrepreneurs of above-median baseline aspirations reporting gains of up to nine percent (0.26 standard deviations) six and eighteen months after treatment. Moreover, we detect significant positive effects on life satisfaction scores for these entrepreneurs eighteen months after the treatment. The satisfaction scores of entrepreneurs with below-median baseline aspirations are not significantly different from the control group.
+
+%To the best of our knowledge, these findings provide first empirical evidence for the theoretical prediction by both \citet{Genicot2017} and \citet{Dalton2016} that, in the absence of binding economic constraints, changes in aspirations can be sustained over the long-term. We show that, in the context of small-scale businesses, performance levels follow changes in business aspirations as predicted by theory. Moreover, we provide first empirical evidence consistent with the concept of aspirations frustration \citep{Ray2006, Genicot2017} and for the causal role of aspirations in subjective well-being.
+
+%show that the divergence in aspirations and business performance we document for entrepreneurs above and below the median of baseline aspirations persists eighteen months after treatment. %Empirically, our results provide first field evidence on how shocking business aspirations of small-scale entrepreneurs can influence their business outcomes.
+The sharp heterogeneity based on initial aspirations levels suggests an important role for policy in the design of such programs. Specifically, while widening the aspirations window can be an effective policy tool for those who are already close to achieving the frontier level of business practices, highlighting the same for entrepreneurs further away from the frontier may lead to opposite impacts.
+
+This paper contributes to several strands of literature. First, it adds to the empirical literature on aspirations and poverty \citep[e.g.,][]{Bernard2014, Riley2017, Beaman2012, Janzen2017}. To the best of our knowledge, these findings provide first empirical evidence for the theoretical prediction by both \citet{Genicot2017} and \citet{Dalton2016} that, in the absence of binding economic constraints, changes in aspirations can be sustained over the long-term. We show that, in the context of small-scale businesses, performance levels follow changes in business aspirations as predicted by theory. Moreover, we provide first empirical evidence consistent with the concept of aspirations frustration \citep{Ray2006, Genicot2017} and for the causal role of aspirations in subjective well-being. %We contribute by providing causal evidence on the impact of a widening in aspirations windows on both business and family aspirations, as well as business performance. On a more general level, by promoting the use of simple business practices that can be implemented at no monetary cost, we differ from \citet{Bernard2014} and \citet{Galiani2018} in that we show the effects of aspirations in an environment where economic constraints to satisfying higher aspirations are not binding. We also add to this literature by providing experimental evidence for aspirations frustration when aspirations windows are opened too wide \citep{Ray2006, Genicot2017}.
+We add further by investigating the important role of providing soft psychological and implementation nudges to nurture the entrepreneurs' capacity to aspire and to achieve. 
+%Finally, we contribute methodologically in providing a novel approach to measuring aspirations on the essential dimensions of small-business growth. %We do this in the other paper
+
+Second, we contribute to the literature on small-business growth. We complement \citet{Dalton2018}, who document strong associations between business aspirations and productive investment and innovation, with experimental evidence of both the malleability of business aspirations and their impact on firm performance.%In \citet{Dalton2018}, we document strong associations between business aspirations and forward-looking firm behavior, such as productive investment, loan take-up, and innovation. Here, we complement this aspirations-based view of entrepreneurial behavior with evidence of both the malleability of business aspirations and their impact on firm profitability.
+ This has implications also for strands of this literature which focus on business mentoring \citep[e.g.,][]{Brooks2018, Cai2017}, business counseling, consulting, and training \citep[for reviews see,][]{Carpena2017, McKenzie2014}, and business plan competitions \citep[e.g.,][]{McKenzie2017a, Bjorvatn2015}. Lastly, our findings speak to a recent literature on the identification of businesses with potential for rapid growth \citep[see,][]{Fafchamps2016, Fafchamps2017}. We provide evidence on the conditions through which exogenous change in aspirations windows does indeed cause business growth. %In particular, the heterogeneity we show in treatment effects highlights the potential for initial aspiration levels to inform both targeting efforts for and the design of policy interventions.
+
+Third, the paper adds to the growing literature on the effectiveness of role models in promoting behavioral change \citep[see, e.g.,][]{Berg2017, Beaman2012, Ferrara2012, Chong2009, Kearney2015, Bernard2014, Riley2017}. %Emanating from psychology, work on gender stereotypes has shown how exposure to experts and other extraordinary proponents of the same gender  can change stereotypes regarding gender roles and facilitate women's entry into traditionally male industries and roles (e.g., Stout et al., 2011; Asgari et al., 2010).
+In the context of development economics, interventions involving role models have been used to affect financial knowledge and behaviour \citep{Berg2017}, separation and divorce rates \citep{Chong2009}, fertility \citep{Ferrara2012}, teen pregnancies \citep{Kearney2015}, educational outcomes \citep{Beaman2012, Riley2017}, or individual investment behavior and savings (Bernard et al., 2014). We add to this in providing evidence that role-model interventions can also affect the growth aspirations of small-business owners and their business performance. We further contribute by quantifying the effect of a role-model intervention against a purely informational shock.
+
+Finally, our results speak to the empirical literature on well-being and income aspirations \citep[e.g.,][]{Easterlin1995, Easterlin2001, Easterlin2003, Clark2008, Frey2002}. We show that exposing small-scale entrepreneurs to their successful peers can have positive net effects, especially for individuals with high aspirations at baseline. We differ from \citet{Bernard2014} in that we provide \emph{Assistance} alongside a role-model treatment and show that, in conjunction, these interventions can positively affect both financial and life satisfaction levels in the long-term. By providing first experimental evidence on the effect of widening aspirations windows on the entrepreneur's aspirations both for their business and their children's educational prospects, we also contribute to a nascent literature on potential substitution effects among multiple dimensions of aspirations \citep[see, e.g.,][]{Bernard2014, Bjorvatn2015}. This is particularly important in a context where large parts of self-employment are essentially subsistence-oriented. Our findings suggest that, in this sample of small-scale entrepreneurs, business and family aspirations are complements rather than substitutes and that, consequently, no discernable negative impact on well-being can be detected.
+
+The rest of the paper is organized as follows. In Section \ref{sec:theory}, we introduce the concepts of aspirations failure and aspirations windows and lay out our own approach in connection to this literature. Section \ref{sec.method} outlines the experimental design and Section \ref{sec.data} describes the data and estimation method. Section \ref{sec.analysis} reports the results and Section \ref{sec.conc} concludes.
+
+\section{Framework and Hypotheses} \label{sec:theory}
+
+The concept of aspirations and its potential for explaining patterns of persistent poverty is not new to the study of development economics. Since \citet{Simon1955} and \citet{Selten1998} and more recently \citet{Bogliacino2014}, \citet{Dalton2016}, and \citet{Genicot2017}, aspirations have been conceptualized as reference points. Thus, losses and gains relative to the initial level of aspirations are what determine investment incentives, and in turn, performance and achievement. Understanding the causal determinants of entrepreneurial aspirations has both research and policy relevance. This section lays out the hypotheses for how our experimental interventions are expected to affect entrepreneurs' business and family aspirations, and through them, their business performance and subjective well-being. The hypotheses tested in this paper are directly derived from predictions of the models introduced by \citet{Dalton2016} and \citet{Genicot2017}.
+
+\subsection{The Effect of Aspirations Windows on Aspirations}
+
+In his work on the social formation of aspirations, \citet{Ray2003, Ray2006} defines the aspirations window of an agent as ``her zone of  `similar', `attainable' individuals" \citep[][p.1]{Ray2003}, that is, their ``spatially, economically, perhaps even socially" close others \citep[][p.2]{Ray2003}. Aspirations are formed through ``the lives, achievements, or ideals" \citep[][p.2]{Ray2003} of such individuals. Consistent with this, there is broad empirical support for the notion that relative status within a community or neighborhood has some bearing on individuals' aspirations \citep[][]{Bernard2014, Beaman2012, Janzen2017, Knight2012, Stutzer2004}. In an instructive example, \citet{Macours2014} show how plausibly exogenous proximity to females in leadership positions may have opened local women's aspirations windows in a field experiment in Nicaragua.
+
+Inherent in this view of socially determined aspirations is the notion that aspirations can be lifted by opening aspirations windows \citep[see,][]{Ray2006, Genicot2017, Janzen2017}. In the framework of \citet{Genicot2017}, the agent maximizes the net benefits of effort investment considering two possible outcomes: satisfying their aspirations or failing to satisfy them. Under this scenario, there is a threshold level of aspirations at which the agent is indifferent between exerting high effort and reaping utility from satisfying their aspirations and exerting low effort in frustration. Hence, opening aspirations windows may only be optimal up to a point beyond which individuals in the zone of relevant peers may become too dissimilar to the agent and aspiration levels too high to be worthwhile attaining.
+
+By opening aspirations windows up to the same level for all entrepreneurs, we create heterogeneity in treatment shocks conditional on initial aspiration levels. We ask whether the distance between the entrepreneur's initial aspirations and the efficient frontier accounts for a potential divergence in aspiration levels at endline. We expect entrepreneurs aspiring high at baseline to be more likely to perceive the shock provided through the \emph{Handbook} as a relevant enlargement of their aspirations windows by the achievements of similar others and to react by increasing aspiration levels and exerting greater effort. In contrast, entrepreneurs with low aspirations at baseline will see dissimilar others migrate into their aspirations windows and, following \citet{Ray2006} and \citet{Genicot2017}, will be more likely to see their aspirations frustrated. Given the theory, this should result in a divergence in aspiration levels with initial aspiration levels mediating the change. %Ultimately, we expect these differential changes in aspirations to translate into a divergence in business performance as measured in business sales and profits.
+
+%We recognize that purely informational shocks to individuals' aspirations windows may not be sufficient but that, in the absence of economic constraints, psychological constraints to satisfying aspirations may still matter. Hence, in a second step, we test the impact of providing two complementary psychological resources that go along with the \emph{Handbook}. First, the \emph{Movie} provides a personal experience with selected entrepreneurs, presented as ``similar'' but successful others. This intervention is aimed at convincing the entrepreneur of the similarity shared between them and provides an opportunity to learn through the actual achievements of a role model rather than to engage with the same set of practices in a purely informational way. On the other hand, it is also conceivable that the \emph{Handbook} has limited impact on effort and performance since it makes entrepreneurs engage with material they may construe as being too dissimilar to their own skill set as to engage with it productively. The \emph{Assistance} is designed to remedy this constraint by providing personalized, hands-on counseling which may convince entrepreneurs of the applicability of the selected practices to their own idiosyncratic environment beyond what an informational shock can deliver. Since the advice given through both the \emph{Movie} and the \emph{Assistance} is designed to be almost perfectly identical with the content of the \emph{Handbook}, any differences between treatment groups are unlikely to be caused by a pure information shock.
+
+
+\subsection{The Effect of Business Aspirations on Business Performance}
+
+\citet{Dalton2016} develop a model in which differences in initial wealth exacerbate common behavioral biases to produce an aspirations-based poverty trap. In it, behavioral individuals take their aspiration levels as given when choosing effort to invest in the future, even though aspirations are determined by effort and achievement in equilibrium. For both the poor and the rich, this bias leads to suboptimal choices of effort investments. However, since lower wealth levels reduce the marginal benefit of exerting effort, it is the poor individuals who are more likely to aspire below their true potential. That is, poor individuals end up choosing to exert less effort and to set less ambitious aspirations with respect to their true potential. This leads to multiple welfare-ranked equilibria. If constraints to achieve aspirations are not binding and initial aspirations levels are close to an aspirations threshold, an exogenous shock to aspirations can propel the individual out of the aspirations-based poverty trap and move the individual to an equilibrium with higher effort, higher aspirations and better outcomes. \citet{Galiani2018} shed light on the case in which resource constraints are, in fact, binding. Here, the poor individual, once propelled out of the bad equilibrium of a poverty trap through an exogenous shock to aspirations, may not be able to sustain their increased aspirations in the long-term. In the context of a field experiment that randomizes improvements in housing quality to inhabitants of poor slums in Mexico, Uruguay, and El Salvador, the authors show that individuals in the control group indeed report higher aspirations for home improvements in the short-term. However, investment levels did not change and any gains in aspirations have vanished eight months after treatment.
+
+%Our paper ties in directly with this literature. 
+Since we provide a step-by-step guidance on business practices which can be implemented at no economic costs, by design, our study creates an environment in which economic constraints to satisfying rising aspirations can be plausibly assumed not to be binding. In addition, %we provide complementary implementation nudges, thought as psychological resources to foster the entrepreneur's capacity to aspire and achieve. While the \emph{Movie} offers an opportunity for social learning from peers on the local frontier of best practices, the \emph{Assistance} comprises first-hand experience through personalized hands-on guidance to foster individual agency beliefs. 
+the nudges provided by \emph{Movie} and \emph{Assistance} are based on and are almost perfectly equivalent to the content of the \emph{Handbook}, such that treatment effects beyond the \emph{Handbook} cannot be driven by purely informational shocks. In the short-term (i.e. six months after treatment), we expect aspiration levels to rise in response to each of the treatments. In the absence of binding economic constraints to satisfying higher aspirations, we moreover expect (i) an increase in business performance in the short-term and (ii) for higher aspirations and better performance to be sustained in the long-term (eighteen months after treatment). It is an open question whether, in the absence of economic constraints, agency constraints hold back aspirations and performance. Following the literature on role models and behavioral change, we expect the increase in business aspirations and performance to be stronger for entrepreneurs exposed to \emph{Movie and Handbook} than for those assigned to the \emph{Handbook Only}. We explore the effectiveness of this intervention against the \emph{Assistance} with no directed hypothesis. %It is not clear to me that we can claim the same for the Assistance given the literature.
+
+%Since business models in the retail sector, and particularly among small-scale businesses in the traditional sector, are relatively straight-forward and comparable across businesses, we believe this to be a suitable environment to study the impact of opening aspirations windows on small-business growth in the absence of binding economic resource constraints.
+
+
+%We differ from Galiani et al. (2018) in that we offer not only step-by-step guidance on easy to implement and locally relevant business practices but additionally provide psychological and implementation nudges as resources for the entrepreneur to emulate these practices. That way, we create an environment with essentially zero economic costs to adoption. This is close to Macours and Vakis (2014) who find that, when provided with the necessary resources to follow through on aspired investments, a widening of aspirations windows through exposure to local role models can be sustained beyond the short-term. Furthermore, business models in the retail sector, and particularly among small-scale businesses in the traditional sector, are relatively straight-forward and comparable across businesses. Taken together, we believe this provides us with a realistic case to study the impact of opening aspirations windows on small-business growth when resource constraints are not binding.
+
+\subsection{The effect of business Aspirations on Family Aspirations}
+
+While there is a growing literature on the impact of aspiration levels on effort and investment, much of this literature has been limited to conceptualizing aspirations as one-dimensional and as pertaining to income only \citep[see, e.g.,][]{Janzen2017, McBride2010, Stutzer2004, Knight2012}. In contrast, \citet{Ray2003, Ray2006} acknowledges that ``the concept of aspirations itself may be inherently multidimensional'' and that ``depending on one's place in the socio-economic hierarchy, these many-faceted aspirations may complement one another, or they may be mutual substitutes'' \citep[][p.2]{Ray2003}. Such a multidimensional view on aspirations is arguably of particular relevance in the study of small-business growth and entrepreneurship in developing countries where, typically, a majority of individuals is self-employed \citep[e.g.][]{Maloney2004, Gollin2008, Nichter2009}. While common, such small-scale firms are often not the only source of household income and their owners compelled to divide their time between business tasks, household chores, and child rearing. Indeed, in our sample, 79\% of the enterprises are operated from within the entrepreneur's household. An exogenous shock to the entrepreneur's aspirations window may simply render one dimension salient at the expense of another in the pursuit of utility maximization or change the relative marginal benefits of time spent on business task versus in the household or with their children.
+
+Though the empirical literature is still sparse, there is some evidence on the interplay of different aspirations dimensions. Considering multiple dimensions of Ethiopian villagers' individual aspirations, \citet{Bernard2014} report treatment effects of a role-model intervention on the aspirations towards their children's educational attainment, while neither other aspirations dimensions nor life satisfactions were affected. The authors conjecture that the finding may be due to a strong local belief in the returns to education in the wake of comprehensive government reform. However, aspirations for their childrens' prospects may simply act as a substitute for aspirations towards the individual's own income and social status. \citet{Bjorvatn2015} offers further suggestive evidence along these lines from a field experiment among school students in Tanzania. The authors show that exposure to an edutainment program that motivated students for entrepreneurship facilitated interest in entrepreneurship and business start-up but decreased school performance and graduation rates.
+
+In this paper, we consider the multidimensionality of aspirations by measuring the entrepreneur's aspirations for their children's educational attainments alongside their business aspirations. We explore potential substitution effects between these aspirations dimensions by capturing the effect of widening aspirations windows on educational aspirations.
+
+
+\subsection{The effect of Business Aspirations Subjective Well-being}
+
+Though the literature on aspirations and poverty has largely established that aspirations correlate with forward-looking behavior and investment \citep[see, e.g.,][]{Janzen2017, Dalton2018, Kosec2017, Favara2017, Ross2017, Serneels2014} and that aspirations are amenable to change \citep[e.g.,][]{Bernard2014, Macours2014, Beaman2012, McBride2010}, it is not clear what the welfare consequences of such change should be on the treated individual. As common proxies for individual utility, self-reported happiness and well-being should offer first insights into the impact of aspirations-based interventions on individual welfare \citep[see, e.g.,][]{Clark1994, Oswald1997, Ng1997, Easterlin2001, Stutzer2004, Frey2000, Frey2002}. Generally, the happiness literature finds happiness to increase in income but decrease in income aspirations \citep[e.g.,][]{Easterlin1995, Easterlin2001, Easterlin2003, Stutzer2004, Knight2012, Clark2008, Frey2002}. Using a large cross-section from Switzerland, \citet[][]{Stutzer2004} provides evidence for a negative correlation between aspiration levels and life satisfaction. \citet{Knight2012} find the same result in a cross-section from rural China. \citet{McBride2010} corroborates this in the controlled environment of a laboratory study, confirming the importance of relative judgments for happiness found in previous lab research \citep[see, e.g.,][]{Tversky1991, Smith1989}.
+
+This effect may be driven by social comparisons. The literature finds that improvements in the incomes of relevant peers tend to decrease individual happiness \citep[e.g.,][]{Clark2010, Fafchamps2008, Luttmer2005, Ferrer-i-Carbonell2005, Stutzer2004, Senik2004, Senik2009}. This social channel is consistent with the literature on the formation of aspirations which models aspiration levels as, in part, determined by the individual's ``aspirations window'' of similar and attainable peers \citep{Ray2006, Genicot2017, Janzen2017}. A shock to the exposure to well-off peers may thus cause changes in the individual's aspiration levels which, in turn, impact on their happiness. Moreover, potential substitution effects between multiple dimensions of aspirations, as outlined above, may provide a further channel of the negative effect of aspirations on subjective well-being.
+
+We are able to shed light on the impact of social comparisons on subjective well-being in that we expose entrepreneurs to the example of aspirational peers with the \emph{Movie} and measure the entrepreneur's satisfaction with their finances and with life in general. Following the happiness literature \citep[e.g.,][]{Easterlin1995, Easterlin2001, Easterlin2003, Clark2008, Frey2002}, any treatment effect on subjective well-being will be the net effect of a positive income effect and a negative effect from rising aspirations. Since the exposure to successful, well-off peers differs in impact by the distance to this frontier, we expect entrepreneurs closer to it (above-median baseline aspirations) to benefit more from the intervention in terms of satisfaction levels than those further from it (below-median baseline aspirations). In contrast, the direction of the overall effect depends on the relative magnitudes of the opposing effects of income and aspirations and is, therefore, not clear ex ante. By providing \emph{Assistance}, we explore the possibility that increases in perceived agency may contribute to raising satisfaction levels.
+
+
+\section{\textbf{Research Method}}\label{sec.method}
+
+
+\subsection{Study Location and Population of Interest}
+
+The study was conducted in Jakarta, the capital city of Indonesia. While the city of Jakarta is home to roughly 10 million inhabitants, 30 million people live in its metropolitan area including the peripheral cities of Bogor, Depok, Tangerang, and Bekasi (``Jabodetabek''). We draw our sample from the population of traditional retail businesses in the city of Jakarta (excluding ``Jabodetabek''). Locally known as ``toko kelontong'' or ``warung'', shops of this kind are ubiquitous in Indonesia where retail and hospitality is the second largest sector of MSE employment following agriculture \citep{StatistikUMKM2011}. Offering staples such as rice, nuts, and beans but also snacks, sweets, beverages, toiletries, cigarettes, and other convenience goods, traditional retail shops are concentrated largely in residential areas and adjacent to traditional markets for vegetables, fruits, rice, meat, and fish. Most are operated as family businesses with only 2.43\% employing any hired labor. Appendix \ref{sec:expbusinesses} shows pictures of two shops representative of this sample.
+
+
+\subsection{Sampling Frame}
+
+For logistical reasons, we restricted the area of study to the 144 districts of the city of Jakarta, excluding the wider metropolitan area (``Jabodetabek''). Of the 144 districts that comprise the city of Jakarta, we dropped all 32 districts of Northern Jakarta (``Kota Jakarta Utara'') due to an SME training program concomitantly run by a large retail chain. Out of the 112 eligible districts, we randomly selected 29 districts to be part of the research.\footnote{Appendix \ref{sec:maps} provides a map of the districts of study in the context of the wider metropolitan area.} Within these 29 areas of study, we conducted a listing exercise to create a list of all businesses which met the following four selection criteria: (i) shop size of at least $4m^2$, (ii) at least two different product categories on offer, %(iii) a general interest of the entrepreneur to see their business grow,
+(iii) no handcart or other moveable business premises, and (iv) no franchise of larger retail chains. Regarding the sampling procedure, within each district a team of two to three enumerators would first request a map of \textit{community-level} boundaries at the local district office. This enabled us to avoid market places whose high population density would make the research design vulnerable to spill-over concerns. We further aim to avoid spill-overs by sampling only businesses which were at a distance of at least 30 meters. This procedure yielded a total of 2042 businesses of which we randomly selected a sample of 1301 to be included in the study.
+
+
+\subsection{Experimental Design}
+
+In order to create exogenous variation in the exposure to treatment, we divided the full sample of 1301 businesses into four treatment groups ($N = 260$ each) and one control group ($N = 261$). Randomization was stratified according to (i) gender, (ii) business size (below 6$m^2$, between 6 and 10$m^2$, or above 10$m^2$), and (iii) a dummy of whether the entrepreneur scored above or below the median in a composite of business practices.
+
+Each of the treated individuals ($N = 1040$) received the \emph{Handbook} which characterized local best practices in doing business and provided step-by-step advice on their implementation. Orthogonal to this treatment, a random subset of shop owners ($N = 520$) was invited to the screening of the \emph{Movie} which featured the success stories of five local entrepreneurs. A second subset of shop owners ($N = 520$) received an invitation to \emph{Assistance}, two sessions of personalized business counseling which were based on the content of the \emph{Handbook} and were designed to clarify misunderstandings and aid with implementation issues. A cross-design ensured that 260 participants received the \emph{Handbook Only}, while other 260 participants were assigned to each of three additional groups: \emph{Handbook and Movie} ($N = 260$), \emph{Handbook and Assistance} ($N = 260$), and \emph{All Three} treatments ($N = 260$).
+
+Regarding the timing of activities, we conducted the listing exercise in January 2016 and administered the baseline survey in March and April 2016. Interventions took place in October and November 2016. These were followed by a first endline survey conducted in April and May 2017 and a second endline survey in April and May 2018.\footnote{For a detailed timeline, see Appendix \ref{X}.}
+
+\subsection{Interventions}
+
+\subsubsection{Handbook}
+
+\emph{\textbf{Selection of Best Practices}}\
+
+The business practices presented in the \emph{Handbook} are those found to be most profitable in the local context among a total set of 84 practices tested. In order to identify these local best practices, we rely on data from qualitative interviews with 102 small-scale entrepreneurs and from the quantitative baseline survey conducted among all 1301 business owners included in the study sample. The process is described in more detail in Dalton et al. (2018b). Importantly, we use the qualitative data to inform implementation advice in both the \emph{Handbook} and \emph{Assistance} intervention. The quantitative baseline data is used to estimate the returns to adoption of each practice and ultimately to select the set of best practices. We use multivariate regression models to regress firm performance measures, such as the number of daily customers and different measures of business sales and profits, on business practices. The set of best practices is selected according to two criteria: 1) the practice's significance in predicting firm performance measures across eight different OLS specifications and 2) the absolute value of the effect on performance. That way, we are able to reduce the total set of 84 practices to 14 most profitable practices. %We subsequently 2 marketing practices, 3 in stocking-up, 4 in record-keeping and profit calculation, 1 in financial planning, and 3 in discussing and cooperating on business matters.
+
+Appendix \ref{sec:selprac} provides a list of all practices mentioned in the \emph{Handbook}. Besides the set of 14 best practices, additional practices were mentioned in the \emph{Handbook}. These practices served mainly as entry points to the narrative of a chapter or as connecting points between two or more selected practices. While we provide information on the estimated returns to adoption on all selected practices, we show no such information for this set of accessory questions. \\
+
+\noindent \emph{\textbf{Handbook Production}}\
+
+The \emph{Handbook} is designed to introduce the set of local best practices identified through the baseline data and to provide both reasons to adopt the practices and a clear guide to implementation. We grouped the selected practices in five semantic groups: keeping records, calculating profits, planning stock-up purchases, attracting new and retaining old customers, and discussing and cooperating on business decisions. One chapter of approximately 10 to 15 pages was devoted to each of the semantic groups. In each chapter, we address major misconceptions which we found entrepreneurs use to rationalize non-adoption or procrastination on adoption decisions in the qualitative interviews. We highlight returns to adoption information of each of the selected practices and outline simple implementation strategies which embed each practice into the broader narrative of the chapter. %For instance, in the case of record-keeping (chapter 1), the reader first learns to separate accounts before they are introduced, step by step, to building a structured account of every business transaction that takes place. This leads up to practical ways to calculate profits at the end of the chapter. Along the way, the entrepreneur learns to deal with common situations, such as how to note down the event of lending money to one's friends and family and how to document any event of extending trade credit.
+Each chapter ends with a number of tips for the advanced user, such as applying for a token-based electricity meter which helps keep costs in check and aids keeping account of the costs. %In order to enable the reader to not only read cover to cover but also more cursorily, all chapters are self-contained and each section within a chapter provides links to other points in the chapter which explain background knowledge in more detail.
+A cheat sheet of 12 pages complements the \emph{Handbook} to summarize the main information in condensed form. An additional exercise book is meant to minimise transactions costs of adoption and enables the reader to start practicing the structure conveyed in the \emph{Handbook} regarding both record-keeping and stock-up planning right away.
+
+\subsubsection{Movie}
+
+\emph{\textbf{Selection of Role Models}}\
+
+\noindent In order to identify potential entrepreneurs whose businesses were comparable to those of the sample in type but distinct in the level of organization, growth aspirations, practices, and size, we used the qualitative data on 102 shop owners to create a list of nine candidates. Short-listed candidates were entrepreneurs who used the greatest number of business practices as measured by the battery provided by \citet{McKenzie2017}. In-depth interviews with these candidates were conducted to reveal their aspirations for business growth and history as small-scale retailers. Further, we enquired into business practices used and encouraged the candidates to elaborate on personal experiences and to give advice crucial for implementation. Based on these interviews, we selected five entrepreneurs who best represented the local frontier of best practices and acquired informed consent for their appearance as role models in our \emph{Movie}.
+
+The final sample of entrepreneurial role models are heterogeneous in socio-demographics, such as gender, age, and ethnicity, and own businesses disparate in size. Drawing on the anthropological and psychological literature on social learning, we use this heterogeneity to ensure similarity with the greatest possible fraction of the sample tapping into individuals' tendency to learn from similar others \citep{Chudek2013, Corriveau2009, Efferson2008, McElreath2008, Morgan2011, Rendell2011}. Moreover, the difference in business size is intended to show the range of possibilities for a business of the same type as those in the sample and thus to facilitate the opening of ``aspirations windows'' \citep{Ray2006}. On average, the smallest businesses in our sample are roughly as large as the very smallest shop shown in the \emph{Movie}. Larger businesses in our sample are on par with larger role-model shops but smaller than the very largest aspirational example.\\
+
+\noindent \emph{\textbf{Movie Production}}\
+
+\noindent A professional production company was hired to conduct both the shooting of the \emph{Movie} and the post-production editing. The research team was in charge of every aspect pertaining to the content of the film. As such, we wrote a script which comprised the full set of questions that would be asked and distributed it days before the shooting started to ensure informed consent on the part of the participants. The final \emph{Movie} is 25 minutes in length and portrays the five selected role models, their advice and businesses. Each entrepreneur is prompted to elaborate on their use of a set of related practices, the impact of their use on the business, and specific implementation advice. The set of practices presented by each role model roughly corresponds to one chapter in the \emph{Handbook}. Moreover, entrepreneurs are asked about their past as small-scale retailers and about their aspirations for future growth. In sum, through each role model, aspirational goals are established and business practices presented which are framed as pathways to business success. \\
+
+\noindent \emph{\textbf{Movie Screening}}\
+
+\noindent Public screenings of the \emph{Movie} were conducted on the village-level to minimize transactions costs and maximize take-up. The typical location of the screening were school buildings or the local village-level office whose spaces are commonly known to be locations for gatherings and deliberations. Attendance was remunerated by a lump sum of IDR 100,000 (USD 24.68 PPP) to cover any costs incurred for transportation and provide a meaningful incentive on top. Assigned entrepreneurs were informed of the incentive at the time of the distribution of the \emph{Handbook} and were involved in finding a date and time for the screening. On the day before the screening and again in the run-up to the event, we reminded invited individuals through phone calls or text messages, and in few cases through personal visits. In order to further facilitate attendance, we offered two alternative screening dates in each district.
+
+Screenings were followed up by question-and-answer-type sessions led by trained local staff and dedicated to fostering identification with the role models and facilitating the understanding of the material. Moreover, these sessions served to tie the practices presented on screen to the chapters in the \emph{Handbook} they originated from. We closed each session by conducting a feedback survey of 15 minutes and paying the attendance fee. A typical screening session took about 90 minutes.
+
+\subsubsection{Assistance}
+
+\emph{Assistance} was delivered to businesses by local staff not previously involved in any small-business research or consulting activities. Over three days, we conducted in-depth training sessions for 20 facilitators on the content of the \emph{Handbook}, incorporating also implementation advice gathered through the qualitative interviews.
+
+Facilitators were each randomly allocated 104 entrepreneurs assigned to \emph{Assistance}. Visits took place between two and three weeks after the distribution of the \emph{Handbook}, lasted about 40 minutes, and followed a structured protocol. After confirming the identity and eligibility of the entrepreneur, facilitators inquired into which of the chapters the respondent had already engaged with and, if none, elicited the entrepreneur's individual priorities. The facilitator would then work through the preferred chapters and give standardized advice on understanding and implementing the practices. %For each of the chapters and in the order of the entrepreneur's preference, the facilitator would work through the following sequence of actions. First, if the entrepreneur had started to implement any of the practices and had faced issues, those were documented and standardized advice given according to the \emph{Handbook} or, if no advice emerged from the \emph{Handbook}, remediation was postponed to the second visit. Second, in case the entrepreneur had not started implementing any practice but had engaged with the \emph{Handbook}, again, any issues were documented and standardized advice given. Third, once all issues were documented or in case the entrepreneur had not yet engaged at all with the material, the facilitator would use the remainder of the time to work through the rest of the entrepreneur's most preferred chapter. Fourth, at the end of the first session, the entrepreneur was asked to establish goals for the reading and/or implementation of chapters covered during the session.
+At the end of the first session, the entrepreneur was asked to establish goals for the reading and/or implementation of chapters covered. A second session was scheduled for about two weeks after the first and in accordance with the entrepreneur's availability. In the second session, the facilitator would take up the work left from the first session and follow up on the goals established during that visit. Apart from that, the second session followed the same protocol as the first.
+
+\subsection{Treatment Compliance}
+
+Regarding the screening of the \emph{Movie}, 50\% of the 520 entrepreneurs assigned to the treatment attended the local event (see \ref{tab.movietake}). This take-up rate is in line with previous experiences of centrally conducted, class-style business training programs \citep[see, e.g.,][]{Drexler2014, Gine2014, Bruhn2017, Bruhn2013, Calderon2013, Premand2016}, and despite a compensation of IDR 100,000 (USD 24.68 PPP), which was made known to every entrepreneur assigned to treatment at the time of the \emph{Handbook} distribution. Date and time of the screenings were chosen in accordance with what assigned entrepreneurs indicated would be suitable and up to two additional screenings were provided in areas were take-up was imperfect. On the day of the screening, entrepreneurs were reminded through phone calls or text messages, and in few cases by personal visits. Table \ref{tab.movietake} presents take-up rates of the \emph{Movie} and data on the participants' subjective assessments of the intervention.% We interpret the generally positive feedback as evidence that low attendance was not due to the irrelevance or unpleasantness of the material shown.
+
+With respect to the \emph{Assistance}, compliance rates were higher, with 77\% receiving the first and 68\% receiving both sessions of the intervention (see Table \ref{tab.movietake}). Presumably, this is because \emph{Assistance} was provided on-site and local staff was instructed to readily interrupt the session to let transactions take place as per usual. Visits were individually scheduled with each assigned entrepreneur. As Table \ref{tab.movietake} shows, overall feedback was positive on all dimensions.
+
+\section{Data and Estimation Method}\label{sec.data}
+
+\subsection{Description of Variables}
+
+The empirical analysis of this paper draws on three waves of a business survey with a baseline conducted in March and April 2016, a first endline in October and November 2016, and a second endline in April and May 2018. Besides a wide range of entrepreneurial and business characteristics, such as business performance and practices, this survey includes detailed measures on the aspirations of the entrepreneur, both towards their business and the education of the their children. \\ %Lastly, the survey includes questions on the satisfaction of the entrepreneur with their financial situation and life in general.
+
+\textbf{\emph{Business and Family Aspirations}}
+
+Regarding business aspirations, we elicit both short-term and long-term aspirations for different business dimensions. For the short-term, we ask we ask: ``Please imagine your business a year from now. How large do you imagine your business premises to be? How many people will work there? How many customers will come by on a normal day? What are the daily sales you aspire to have?''. For the long-term, we ask ``\emph{Please imagine your ideal business. How large is your shop? How many people work there? How many customers come by on a normal day?}''. Complementing these long-term aspirations, we elicit the aspirations horizon: ``\emph{How many years do you think it will take for you to achieve your ideal business?}''. On each dimension, responses are primed by reminding respondents of their current levels. Respondents answer with estimates in square meters, numbers of employees and customers, and amounts of daily sales in Indonesian Rupiah. We use the levels for each dimension as outcomes to capture potential treatment effects. Additionally, we compute aggregate scores for business aspirations by averaging z-scores of each dimension in the short-term and in the long-term, respectively.
+
+Further, we measure the aspirations of the entrepreneur towards their son's and daughter's educational attainment\footnote{For budgetary reasons, data on the educational aspirations of the entrepreneur are only available at baseline and first endline.}. For this, we first record the respondent's offspring by asking: ``Do you have any sons [daughters] and, if so, what are their names and how old are they?''. We then elicit aspirations regarding the oldest son and the oldest daughter under the age of 18, respectively. Specifically, we ask: ``How many years of schooling do you aspire him [her] to achieve?''. Respondents answer with estimates in years or are aided by the enumerator in translating any degree to the number of years necessary to acquire it in the Indonesian education system. We use the number of years as an outcome and construct a dummy variable that takes on the value one if the entrepreneur aspires for their son [daughter] to acquire at least Master's level education and zero otherwise. \\
+
+\textbf{\emph{Subjective Well-being}}
+
+The entrepreneur's subjective well-being is proxied by their self-reported overall satisfaction with household finances and life in general at the time of the survey. We use standard questions taken from the World Values Survey and ask: ``How satisfied are you with the financial situation of your household?'' and ``How satisfied are you with your life at this point?'' (FIND REF: WWS?). Respondents are instructed to answer on a scale from one to ten, whereby one indicates ``very dissatisfied'' and ten indicates ``very satisfied''. \\
+
+\textbf{\emph{Business Performance}}
+
+As measures of the performance of the firm, we use self-reported business sales for the month prior to the survey and monthly profits which we calculate from self-reported sales and expenses data. Specifically, we ask ``How much in total sales did this business make in the past month?'' and ``How much in total profits did this business make in the past month after paying all expenses?'' regarding monthly profits. With respect to expenses paid in the previous month, we ask ``What was the approximate amount you spent on the following item in the past month?'' followed by a list of the following expense categories: (i) total of all product purchases, (ii) total salaries and benefits for employees, (iii) rent payments and market fees, (iv) electricity and utilities payments, (v) transportation costs, and an open-ended answering option for ``other expenses''\footnote{For the baseline and first endline surveys, we provided a longer list including additional expense categories. Since expenses on those additional dimensions were rarely reported, we grouped any such expense under ``other expenses'' in the second endline survey.}. For both monthly sales and monthly expenses, we truncate the distribution treating extreme outliers in excess of USD 500,000 PPP as missing values. We calculate monthly profits taking the difference between the truncated versions of total monthly sales and total monthly expenses. In the final analysis, we additionally use winsorized versions of sales and profits at the 1\% and 2\% level on both tails of the outcome distribution. \\
+
+
+\textbf{\emph{Business and Entrepreneurial Characteristics}}
+
+In addition, we measure a number of business and entrepreneurial characteristics.
+Regarding the characteristics of the business, we consider the age of the establishment and a dummy that take son the value one if the shop is registered as a business and/or for taxes (including value-added tax). Furthermore, we ask the entrepreneur to gauge the size of the business premises and document the number of full-time employees working in the business and the calculated monthly profits of the firm.
+
+In terms of demographics, we gather data on the age, gender, and formal education of the shop owner. We use a dummy that takes on the value one if the entrepreneur's family comprises at least three children to measure family size. Moreover, we collect data on the entrepreneur's business practices as measured by the sub-scores for marketing, stocking-up, record-keeping, and financial planning introduced by \citet{McKenzie2017}. We measure risk preferences by simple self-reports for which we ask whether the respondent ``usually avoid[s] taking any risk" or whether they are  ``fully prepared to take risks''. We frame the same question in three different ways: as risk-taking for i) financial matters, ii) business decisions, and iii) in general. On a 10-point scale, respondents indicate how patient they are in each of the three categories. For the final analysis, we aggregate the answers to the three dimensions to one overall composite score of risk-taking. We proxy the entrepreneur's fluid intelligence using a standard digit span task. Digit span tasks are commonly used in the psychometric literature to proxy for intelligence independent of specific knowledge and skills \citep[see, e.g.,][]{Engle1999, Hale2002, Colom2005, Kane2005}. Sequences of digits of increasing length are read out one by one and the respondent is asked to repeat the respective sequence. The final score is equal to the number of digits of the longest sequence repeated without mistake. Following the literature, we conduct the exercise in two different ways asking the respondent to repeat the sequence i) in the order of presentation and ii) in the reverse order. We aggregate the two scores and use this composite for the final analysis.
+
+The cognitive style of the entrepreneur is measured with the 10-item questionnaire by \citet{Sagiv2010}. This psychonometric scale includes five statements measuring an intuitive approach to working and thinking (e.g., ``I often follow my instincts.") and five statements measuring a systematic approach (e.g., ``Before I do something important, I plan carefully."). Respondents indicate on a 5-point rating scale how much they agree with each statement. We use both sub-scales for an intuitive and for a systematic style in the final analysis. %In the final analysis of the det and dynamics paper, we use one scale for both and not the two sub-scales.
+
+%Following \citep{Sagiv2010, Sagiv2014}, we create one unified measure for which we invert the score on the items measuring an intuitive approach and subsequently aggregate the answers of all questions to one composite characterizing the systematic cognitive style of the entrepreneur. \\
+
+
+\subsection{Summary Statistics}
+
+Table \ref{XXX} presents summary statistics on owner background characteristics, business characteristics, as well as business and educational aspirations from baseline data. Column (1) shows means and standard deviations of the full sample of 1301 businesses. Columns (2) to (6) present the means for businesses assigned to each of the experimental groups, respectively.
+
+\textcolor[rgb]{1.00,0.00,0.00}{STILL TO CHECK CONSISTENCY BETWEEN OUR PAPERS.}
+
+The median entrepreneur in this sample is female (70.83\%), 45 years of age, and has completed 9 years of formal education or the equivalent of middle school ($mean = 9.39$ years). However, this masks considerable heterogeneity as 46.78\% have finished high-school and 4.44\% hold college degrees. At the time of the baseline survey, the median business has been operative for 10 years. It has two workers, measures ten square meters in size, and sees a total of 40 customers on a typical day. Median monthly profits are USD 370.17 PPP ($mean = 477.45$) with median monthly sales of USD 2961.35 PPP ($mean = 6034.93$). In one year, the median business owner aspires to have daily sales on the order of USD 246.78 PPP. They further report aspirations for business growth to 12 square meters in size ($mean = 15.56$) but for no change in the number of employees ($mean = 1.72$) and the number of customers ($mean = 56.85$). In addition, we elicit long-run aspirations for the imagined ideal business, which the median entrepreneur estimates to be achieved in 2 years ($mean = 2.77$). In the long-run, the median shop owner aspires to a business of 16 square meters in size ($mean = 24.19$) with a total of 50 daily customers ($mean = 73.35$). Aspirations for employment growth are no higher than current levels ($mean = 2.09$). Regarding their children's prospects, aspirations exceed the educational attainment of the entrepreneur by a considerable margin. The median business owner aspires for their child to complete 16 years of schooling ($mean = 16.81$) while 27\% aspire to Master's-level education for their offspring.
+
+Table \ref{XXX} presents balance checks for the baseline sample. Columns (5) to (7) present p-values for differences-in-means tests between the three groups. The table shows that the randomization was successful. Out of 64 difference in means tests performed, only 3 return statistically significant differences, which would be expected in random sampling.
+
+\subsection{Survey Attrition}
+
+We document three sources of attrition among respondents: (1) owners of shops which have closed down and cannot be tracked, (2) owners who refuse to take part in the endline survey, (3) owners who are sick or out of town for a period longer than two weeks. Regarding its effect on statistical power, attrition levels are low. Six months after the interventions, we document a loss of about 8\% of the overall sample. This places our study at the lower end of the distribution of business training interventions in developing countries for which attrition rates at the first endline survey are typically in excess of 10\% and can reach up to 25\% or higher \citep[for a review, see][]{McKenzie2014}. At the second endline eighteen months after treatment, the sample has diminished by another 13\% of the entrepreneurs interviewed one year prior, which is well in line with prior surveys of small-scale businesses. %In fact, attrition is in line with commonly observed levels in household panel surveys (Hill, 2004).
+
+Moreover, the event of whether a respondent attrits or not is not correlated with treatment status. Tables \ref{X} and \ref{y} present regression analyses of survey attrition on treatment status for the first and the second endline survey, respectively. For each, Columns (1) and (2) present results for differential attrition due to respondents refusing to take part in the survey. Columns (3) and (4) show the same analysis for attrition due to shop closures. Even-numbered columns present regression models with added stratification controls.
+
+[\textcolor[rgb]{0.00,0.00,0.00}{STILL NEED TO ADD TABLE FOR ATTRITION AT EL2. MAYBE MERGE WITH TABLE FOR EL1.}]
+
+\subsection{Estimation Strategy}
+
+%We study the impact of treatment on the entrepreneur's business aspirations towards business growth and their children's educational attainment as well as on subjective well-being. For all outcomes, we estimate the average treatment effect (ATE) as intention-to-treat effects (ITT). Using ordinary least squares (OLS), we estimate the ITT on any given outcome $Y$ through the following ANCOVA regression specification\footnote{As we did not collect data on subjective well-being at baseline, we resort to simple OLS models with strata controls instead of computing ANCOVA regressions for this outcome.}:
+
+%\begin{align}
+%    {Y}_{2i} = \alpha + \sum\limits_{m=1}^4 \beta_m \text{T}_{mi} + \gamma \text{X}_{1i} + \delta {V} + \zeta \text{Y}_{1i} + \epsilon_i \label{eq:1}
+%\end{align}
+
+%where ${Y}_{2i}$ is the outcome for business $i$ at endline $t=2$. $T$ is a firm-level dummy variable which is equal to one if enterprise $i$ was assigned to a particular treatment group, while $m = 1$ to $4$ represent the four combinations of interventions subgroups of entrepreneurs were exposed to. Following \citet{Bruhn2009}, we include strata dummies represented by vector $X$. $V$ represents village fixed effects and $Y_{1i}$ is the baseline value of the outcome of interest\footnote{ANCOVA regression models of this kind are more efficient than difference-in-differences estimators in determining treatment effects in the presence of measurement error in the outcome \citep{McKenzie2012}}. $\epsilon_i$ is a firm-level error term. Missing control variables are coded as zero. We include dummy variables to indicate missing values. \\
+
+Based on the theory due to \citet{Ray2006}, \citet{Genicot2017}, and \citet{Dalton2016}, we estimate the differential impact of the four treatments on aspirations, subjective well-being, and business performance for subgroups of entrepreneurs with high and low aspiration levels at baseline. In order to do this, we interact a dummy which indicates whether the entrepreneur reported below-median baseline aspirations with the four treatment dummies and add both the vector of interactions and the vector of treatment dummies to the specification. Using ordinary least squares (OLS), we estimate the following ANCOVA regression specification:
+
+\begin{align}
+    {Y}_{2i} = \alpha + \sum\limits_{m=1}^4 \beta_m \text{T}_{mi} + \eta \text{S}_{1i} + \sum\limits_{m=1}^4 \theta_m \text{T}_{mi} \times \text{S}_{1i} + \gamma \text{X}_{1i} + \delta {V} + \zeta \text{Y}_{1i} + \epsilon_i \label{eq:2}
+\end{align}
+
+where $\theta_m$ is the coefficient on the interaction of each treatment $m$ with a dummy $S$ equal to one if the entrepreneur's baseline level of aspirations was below the median and zero otherwise. When the outcome are the dimensions of business aspirations, we construct dummies from the baseline level of the outcome. For instance, when we estimate the heterogeneity in treatment effects on sales aspirations, $S$ takes on one if the entrepreneur's baseline level of sales aspirations was below the median and zero otherwise. Regarding business performance, educational aspirations, and subjective well-being, we use an interaction dummy constructed from the z-score of aggregate short-term business aspirations. In either case, the coefficients $\beta_{m1}$ to $\beta_{m4}$ measure the effect of treatment $m$ for entrepreneurs with above-median baseline aspirations. The effect of treatment $m$ on entrepreneurs with below-median scores is measured by the sum of $\beta_m$ and $\theta_m$. %While statistical significance of above-median estimates can be inferred from the p-values of the estimates,
+F-tests are used to compute significance scores for below-median scores. Following \citet{Bruhn2009}, we include strata dummies represented by the vector $X$. $V$ represents village fixed effects and $Y_{1i}$ is the baseline value of the outcome of interest\footnote{ANCOVA regression models of this kind are more efficient than difference-in-differences estimators in determining treatment effects in the presence of measurement error in the outcome \citep{McKenzie2012}}. $\epsilon_i$ is a firm-level error term. Missing control variables are coded as zero. Further, we include fixed effects on the village-level and dummy variables to indicate missing values.
+
+
+\section{Results}\label{sec.analysis}
+
+\subsection{Impact on Business Aspirations}
+
+Tables A and B show the heterogeneity in treatment effects on business aspirations for subgroups of entrepreneurs with above- and below-median baseline aspirations six months and 18 months after treatment, respectively. %Table A shows results six months after treatment and Table B reports findings from the 18-months endline.
+For each, Columns (1) to (5) present results on short-run aspirations for the business in 12 months and Columns (6) to (9) present results on long-run aspirations for the entrepreneur's ideal business. Overall, we find a pronounced divergence by which business owners with higher aspirations at baseline increase their aspirations at endline and those who aspired low decrease their aspirations further. While effects are modest six months after the interventions (Table A), they grow more pronounced eighteen months out (Table B).
+
+As can be seen in Table A, six months after the interventions, treatment effects on business aspirations are (i) more pronounced for shop owners with below-median baseline aspirations than for those with above-median aspirations and they are (ii) stronger for long-run aspirations than for short-run aspirations. Column (6) shows that, on aggregate, entrepreneurs who start out with lower aspiration levels become more discouraged in their long-run aspirations after being assigned to the \emph{Handbook} and to \emph{All Three} whereas those with higher aspirations to begin with do not. %F-tests reveal that low-aspiring shop owners' aspirations also falter when assigned to \emph{All Three}.
+This aggregate effect is mostly driven by long-run aspirations for business size. According to Column (7), entrepreneurs below the median of business aspirations at baseline aspire for businesses about 4.5 (-22\%) and 6.9 square meters (-34\%) smaller in size after being assigned to \emph{Handbook and Assistance} and \emph{All Three}, respectively. In contrast, the aspirations of entrepreneurs with high aspirations are not statistically different from those in the control group. Changes in short-run aspirations are more modest and mostly not statistically significant. \\ %As per Column (4), entrepreneurs aspiring higher than the median business at baseline aspire for around 20 more daily customers within 12 months of being assigned to \emph{Handbook and Assistance}}.
+
+The divergence in aspiration levels grows stronger eighteen month after treatment. As Table B shows, significant effects can now be (i) observed for both entrepreneurs with below-median and those with above-median baseline aspirations, for (ii) both short-run and long-run aspirations, and they are (iii) most pronounced for customer and sales aspirations. Column (4) shows that, being assigned to the \emph{Movie}, entrepreneurs with above-median customer aspirations at baseline increase their aspirations by about 20 daily customers (+29\% or 0.37 standard deviations) compared to the control group. In addition, entrepreneurs invited to receive \emph{Assistance} and \emph{All Three} each aspire to roughly 15 extra customers over the control (+21\% or 0.27 standard deviations). In contrast, shop owners with below-median aspirations further lower their aspirations by about 17 daily customers (-43\% or 0.57 standard deviations) vis-\`{a}-vis the control when assigned to the \emph{Handbook Only}, and by 8 (-21\%) and 9 customers (-22\%) when additionally invited to the \emph{Movie} and \emph{Assistance}, respectively. Column (5) shows that assignment to the \emph{Movie} also increases the sales aspirations of high-aspiring entrepreneurs. While this subgroup aspires to a considerable plus of USD 151.00 PPP in daily sales (+20\% or 0.23 standard deviations), low-aspiring shop owners aspire to about USD 67.00 PPP less after the same intervention (-9\% or 0.10 standard deviations). Shop owners with low baseline aspirations also decrease their sales aspirations when assigned to the \emph{Handbook Only} and to \emph{All Three}.
+
+Long-run aspirations corroborate this pattern. The negative aggregate effect for shop owners who aspire below the median at baseline, shown in Column (6), is driven by aspirations for business size (Column 7) and customers (Column 9). As per Column (9), shop owners who have high customer aspirations at baseline increase their aspirations by 25 (+29\%) and 36 daily customers (+41\%) over the control when assigned to \emph{Handbook Only} and \emph{Handbook and Movie}, respectively. On the contrary, the \emph{Handbook} lowers the customer aspirations of entrepreneurs with low aspirations at baseline by about 20 customers (-34\% or 0.27 standard deviations) compared to the control group. Column (7) shows no significant positive effects on long-run aspirations for business size. However, all interventions significantly reduce these aspirations for shop owners with below-median baseline aspirations. Effects for \emph{Handbook Only}, \emph{Handbook and Movie}, and \emph{Handbook and Assistance} are considerable: low-aspiring entrepreneurs reduce their aspirations vis-\`{a}-vis the control group by about 6 (-30\%), 5 (-25\%), and 5 (-22\%) square meters, respectively.
+
+
+\subsection{Impact on Business Performance}
+
+Tables C and D present results on treatment effects on business profits and sales for the same subgroups of high- and low-aspiring entrepreneurs. In each case, Columns (1) and (2) present results on calculated monthly profits and Columns (3) and (4) present results on monthly business sales. Columns (2) and (4) show estimates for the respective outcome winsorized at the 1\% level on both tails. Overall, the pattern we observe matches the divergence found for business aspirations: the interventions spur higher sales and profits for business owners with high aspirations at baseline and lower performance for their low-aspiring peers. We find strong effects in terms of statistical and economic significance both six months (Table C) and 18 months after treatment (Table D). Interestingly, while entrepreneurs above the median gain in performance from both the \emph{Movie} and the \emph{Assistance} but not from the \emph{Handbook Only}, the aspirations of below-median entrepreneurs only falter when assigned to the \emph{Handbook Only} but not when invited to the \emph{Movie} or the \emph{Assistance}.
+
+Table C shows significant and positive treatment effects on business profits and sales for entrepreneurs with above-median baseline aspirations. As per Column (3), high-aspiring shop owners report a large increase of about USD 578.00 PPP (+47\% or 0.28 standard deviations) over the control group when invited to receive \emph{Assistance}. Column (6) shows that these same entrepreneurs also report gains in monthly business sales of roughly USD 1598.00 PPP (+18\% or 0.17 standard deviations). Entrepreneurs with high baseline levels of aspirations who are assigned to the \emph{Movie} report gains in monthly profits of about USD 405.00 PPP (+33\% or 0.20 standard deviations) and in monthly sales of roughly USD 1329.00 PPP over the control (+15\% or 0.14 standard deviations). Shop owners with high baseline aspirations assigned to \emph{All Three} report increases in monthly profits and sales of about USD 489.00 PP (+40\%) and USD 1611.00 PPP (+18\%), respectively, which indicates that we find no complentarities between the interventions. While entrepreneurs with below-median aspirations report lower profits and sales, F-tests reveal that most estimates are not significantly different from the control group. Only when distributed the \emph{Handbook Only} do low-aspiring entrepreneurs report significant reductions in monthly business sales by USD 1088.00 PPP (-41\% or 0.54 standard deviations) without significant decreases in monthly profits.
+
+Table D corroborates this divergent trend with data from the 18-months endline survey. Overall, it becomes clear that the most robust positive effects on business profits and sales accrue to those assigned to \emph{All Three}. High-aspiring entrepreneurs report monthly gains in profits of USD 623.00 PPP (x\% or 0.xx standard devaitions) and in sales of USD 1797.00 PPP (x\% or 0.xx standard deviations) over the control group, which is roughly on par with results from the first endline. Column (3) shows that we find significant effects of the \emph{Assistance} only when we winsorize 2\% of the outcome data on both tails. Here, entrepreneurs with high initial aspiration levels report USD 526.00 PPP higher profits (x\% or 0.xx standard deviations).
+
+\subsection{Impact on Aspirations for Children's Education}
+
+In Table E, we present additional findings on the heterogeneity in treatment effects on aspirations for the education of the entrepreneur's children six months after treatment. While Columns (1) and (2) present estimates for an aggregate score representing the statistical average of aspirations towards both the family's son and the family's daughter, Columns (3) to (4) show estimates regarding the family's oldest son under the age of 18, and Columns (5) to (6) show estimates regarding the daughter. We find evidence for the same heterogeneity in impact across subgroups that we also report for business aspirations and business performance. That is, as per Column (1), entrepreneurs with above-median baseline aspirations report to aspire to almost one year (5\% or 0.30 standard deviations) more educational attainment for their children than the control group. Similarly, according to Column (2), they are roughly 13\% more likely to aspire for their children to reach, on average, Masters-level university education. Evidence of negative effects on low-aspiring entrepreneurs is less conclusive. Only aspirations for the son's education show a significant and negative effect for entrepreneurs invited to \emph{All Three}: this subgroup aspires to 1 years (6\% or 0.30 standard deviations) less in schooling compared to the control group.
+
+\subsection{Impact on Subjective Well-Being}
+
+Table F presents significant and sustained positive effects on overall financial satisfaction for entrepreneurs with high baseline aspirations both six months (Column 2) and 18 months after treatment (Column 4). High-aspiring shop owners at baseline have gained 9\% (0.26 standard deviations) in satisfaction after six months and report a plus of X\% (0.XX standard deviations) over the control group 18 months after treatment. [COMPLETE WHEN CONTROL STATS CORRECTED] Moreover, we detect a significant increase in life satisfaction scores of X\% (0.xx standard deviations) for these same entrepreneurs 18 months after the treatment (Table G, Column 1). The satisfaction scores of entrepreneurs with below-median baseline aspirations are not significantly different from the control group.
+
+\subsection{Characteristics of High-Aspiring Entrepreneurs}
+
+Given the clear, robust, and sustained divergence between entrepreneurs with high and low aspirations at baseline, we investigate the determinants of high aspirations. To this end, we use baseline data on the full sample of entrepreneurs to regress a pair of dummies indicating above-median aspirations for business growth in the short- and in the long-run. Table H presents results from these linear OLS regressions. Columns (1) to (5) take a dummy for above-median short-term aspirations as the outcome, Columns (6) to (10) use a dummy for above-median long-term aspirations. We consecutively add vectors of entrepreneur-level and firm-level characteristics and control for village fixed effects. Columns (5) and (10) show that several characteristics stand out as determining above-median aspirations for both the short- and for the long-term. Businesses whose owners report high aspirations are in existence for a shorter time, they are larger in terms of both business size and the number of employees, and operated by entrepreneurs who are younger and more likely to be male. Entrepreneurs who aspire high are more likely to produce product innovations and are more systematic in their approach to working and thinking. In addition, these entrepreneurs are better skilled at keeping records and planning ahead financially as well as more willing to take risks overall.
+
+%\subsection{Robustness Tests}
+
+%Corrections for Multiple Hypothesis Testing? Anderson (2008)
+
+\section{Conclusion}\label{sec.conc}
+
+This paper is the first to document experimental evidence of the effect of aspirations on small-business growth. It extends the research on the effect of widening aspirations windows on aspiration levels and investment beyond the domain of household and educational aspirations. In line with the theoretical literature on aspirations and poverty, we detect significant and positive treatment effects for entrepreneurs with high business aspirations at baseline and negative effects for those who reported low baseline aspirations. This divergence is consistent for business aspirations and business performance. We find confirming evidence of the same divergence in the entrepreneur's family aspirations and their financial well-being, which we interpret as a first approximation of the positive impact on the welfare of treated individuals.
+
+Overall, the findings hold five important lessons for policy design. First, we provide evidence for the general usefulness of interventions to widen the aspirations windows of small business owners in fostering business aspirations and small-business growth. Second, the distance of the entrepreneur's aspirations to the frontier mediates the effect on aspirations and business performance such that only entrepreneurs with high aspirations to begin with may benefit from the intervention. This speaks to the importance of targeting efforts prior to the roll-out of policies and the essential role of intervention design to match characteristics of the target population with those of the treatment material. In particular, empowerment programs aimed at women or marginalized groups of the population will benefit from prior efforts to measure aspirations levels lest they run the risk of worsening the situation. Third, complementary to \citet{Galiani2018}, the study highlights that effects on aspirations and business performance may only persist in the long-term if economic constraints are not binding. This brings home the point that aspirations-based policy initiatives may only meet sustainable success if several constraints are being tackled simultaneously. Fourth, and expanding the previous point, regarding the effects on business performance, informational shocks to aspirations alone may not be suited to bring about positive change without complementary treatments that provide additional psychological resources, such as the opportunity to learn from role models or being assisted in implementation to foster agency. Fifth, the interventions to provide additional psychological resources are scalable and comparably low-cost. With most costs being fixed, delivery of larger-scale efforts along the same lines is only going to be more effective in costs per person treated. Hence, while this paper provides clear evidence for the usefulness of aspirations research in the field of small-business growth, it also offers a cautionary tale on the potential of unintended consequences if the distance of the target population to the frontier and related constraints are not taken into account. %In so doing, it outlines the crucial need for careful targeting efforts and intervention design in successfully implementing aspirations-based interventions for future research and policy.
+
+
+
+
+\pagebreak
+
+%\section*{Bibliography}
+%\label{sec:bibliography}
+\bibliography{INDO_Shocking_Asps}
+
+
+\clearpage
+
+
+
+
+\onehalfspacing
+\section*{Tables} \label{sec:tab}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage\pagenumbering{roman}
+\begin{appendices}
+
+
+\appendix
+
+
+\pagebreak
+\begin{landscape}
+\section{Maps of Study Area} \label{sec:maps}
+
+\begin{figure}[h!]
+    \centering
+    \caption{Distribution of Retailers in Jakarta (White=Treated; Black=Control)}
+    \includegraphics[width=120mm]{FigmapTC.png}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \caption{Treatment Distribution across Retailers: Village Pegangsaan}
+   \includegraphics[width=120mm]{FigmapZoom.png}
+\end{figure}
+
+
+\pagebreak
+
+\begin{figure}[h!]
+    \centering
+    \caption{Movie Screening Locations (big white) and Firms invited to the movie}
+   	\includegraphics[width=120mm]{FigmapMovie.png}
+\end{figure}
+
+\end{landscape}
+\pagebreak
+
+
+\section{Sampling Protocol} \label{sec:appendixd}
+\begin{enumerate}
+
+	\item In the order given by the randomized list of selected villages, move 					into a village by approaching the respective head of the village.
+
+	\item Obtain a list of all communities within the respective village and their 				boundaries.
+	
+	\item Generate a second list that contains these communities in random order.
+
+	\item Move into a village according to the randomized list and, within each 				village, approach the owner of every shop that satisfies the following 				criteria:
+
+	\begin{enumerate}
+	
+		\item The shop is at a distance of at least 30 meters to any other shop 					already listed.
+
+		\item The shop is not a mere handcart or not otherwise easily moved.
+
+		\item The shop is at least 4 $m^2$ in size
+
+		\item The shop offers products from at least 2 product categories out of 					the following list:
+
+		\begin{enumerate}
+
+
+			\item Perishables (vegetables, fruits, eggs, rice, etc.)
+			\item Pre-packaged food
+			\item Soft-drinks and packaged drinks
+			\item Snacks
+			\item Tobacco
+			\item Medicine
+			\item Cleaning products
+			\item Personal care
+			\item DIY products
+
+		\end{enumerate}
+
+		\item The shop owner professes an aspiration to grow their business.
+
+	\end{enumerate}
+
+	\item Conditional upon the shop owner consenting, conduct the interview.
+
+	\item Within the respective community, continue interviewing the owners of all 				shops that satisfy above mentioned criteria.
+
+	\item If at any time the number of shops interviewed within the respective 					village equals or exceeds 67, continue interviewing all shops within 				the communities already moved into, but do not begin sampling in any 				new community within that village.
+
+	\item If and when the total number of shops interviewed equals or exceeds 					2000, continue interviewing all shops within the village until the 					number of shops interviewed within the respective village equals or 				exceeds 67, in which case you continue interviewing all shops within 				the communities already moved into, but do not move into any new 					community within that village (just as outlined above).
+
+\end{enumerate}
+\pagebreak
+\section{Project Timeline} \label{sec.timeline}
+
+\begin{figure}[h]
+    \centering
+    \includepdf[pages=-]{FigTimeline.pdf}
+\end{figure}
+
+\pagebreak
+\section{Experimental Design} \label{sec:design}
+
+\begin{table}[h!]
+  \centering
+  \renewcommand{\arraystretch}{1.4}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \multicolumn{9}{|c|}{\textbf{Total Sample}}\\
+    \multicolumn{9}{|c|}{1301 firms}\\
+    \hline
+    \multicolumn{1}{|c}{\textbf{Control}} & \multicolumn{8}{|c|}{\textbf{Handbooks}}\\
+    \multicolumn{1}{|c}{261 firms} & \multicolumn{8}{|c|}{1040 firms}\\
+    \cline{2-9}
+    \multicolumn{1}{|c}{} & \multicolumn{8}{|c|}{\textbf{Returns to Adoption Framing}}\\
+    \cline{2-9}
+    \multicolumn{1}{|c}{} & \multicolumn{4}{|c}{\textit{Positive}} & \multicolumn{4}{|c|}{\textit{Negative}}\\
+    \multicolumn{1}{|c}{} & \multicolumn{4}{|c}{520 firms} & \multicolumn{4}{|c|}{520 firms}\\
+    \cline{2-9}
+    \multicolumn{1}{|c}{} & \multicolumn{8}{|c|}{\textbf{Role-Model Movie}}\\
+    \cline{2-9}
+    \multicolumn{1}{|c}{} & \multicolumn{2}{|c}{\textit{Yes}} & \multicolumn{2}{|c}{\textit{No}} & \multicolumn{2}{|c}{\textit{Yes}} & \multicolumn{2}{|c|}{\textit{No}}\\
+    \multicolumn{1}{|c}{} & \multicolumn{2}{|c}{260 firms} & \multicolumn{2}{|c}{260 firms} & \multicolumn{2}{|c}{260 firms} & \multicolumn{2}{|c|}{260 firms}\\
+    \cline{2-9}
+    \multicolumn{1}{|c}{} & \multicolumn{8}{|c|}{\textbf{Implementation Assistance}}\\
+    \cline{2-9}
+    \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{\textit{Yes}} & \multicolumn{1}{|c}{\textit{No}} & \multicolumn{1}{|c}{\textit{Yes}} & \multicolumn{1}{|c}{\textit{No}} & \multicolumn{1}{|c}{\textit{Yes}} & \multicolumn{1}{|c}{\textit{No}} & \multicolumn{1}{|c}{\textit{Yes}} & \multicolumn{1}{|c|}{\textit{No}}\\
+	\multicolumn{1}{|c}{} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c}{130} & \multicolumn{1}{|c|}{130}\\
+	\multicolumn{1}{|c}{} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c}{firms} & \multicolumn{1}{|c|}{firms}\\
+	\hline
+  \end{tabular}
+\end{table}
+
+
+
+\pagebreak
+%\section{Selection of Role Models}\label{sec:rolemodel}
+
+%\pagebreak
+%\section{Movie Script}\label{sec:movie}
+
+%Available upon request.
+
+
+\section{Businesses Pictures}\label{sec:expbusinesses}
+
+\begin{figure}[h!]
+\centering
+\caption{Pictures of two shops representative of the sample of small-scale retail businesses in this study}
+\label{warung1}
+    \includegraphics[width=120mm]{Warung1.jpg}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\label{warung2}
+    \includegraphics[width=120mm]{Warung2.png}
+\end{figure}
+
+\end{appendices}
+\end{document} 

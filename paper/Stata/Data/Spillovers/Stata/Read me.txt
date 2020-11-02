@@ -1,0 +1,4 @@
+The distances are calculated as follows:
+1. Shoptype_GPS.do in the folder Stata exports GPS and shop type data to *.xls files
+2. Distances are calculated in QGIS and exported to the folder Nearest N
+3. analysis_spillovers.do merges the distances data and creates the final graph as shown in the paper (I saved this graph by hand as Spillover.gph/pdf).

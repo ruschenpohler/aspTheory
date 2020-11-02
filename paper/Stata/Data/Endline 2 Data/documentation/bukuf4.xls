@@ -1,0 +1,908 @@
+
+<font size=4><br><B>Codebook for BUKUF4.DCF</B></font>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_COV</B><BR>(SECTION COVER ( Metadata and Enumerator Information ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_00_L</td><td>String</td><td align='right'>3.0</td><td>NUMBER OF EA Listing</td></tr>
+
+<tr valign='top'><td>F4_01_L</td><td>String</td><td align='right'>8.0</td><td>ID SHOP Listing</td></tr>
+
+<tr valign='top'><td>F4_003</td><td>String</td><td align='right'>3.0</td><td>ENUMERATOR CODE</td></tr>
+
+<tr valign='top'><td>F4_004</td><td>String</td><td align='right'>40.0</td><td>ENUMERATOR NAME</td></tr>
+
+<tr valign='top'><td>F4_005</td><td>String</td><td align='right'>3.0</td><td>SUPERVISOR CODE</td></tr>
+
+<tr valign='top'><td>F4_006</td><td>String</td><td align='right'>40.0</td><td>SUPERVISOR NAME</td></tr>
+
+<tr valign='top'><td>F4_1_2</td><td>Number</td><td align='right'>1.0</td><td>INFORM CONCERNS</td></tr>
+
+<tr valign='top'><td>F4_17_01</td><td>Number</td><td align='right'>1.0</td><td>INTERVIEW RESULTS</td></tr>
+
+<tr valign='top'><td>F4_17_01_OT</td><td>String</td><td align='right'>80.0</td><td>INTERVIEW RESULT (Reject because)</td></tr>
+
+<tr valign='top'><td>F4_17_01_7</td><td>Number</td><td align='right'>1.0</td><td>Reason of interview result (7. Reject interview)</td></tr>
+
+<tr valign='top'><td>F4_17_01_7_OT</td><td>String</td><td align='right'>80.0</td><td>Reason of interview result (7. Reject interview) Others</td></tr>
+
+<tr valign='top'><td>F4_ID_REP1</td><td>String</td><td align='right'>5.0</td><td>Replacement ID</td></tr>
+
+<tr valign='top'><td>F4_ID_REP2</td><td>String</td><td align='right'>5.0</td><td>Replaced by ID</td></tr>
+
+<tr valign='top'><td>F4_007</td><td>Number</td><td align='right'>1.0</td><td>INTERVIEWER CHECK :</td></tr>
+
+<tr valign='top'><td>F4_008X</td><td>Number</td><td align='right'>1.0</td><td>Do you have any relationship with the former owner?</td></tr>
+
+<tr valign='top'><td>F4_008</td><td>Number</td><td align='right'>1.0</td><td>Do you have any relationship with the former owner?</td></tr>
+
+<tr valign='top'><td>F4_008_OT</td><td>String</td><td align='right'>80.0</td><td>Do you have any relationship with the former owner? Others</td></tr>
+
+<tr valign='top'><td>F4_009</td><td>Number</td><td align='right'>1.0</td><td>How did you become the new owner of this shop?</td></tr>
+
+<tr valign='top'><td>F4_010</td><td>Number</td><td align='right'>1.0</td><td>Did the former owner pass on any advice or practices on running this shop?</td></tr>
+
+<tr valign='top'><td>F4_STT</td><td>Number</td><td align='right'>1.0</td><td>endline target status</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_TIME</B><BR>(SECTION TIME)</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>TIME_OCC_F4</td><td>Number</td><td align='right'>3.0</td><td>Time Occurance</td></tr>
+
+<tr valign='top'><td>IVWDAYF4</td><td>Number</td><td align='right'>2.0</td><td>Date of visit</td></tr>
+
+<tr valign='top'><td>IVWMTHF4</td><td>Number</td><td align='right'>2.0</td><td>Month of visit</td></tr>
+
+<tr valign='top'><td>IVWYRF4</td><td>Number</td><td align='right'>4.0</td><td>Year of visit</td></tr>
+
+<tr valign='top'><td>BEGHRF4</td><td>Number</td><td align='right'>2.0</td><td>Hour start</td></tr>
+
+<tr valign='top'><td>BEGMINF4</td><td>Number</td><td align='right'>2.0</td><td>Minute start</td></tr>
+
+<tr valign='top'><td>ENDHRF4</td><td>Number</td><td align='right'>2.0</td><td>Hour end</td></tr>
+
+<tr valign='top'><td>ENDMINF4</td><td>Number</td><td align='right'>2.0</td><td>Minute end</td></tr>
+
+<tr valign='top'><td>BEGHR_F4COV</td><td>Number</td><td align='right'>2.0</td><td>Hour start Cover</td></tr>
+
+<tr valign='top'><td>BEGMIN_F4COV</td><td>Number</td><td align='right'>2.0</td><td>Minute start Cover</td></tr>
+
+<tr valign='top'><td>ENDHR_F4COV</td><td>Number</td><td align='right'>2.0</td><td>Hour end Cover</td></tr>
+
+<tr valign='top'><td>ENDMIN_F4COV</td><td>Number</td><td align='right'>2.0</td><td>Minute end Cover</td></tr>
+
+<tr valign='top'><td>BEGHR_F401</td><td>Number</td><td align='right'>2.0</td><td>Hour start Section 1</td></tr>
+
+<tr valign='top'><td>BEGMIN_F401</td><td>Number</td><td align='right'>2.0</td><td>Minute start Section 1</td></tr>
+
+<tr valign='top'><td>ENDHR_F401</td><td>Number</td><td align='right'>2.0</td><td>Hour end Section 1</td></tr>
+
+<tr valign='top'><td>ENDMIN_F401</td><td>Number</td><td align='right'>2.0</td><td>Minute end Section 1</td></tr>
+
+<tr valign='top'><td>BEGHR_F402</td><td>Number</td><td align='right'>2.0</td><td>Hour start Section 2</td></tr>
+
+<tr valign='top'><td>BEGMIN_F402</td><td>Number</td><td align='right'>2.0</td><td>Minute start Section 2</td></tr>
+
+<tr valign='top'><td>ENDHR_F402</td><td>Number</td><td align='right'>2.0</td><td>Hour end Section 2</td></tr>
+
+<tr valign='top'><td>ENDMIN_F402</td><td>Number</td><td align='right'>2.0</td><td>Minute end Section 2</td></tr>
+
+<tr valign='top'><td>BEGHR_F403</td><td>Number</td><td align='right'>2.0</td><td>Hour start Section 3</td></tr>
+
+<tr valign='top'><td>BEGMIN_F403</td><td>Number</td><td align='right'>2.0</td><td>Minute start Section 3</td></tr>
+
+<tr valign='top'><td>ENDHR_F403</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 3</td></tr>
+
+<tr valign='top'><td>ENDMIN_F403</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 3</td></tr>
+
+<tr valign='top'><td>BEGHR_F404</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 4</td></tr>
+
+<tr valign='top'><td>BEGMIN_F404</td><td>Number</td><td align='right'>2.0</td><td>Minute start section 4</td></tr>
+
+<tr valign='top'><td>ENDHR_F404</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 4</td></tr>
+
+<tr valign='top'><td>ENDMIN_F404</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 4</td></tr>
+
+<tr valign='top'><td>BEGHR_F405</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 5</td></tr>
+
+<tr valign='top'><td>BEGMIN_F405</td><td>Number</td><td align='right'>2.0</td><td>Minute start section 5</td></tr>
+
+<tr valign='top'><td>ENDHR_F405</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 5</td></tr>
+
+<tr valign='top'><td>ENDMIN_F405</td><td>Number</td><td align='right'>2.0</td><td>Minute end Section 5</td></tr>
+
+<tr valign='top'><td>BEGHR_F407</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 7</td></tr>
+
+<tr valign='top'><td>BEGMIN_F407</td><td>Number</td><td align='right'>2.0</td><td>Minute section 7</td></tr>
+
+<tr valign='top'><td>ENDHR_F407</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 7</td></tr>
+
+<tr valign='top'><td>ENDMIN_F407</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 7</td></tr>
+
+<tr valign='top'><td>BEGHR_F408</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 8</td></tr>
+
+<tr valign='top'><td>BEGMIN_F408</td><td>Number</td><td align='right'>2.0</td><td>Minute start section 8</td></tr>
+
+<tr valign='top'><td>ENDHR_F408</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 8</td></tr>
+
+<tr valign='top'><td>ENDMIN_F408</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 8</td></tr>
+
+<tr valign='top'><td>BEGHR_F409</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 9</td></tr>
+
+<tr valign='top'><td>BEGMIN_F409</td><td>Number</td><td align='right'>2.0</td><td>Minute start section 9</td></tr>
+
+<tr valign='top'><td>ENDHR_F409</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 9</td></tr>
+
+<tr valign='top'><td>ENDMIN_F409</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 9</td></tr>
+
+<tr valign='top'><td>BEGHR_F410</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 10</td></tr>
+
+<tr valign='top'><td>BEGMIN_F410</td><td>Number</td><td align='right'>2.0</td><td>Minute start section 10</td></tr>
+
+<tr valign='top'><td>ENDHR_F410</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 10</td></tr>
+
+<tr valign='top'><td>ENDMIN_F410</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 10</td></tr>
+
+<tr valign='top'><td>BEGHR_F413</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 13</td></tr>
+
+<tr valign='top'><td>BEGMIN_F413</td><td>Number</td><td align='right'>2.0</td><td>Minute start section 13</td></tr>
+
+<tr valign='top'><td>ENDHR_F413</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 13</td></tr>
+
+<tr valign='top'><td>ENDMIN_F413</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 13</td></tr>
+
+<tr valign='top'><td>BEGHR_F416</td><td>Number</td><td align='right'>2.0</td><td>Hour start section 16</td></tr>
+
+<tr valign='top'><td>BEGMIN_F416</td><td>Number</td><td align='right'>2.0</td><td>Minute srart section 16</td></tr>
+
+<tr valign='top'><td>ENDHR_F416</td><td>Number</td><td align='right'>2.0</td><td>Hour end section 16</td></tr>
+
+<tr valign='top'><td>ENDMIN_F416</td><td>Number</td><td align='right'>2.0</td><td>Minute end section 16</td></tr>
+
+<tr valign='top'><td>BEGHR_F4CP</td><td>Number</td><td align='right'>2.0</td><td>Hour start CP</td></tr>
+
+<tr valign='top'><td>BEGMIN_F4CP</td><td>Number</td><td align='right'>2.0</td><td>Minute start CP</td></tr>
+
+<tr valign='top'><td>ENDHR_F4CP</td><td>Number</td><td align='right'>2.0</td><td>Hour end CP</td></tr>
+
+<tr valign='top'><td>ENDMIN_F4CP</td><td>Number</td><td align='right'>2.0</td><td>Minute end CP</td></tr>
+
+<tr valign='top'><td>MODE_F4</td><td>Number</td><td align='right'>1.0</td><td>Mode_1</td></tr>
+
+<tr valign='top'><td>PARTIAL_F4</td><td>Number</td><td align='right'>1.0</td><td>Partial</td></tr>
+
+<tr valign='top'><td>ACTIVITY_F4</td><td>String</td><td align='right'>5.0</td><td>Activity</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_01</B><BR>(SECTION 1 ( Enterprise Identifying Information ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_1_1X</td><td>Number</td><td align='right'>1.0</td><td>'Shop owner''s name same as Roster / Update'</td></tr>
+
+<tr valign='top'><td>F4_1_1</td><td>String</td><td align='right'>40.0</td><td>'SHOP OWNER''S NAME'</td></tr>
+
+<tr valign='top'><td>F4_1_3X</td><td>Number</td><td align='right'>1.0</td><td>District/City Name</td></tr>
+
+<tr valign='top'><td>F4_1_3</td><td>String</td><td align='right'>40.0</td><td>District/City</td></tr>
+
+<tr valign='top'><td>F4_1_3_CD</td><td>Number</td><td align='right'>2.0</td><td>District/City code</td></tr>
+
+<tr valign='top'><td>F4_1_4X</td><td>Number</td><td align='right'>1.0</td><td>Subdistrict name</td></tr>
+
+<tr valign='top'><td>F4_1_4</td><td>String</td><td align='right'>40.0</td><td>Subdistrict Name</td></tr>
+
+<tr valign='top'><td>F4_1_4_CD</td><td>Number</td><td align='right'>3.0</td><td>Subdistrict code</td></tr>
+
+<tr valign='top'><td>F4_1_5X</td><td>Number</td><td align='right'>1.0</td><td>Village/Kelurahan Name</td></tr>
+
+<tr valign='top'><td>F4_1_5</td><td>String</td><td align='right'>40.0</td><td>Village/Kelurahan Name</td></tr>
+
+<tr valign='top'><td>F4_1_5_CD</td><td>Number</td><td align='right'>3.0</td><td>Village/Kelurahan code</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_02</B><BR>(SECTION 2 ( Screening Question))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_2_0_NM</td><td>String</td><td align='right'>40.0</td><td>'CAPI CHECK  : LIST OF TARGETED RESPONDENT''S NAMES (taken from intervention and Baseline). NAME of interviewed respondent in ENDLINE :'</td></tr>
+
+<tr valign='top'><td>F4_2_0</td><td>Number</td><td align='right'>2.0</td><td>'CAPI CHECK  : LIST OF TARGETED RESPONDENT''S NAMES (taken from intervention and Baseline). Code'</td></tr>
+
+<tr valign='top'><td>F4_2_2</td><td>String</td><td align='right'>40.0</td><td>What is your name?</td></tr>
+
+<tr valign='top'><td>F4_2_4AX</td><td>Number</td><td align='right'>1.0</td><td>'Respondent''s gender'</td></tr>
+
+<tr valign='top'><td>F4_2_4A</td><td>Number</td><td align='right'>1.0</td><td>'RESPONDENT''S GENDER'</td></tr>
+
+<tr valign='top'><td>F4_2_4BX</td><td>Number</td><td align='right'>1.0</td><td>'Respondent''s date of birth'</td></tr>
+
+<tr valign='top'><td>F4_2_4B_DAY</td><td>Number</td><td align='right'>2.0</td><td>'RESPONDENT''S DATE OF BIRTH'</td></tr>
+
+<tr valign='top'><td>F4_2_4B_MTH</td><td>Number</td><td align='right'>2.0</td><td>'RESPONDENT''S MONTH OF BIRTH'</td></tr>
+
+<tr valign='top'><td>F4_2_4B_YR</td><td>Number</td><td align='right'>4.0</td><td>'RESPONDENT''S YEAR OF BIRTH'</td></tr>
+
+<tr valign='top'><td>F4_2_4CX</td><td>Number</td><td align='right'>1.0</td><td>Mobile phone number</td></tr>
+
+<tr valign='top'><td>F4_2_4C</td><td>String</td><td align='right'>13.0</td><td>MOBILE PHONE NUMBER</td></tr>
+
+<tr valign='top'><td>F4_2_4DX</td><td>Number</td><td align='right'>1.0</td><td>How many years of schooling</td></tr>
+
+<tr valign='top'><td>F4_2_4D</td><td>Number</td><td align='right'>2.0</td><td>How many years of schooling?</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_03</B><BR>(SECTION 3 ( Basic information/ Start-up history ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_3_4</td><td>Number</td><td align='right'>1.0</td><td>In a normal week</td></tr>
+
+<tr valign='top'><td>F4_3_10B</td><td>Number</td><td align='right'>3.0</td><td>On a normal day</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_04</B><BR>(SECTION 4 ( Business Employees ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_44_A</td><td>Number</td><td align='right'>2.0</td><td>Apart from you</td></tr>
+
+<tr valign='top'><td>F4_44_A2</td><td>Number</td><td align='right'>2.0</td><td>Apart from you</td></tr>
+
+<tr valign='top'><td>F4_44_B</td><td>Number</td><td align='right'>2.0</td><td>Apart from you</td></tr>
+
+<tr valign='top'><td>F4_44_B2</td><td>Number</td><td align='right'>2.0</td><td>Apart from you</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_05</B><BR>(SECTION 5 ( Products and Services ) ( questions 501 ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>TYPE_5_1</td><td>Number</td><td align='right'>2.0</td><td>TYPE_501_1a</td></tr>
+
+<tr valign='top'><td>F4_5_1_A1</td><td>String</td><td align='right'>60.0</td><td>What are 3 category of product that contribute the highest sales in your shop? Start from the highest to the less highest. CHOOSE ITEM</td></tr>
+
+<tr valign='top'><td>F4_5_1_A2</td><td>String</td><td align='right'>60.0</td><td>What are 3 category of product that contribute the highest sales in your shop? Start from the highest to the less highest. CHOOSE ITEM</td></tr>
+
+<tr valign='top'><td>F4_5_1_A3</td><td>String</td><td align='right'>60.0</td><td>What are 3 category of product that contribute the highest sales in your shop? Start from the highest to the less highest. CHOOSE ITEM</td></tr>
+
+<tr valign='top'><td>F4_5_1_CD</td><td>String</td><td align='right'>2.0</td><td>Product code</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_05_2</B><BR>(SECTION 5 ( Product and Services ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_5_2A</td><td>Number</td><td align='right'>1.0</td><td>Do you usually dispose the unsold products every week (example: food/drinks/bread/vegetable/product expired/ broken?</td></tr>
+
+<tr valign='top'><td>GROUP_503_1</td><td>String</td><td align='right'>188.0</td><td>GROUP 503</td></tr>
+
+<tr valign='top'><td>GROUP_503_2</td><td>String</td><td align='right'>188.0</td><td>GROUP 503</td></tr>
+
+<tr valign='top'><td>GROUP_503_3</td><td>String</td><td align='right'>188.0</td><td>GROUP 503</td></tr>
+
+<tr valign='top'><td>TYPE_503_1</td><td>Number</td><td align='right'>1.0</td><td>TYPE_503</td></tr>
+
+<tr valign='top'><td>TYPE_503_2</td><td>Number</td><td align='right'>1.0</td><td>TYPE_503</td></tr>
+
+<tr valign='top'><td>TYPE_503_3</td><td>Number</td><td align='right'>1.0</td><td>TYPE_503</td></tr>
+
+<tr valign='top'><td>F4_5_3A_1</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3A_2</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3A_3</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3B_1</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3B_2</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3B_3</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3C_1</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3C_2</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_3C_3</td><td>String</td><td align='right'>60.0</td><td>Three (3) top product categories</td></tr>
+
+<tr valign='top'><td>F4_5_4_1</td><td>Number</td><td align='right'>1.0</td><td>When do you stock up products of this category?  [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]</td></tr>
+
+<tr valign='top'><td>F4_5_4_2</td><td>Number</td><td align='right'>1.0</td><td>When do you stock up products of this category?  [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]</td></tr>
+
+<tr valign='top'><td>F4_5_4_3</td><td>Number</td><td align='right'>1.0</td><td>When do you stock up products of this category?  [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]</td></tr>
+
+<tr valign='top'><td>F4_5_6_1</td><td>Number</td><td align='right'>1.0</td><td>How often do you usually stock up?   [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]. By that we mean</td></tr>
+
+<tr valign='top'><td>F4_5_6_2</td><td>Number</td><td align='right'>1.0</td><td>How often do you usually stock up?   [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]. By that we mean</td></tr>
+
+<tr valign='top'><td>F4_5_6_3</td><td>Number</td><td align='right'>1.0</td><td>How often do you usually stock up?   [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]. By that we mean</td></tr>
+
+<tr valign='top'><td>F4_5_7_1</td><td>Number</td><td align='right'>1.0</td><td>How often are products out of stock when customers ask for them? [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]</td></tr>
+
+<tr valign='top'><td>F4_5_7_2</td><td>Number</td><td align='right'>1.0</td><td>How often are products out of stock when customers ask for them? [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]</td></tr>
+
+<tr valign='top'><td>F4_5_7_3</td><td>Number</td><td align='right'>1.0</td><td>How often are products out of stock when customers ask for them? [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ]</td></tr>
+
+<tr valign='top'><td>F4_5_9A_1</td><td>Number</td><td align='right'>1.0</td><td>When you do those short-term stock-ups</td></tr>
+
+<tr valign='top'><td>F4_5_9A_2</td><td>Number</td><td align='right'>1.0</td><td>When you do those short-term stock-ups</td></tr>
+
+<tr valign='top'><td>F4_5_9A_3</td><td>Number</td><td align='right'>1.0</td><td>When you do those short-term stock-ups</td></tr>
+
+<tr valign='top'><td>F4_5_9B_1</td><td>Number</td><td align='right'>3.0</td><td>Approximately how much is the average mark-up that you keep for products of this category? [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ] ? ENUMERATOR NOTE: MARK-UP = SELL PRICE - BUY PRICE</td></tr>
+
+<tr valign='top'><td>F4_5_9B_2</td><td>Number</td><td align='right'>3.0</td><td>Approximately how much is the average mark-up that you keep for products of this category? [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ] ? ENUMERATOR NOTE: MARK-UP = SELL PRICE - BUY PRICE</td></tr>
+
+<tr valign='top'><td>F4_5_9B_3</td><td>Number</td><td align='right'>3.0</td><td>Approximately how much is the average mark-up that you keep for products of this category? [ %F4_5_3A%%F4_5_3B%%F4_5_3C% ] ? ENUMERATOR NOTE: MARK-UP = SELL PRICE - BUY PRICE</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_07</B><BR>(SECTION 7 ( Business Practices and Planning ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_7_1A</td><td>Number</td><td align='right'>1.0</td><td>Do you keep written business records?</td></tr>
+
+<tr valign='top'><td>F4_7_1B</td><td>Number</td><td align='right'>1.0</td><td>What kind of business records do you keep? ASK POLITELY FOR PROOF:</td></tr>
+
+<tr valign='top'><td>F4_7_1B_OT</td><td>String</td><td align='right'>80.0</td><td>What kind of business records do you keep? ASK POLITELY FOR PROOF: Others</td></tr>
+
+<tr valign='top'><td>F4_7_1C</td><td>Number</td><td align='right'>1.0</td><td>How often do you update your business records?</td></tr>
+
+<tr valign='top'><td>F4_7_1D</td><td>Number</td><td align='right'>1.0</td><td>Do you record all the purchase and sales of your business?</td></tr>
+
+<tr valign='top'><td>F4_7_1G</td><td>Number</td><td align='right'>1.0</td><td>Are you able to use your records to see how much cash your business has on hand at any point in time?</td></tr>
+
+<tr valign='top'><td>F4_7_1H</td><td>Number</td><td align='right'>1.0</td><td>Do you regularly use your records to know whether sales of a particular product are increasing or decreasing within months? (comparing from one month to another)</td></tr>
+
+<tr valign='top'><td>F4_7_1I</td><td>Number</td><td align='right'>1.0</td><td>Imagine you wanted a bank loan for your business and you needed to check if you are able to pay the monthly rates.</td></tr>
+
+<tr valign='top'><td>F4_7_3</td><td>Number</td><td align='right'>1.0</td><td>Do you know 3 products that make the most profit (per item selling) for your business? NOTES: OPTION 1 IS CHOSEN WHEN RESPONDENT IS REALLY KNOW AND MENTIONS AT LEAST THE TOP 3 PRODUCTS IN TERMS OF PROFIT PER ITEM SELLING</td></tr>
+
+<tr valign='top'><td>F4_7_4</td><td>Number</td><td align='right'>1.0</td><td>Do you have a written budget</td></tr>
+
+<tr valign='top'><td>F4_7_6</td><td>Number</td><td align='right'>1.0</td><td>Do you have separate account for your personal finances (household savings</td></tr>
+
+<tr valign='top'><td>F4_7_7A</td><td>Number</td><td align='right'>1.0</td><td>Do you review your financial performance and analyse where there are areas for improvement</td></tr>
+
+<tr valign='top'><td>F4_7_9A</td><td>Number</td><td align='right'>1.0</td><td>Do you compare your sales achieved to your target at least monthly?</td></tr>
+
+<tr valign='top'><td>F4_7_8</td><td>Number</td><td align='right'>1.0</td><td>Do you have a target set for sales over the next year? NOTES: OPTION 1 IS CHOSEN WHEN THE RESPONDENT IS ABLE TO MENTION THE TARGET THAT WE MEAN</td></tr>
+
+<tr valign='top'><td>F4_7_10</td><td>Number</td><td align='right'>1.0</td><td>Do you have a budget for the anticipated costs your business will have to pay over the next year?</td></tr>
+
+<tr valign='top'><td>F4_7_11</td><td>Number</td><td align='right'>1.0</td><td>Do you have an annual profit and loss statement?</td></tr>
+
+<tr valign='top'><td>F4_7_12</td><td>Number</td><td align='right'>1.0</td><td>Do you have an annual statement of cash flow?</td></tr>
+
+<tr valign='top'><td>F4_7_13</td><td>Number</td><td align='right'>1.0</td><td>Do you have an annual balance sheet?</td></tr>
+
+<tr valign='top'><td>F4_7_14</td><td>Number</td><td align='right'>1.0</td><td>Do you have an annual income/expenditure statement?</td></tr>
+
+<tr valign='top'><td>F4_7_15X</td><td>Number</td><td align='right'>1.0</td><td>I will now ask you about some business practices. For each of them</td></tr>
+
+<tr valign='top'><td>F4_7_16</td><td>Number</td><td align='right'>1.0</td><td>Do you compare your own firm’s sales performance with your competitors?</td></tr>
+
+<tr valign='top'><td>F4_7_17</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_18</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_19A</td><td>String</td><td align='right'>5.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_19</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_21</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_24</td><td>Number</td><td align='right'>1.0</td><td>In the last 6 months</td></tr>
+
+<tr valign='top'><td>F4_7_26A</td><td>Number</td><td align='right'>1.0</td><td>Do you ever adjust your level of inventory based on the following reason? Change of demand from the customers</td></tr>
+
+<tr valign='top'><td>F4_7_26B</td><td>Number</td><td align='right'>1.0</td><td>Do you ever adjust your level of inventory based on the following reason? The shelves of merchandise (not durable)</td></tr>
+
+<tr valign='top'><td>F4_7_26C</td><td>Number</td><td align='right'>1.0</td><td>Do you ever adjust your level of inventory based on the following reason?  Price from supplier..?</td></tr>
+
+<tr valign='top'><td>F4_7_26D</td><td>Number</td><td align='right'>1.0</td><td>Do you ever adjust your level of inventory based on the following reason? Profit earned by the product</td></tr>
+
+<tr valign='top'><td>F4_7_27</td><td>Number</td><td align='right'>3.0</td><td>In the past 12 months</td></tr>
+
+<tr valign='top'><td>F4_7_28</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_29</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_30A</td><td>Number</td><td align='right'>1.0</td><td>Do you accept delayed payment from your customers?</td></tr>
+
+<tr valign='top'><td>F4_7_30B</td><td>Number</td><td align='right'>1.0</td><td>Do you charge them more for paying later?</td></tr>
+
+<tr valign='top'><td>F4_7_31</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_32</td><td>Number</td><td align='right'>1.0</td><td>In the last 3 months</td></tr>
+
+<tr valign='top'><td>F4_7_33</td><td>Number</td><td align='right'>1.0</td><td>Does your business run out of stock monthly or more often?</td></tr>
+
+<tr valign='top'><td>F4_7_35A</td><td>Number</td><td align='right'>1.0</td><td>Missing</td></tr>
+
+<tr valign='top'><td>F4_7_36A</td><td>Number</td><td align='right'>1.0</td><td>Missing</td></tr>
+
+<tr valign='top'><td>F4_7_36E</td><td>Number</td><td align='right'>1.0</td><td>Missing</td></tr>
+
+<tr valign='top'><td>F4_7_36F</td><td>Number</td><td align='right'>1.0</td><td>What kind of agreement do you have?</td></tr>
+
+<tr valign='top'><td>F4_7_35A2</td><td>Number</td><td align='right'>2.0</td><td>Have you discussed business matters with other people?</td></tr>
+
+<tr valign='top'><td>F4_7_35A2_OT</td><td>String</td><td align='right'>80.0</td><td>Have you discussed business matters with other people? Othetrs</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_07_2</B><BR>(SECTION 7 ( Business Practices and Planning ) ( question 715 ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>TYPE_7_15</td><td>Number</td><td align='right'>2.0</td><td>TYPE 715</td></tr>
+
+<tr valign='top'><td>F4_7_15A</td><td>Number</td><td align='right'>1.0</td><td>In the past 12 months</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_08</B><BR>(SECTION 8 ( Profits)</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_8_1</td><td>String</td><td align='right'>15.0</td><td>How much total profit did your shop earn in the past month after paying all expenses?By all expenses we mean purchasing price</td></tr>
+
+<tr valign='top'><td>F4_8_2</td><td>String</td><td align='right'>15.0</td><td>How much total sales did this business make in the past month?</td></tr>
+
+<tr valign='top'><td>F4_8_3A</td><td>String</td><td align='right'>15.0</td><td>What was the approximate amount spent on the following item in the past month? Total product purchases (combined)</td></tr>
+
+<tr valign='top'><td>F4_8_3B</td><td>String</td><td align='right'>15.0</td><td>What was the approximate amount spent on the following item in the past month? Total salaries and benefits (excluding respondent)</td></tr>
+
+<tr valign='top'><td>F4_8_3C</td><td>String</td><td align='right'>15.0</td><td>What was the approximate amount spent on the following item in the past month? Rent for the space and (market) fees</td></tr>
+
+<tr valign='top'><td>F4_8_3D</td><td>String</td><td align='right'>15.0</td><td>What was the approximate amount spent on the following item in the past month?  Electricity and utilities</td></tr>
+
+<tr valign='top'><td>F4_8_3E</td><td>String</td><td align='right'>15.0</td><td>What was the approximate amount spent on the following item in the past month? Transportation costs</td></tr>
+
+<tr valign='top'><td>F4_8_3K</td><td>String</td><td align='right'>15.0</td><td>What was the approximate amount spent on the following item in the past month? Other expenses</td></tr>
+
+<tr valign='top'><td>F4_8_3K_OT</td><td>String</td><td align='right'>80.0</td><td>What was the approximate amount spent on the following item in the past month? Other expenses</td></tr>
+
+<tr valign='top'><td>F4_8_4</td><td>String</td><td align='right'>15.0</td><td>On a normal day</td></tr>
+
+<tr valign='top'><td>F4_8_5</td><td>String</td><td align='right'>15.0</td><td>On a normal day</td></tr>
+
+<tr valign='top'><td>F4_8_12</td><td>Number</td><td align='right'>1.0</td><td>At the end of each day</td></tr>
+
+<tr valign='top'><td>F4_8_1_X</td><td>Number</td><td align='right'>1.0</td><td>How much total profit did your shop earn in the past month after paying all expenses? By all expenses we mean purchasing price</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_09</B><BR>(SECTION 9 ( Finance and Credit ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_9_1</td><td>Number</td><td align='right'>2.0</td><td>In the past 12 months</td></tr>
+
+<tr valign='top'><td>F4_9_2</td><td>Number</td><td align='right'>2.0</td><td>In the past 12 months</td></tr>
+
+<tr valign='top'><td>F4_9_8X</td><td>Number</td><td align='right'>1.0</td><td>What is the total principal owed at this time on all of your loans combined?</td></tr>
+
+<tr valign='top'><td>F4_9_8</td><td>String</td><td align='right'>15.0</td><td>What is the total principal owed at this time on all of your loans combined?</td></tr>
+
+<tr valign='top'><td>F4_9_12B</td><td>Number</td><td align='right'>1.0</td><td>Start with probing: Have you ever heard…? Do you have the Tax Identification Number for this business?</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_10</B><BR>(SECTION 10 ( Aspirations and Forward-Looking Behavior ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_10_01AA</td><td>Number</td><td align='right'>3.0</td><td>How big do you think your shop is?</td></tr>
+
+<tr valign='top'><td>F4_10_01A</td><td>Number</td><td align='right'>1.0</td><td>Have you ever imagined how your shop will be in the future?</td></tr>
+
+<tr valign='top'><td>F4_10_01B</td><td>Number</td><td align='right'>4.0</td><td>Now</td></tr>
+
+<tr valign='top'><td>F4_10_01C</td><td>Number</td><td align='right'>4.0</td><td>How many people work there?</td></tr>
+
+<tr valign='top'><td>F4_10_01D</td><td>Number</td><td align='right'>4.0</td><td>How many customers come by on a normal day?</td></tr>
+
+<tr valign='top'><td>F4_10_01E</td><td>Number</td><td align='right'>4.0</td><td>When do you think you can achieve this? [ Size of shop= %F4_10_01B%</td></tr>
+
+<tr valign='top'><td>F4_10_02A</td><td>Number</td><td align='right'>5.0</td><td>How big do you imagine your shop to be (in square meter)?</td></tr>
+
+<tr valign='top'><td>F4_10_02B</td><td>Number</td><td align='right'>4.0</td><td>How many people will work there in the next 1 year?</td></tr>
+
+<tr valign='top'><td>F4_10_02C</td><td>Number</td><td align='right'>4.0</td><td>how many customers will come by on a normal day in the next 1 year?</td></tr>
+
+<tr valign='top'><td>F4_10_3AA</td><td>String</td><td align='right'>15.0</td><td>You said your sales on a normal day were ..</td></tr>
+
+<tr valign='top'><td>F4_10_3BA</td><td>String</td><td align='right'>15.0</td><td>What is the minimum amount of sales per day in order to sustain/maintain your shop?</td></tr>
+
+<tr valign='top'><td>F4_10_3C</td><td>String</td><td align='right'>15.0</td><td>What is the level of sales on a normal day you aspire to have in 1 year from now?</td></tr>
+
+<tr valign='top'><td>F4_10_3D</td><td>Number</td><td align='right'>1.0</td><td>How important is it for you to achieve that level of sales?  ENUMERATOR NOTE: LEVEL OF SALES REFERS TO THE ANSWER ON 10.03C</td></tr>
+
+<tr valign='top'><td>F4_10_3E</td><td>Number</td><td align='right'>1.0</td><td>How likely do you think you are to achieve this level?</td></tr>
+
+<tr valign='top'><td>F4_10_3F</td><td>Number</td><td align='right'>1.0</td><td>How confident are you to have the capabilities necessary to achieve this?</td></tr>
+
+<tr valign='top'><td>F4_10_3G</td><td>Number</td><td align='right'>1.0</td><td>On your way to achieve a target</td></tr>
+
+<tr valign='top'><td>F4_10_3HA</td><td>String</td><td align='right'>15.0</td><td>What is the level of sales on a normal day you  aspire to have in 1.5 year from now?</td></tr>
+
+<tr valign='top'><td>F4_10_6AX1</td><td>String</td><td align='right'>3.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AX2</td><td>String</td><td align='right'>3.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AX3</td><td>String</td><td align='right'>3.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AXA1</td><td>String</td><td align='right'>60.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AXA2</td><td>String</td><td align='right'>60.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AXB1</td><td>String</td><td align='right'>60.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AXB2</td><td>String</td><td align='right'>60.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AXC1</td><td>String</td><td align='right'>60.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6AXC2</td><td>String</td><td align='right'>60.0</td><td>If you wanted to improve the profits of your business</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A01</td><td>Number</td><td align='right'>1.0</td><td>Start keeping/improve financial records</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A02</td><td>Number</td><td align='right'>1.0</td><td>Document expenditures (more regularly)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A03</td><td>Number</td><td align='right'>1.0</td><td>Cut expenditure</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A04</td><td>Number</td><td align='right'>1.0</td><td>Allow people to pay later (longer)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A05</td><td>Number</td><td align='right'>1.0</td><td>Learn about business concepts (e.g. profits calculations</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A06</td><td>Number</td><td align='right'>1.0</td><td>Calculate profits (more regularly)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A07</td><td>Number</td><td align='right'>1.0</td><td>Separate finances in personal and business</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A08</td><td>Number</td><td align='right'>1.0</td><td>Review financial performance (more regularly)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A09</td><td>Number</td><td align='right'>1.0</td><td>Set targets for sales (more regularly)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A10</td><td>Number</td><td align='right'>1.0</td><td>Develop a business plan</td></tr>
+
+<tr valign='top'><td>F4_10_6A_A11</td><td>Number</td><td align='right'>1.0</td><td>Draft annual income/expenditure statement</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B01</td><td>Number</td><td align='right'>1.0</td><td>Seek more advice from suppliers</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B02</td><td>Number</td><td align='right'>1.0</td><td>Seek other/better suppliers</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B03</td><td>Number</td><td align='right'>1.0</td><td>Seek better buying prices from existing suppliers</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B04</td><td>Number</td><td align='right'>1.0</td><td>Analyse (better) the best-selling products</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B05</td><td>Number</td><td align='right'>1.0</td><td>Analyse (better) the most profitable products</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B06</td><td>Number</td><td align='right'>1.0</td><td>Stock more of the best-selling/most profitable products</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B07</td><td>Number</td><td align='right'>1.0</td><td>Buy better-quality products</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B08</td><td>Number</td><td align='right'>1.0</td><td>Introduce new products</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B09</td><td>Number</td><td align='right'>1.0</td><td>Introduce new brands of existing products</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B10</td><td>Number</td><td align='right'>1.0</td><td>Stock more cigarettes</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B11</td><td>Number</td><td align='right'>1.0</td><td>Sell (more) phone credit (e.g. pulsa)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B12</td><td>Number</td><td align='right'>1.0</td><td>Stock more (regularly) to avoid stock-outs</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B13</td><td>Number</td><td align='right'>1.0</td><td>Ask customers (more) what to stock up</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B14</td><td>Number</td><td align='right'>1.0</td><td>Attract new customers</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B15</td><td>Number</td><td align='right'>1.0</td><td>Retain old customers</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B16</td><td>Number</td><td align='right'>1.0</td><td>Make (more) special offers to existing customers</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B17</td><td>Number</td><td align='right'>1.0</td><td>Cut selling prices</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B18</td><td>Number</td><td align='right'>1.0</td><td>Demand higher mark-up (increase prices)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_B19</td><td>Number</td><td align='right'>1.0</td><td>Provide better customer service (e.g. friendliness</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C01</td><td>Number</td><td align='right'>1.0</td><td>Invest in vehicles (e.g. scooter</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C02</td><td>Number</td><td align='right'>1.0</td><td>Invest in communication technology</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C03</td><td>Number</td><td align='right'>1.0</td><td>Invest in payment technology</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C04</td><td>Number</td><td align='right'>1.0</td><td>Re-invest more in business (and consume less)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C05</td><td>Number</td><td align='right'>1.0</td><td>Get a bank account</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C06</td><td>Number</td><td align='right'>1.0</td><td>Get a formal loan</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C07</td><td>Number</td><td align='right'>1.0</td><td>Get capital from a friend/relative</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C08</td><td>Number</td><td align='right'>1.0</td><td>Advertise</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C09</td><td>Number</td><td align='right'>1.0</td><td>Invest (more) in arisan</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C10</td><td>Number</td><td align='right'>1.0</td><td>Apply for government program (e.g. KUR)</td></tr>
+
+<tr valign='top'><td>F4_10_6A_C11</td><td>Number</td><td align='right'>1.0</td><td>Apply for a business license (e.g. TDP</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D01</td><td>Number</td><td align='right'>1.0</td><td>Hire more outside staff</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D02</td><td>Number</td><td align='right'>1.0</td><td>Get more family members working in the shop toko</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D03</td><td>Number</td><td align='right'>1.0</td><td>Delegate (more) tasks to employees/family members keluarga</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D04</td><td>Number</td><td align='right'>1.0</td><td>Give employees/family members different tasks</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D05</td><td>Number</td><td align='right'>1.0</td><td>Let go of employees/family members</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D06</td><td>Number</td><td align='right'>1.0</td><td>Observe competitors (more) (e.g. goods on offer</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D07</td><td>Number</td><td align='right'>1.0</td><td>Cooperate with competitor firm</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D08</td><td>Number</td><td align='right'>1.0</td><td>Jointly make decisions with other people from the industry</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D09</td><td>Number</td><td align='right'>1.0</td><td>Rent larger space</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D10</td><td>Number</td><td align='right'>1.0</td><td>Move premises to different location</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D11</td><td>Number</td><td align='right'>1.0</td><td>Open a new branch</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D12</td><td>Number</td><td align='right'>1.0</td><td>Keep premises clean and neat</td></tr>
+
+<tr valign='top'><td>F4_10_6A_Z95_1</td><td>Number</td><td align='right'>1.0</td><td>Others 1</td></tr>
+
+<tr valign='top'><td>F4_10_6A_Z95_1_OT</td><td>String</td><td align='right'>80.0</td><td>( others ) 1</td></tr>
+
+<tr valign='top'><td>F4_10_6A_Z95_2</td><td>Number</td><td align='right'>1.0</td><td>Others 2</td></tr>
+
+<tr valign='top'><td>F4_10_6A_Z95_2_OT</td><td>String</td><td align='right'>80.0</td><td>( others ) 2</td></tr>
+
+<tr valign='top'><td>F4_10_6A_Z95_3</td><td>Number</td><td align='right'>1.0</td><td>Others3</td></tr>
+
+<tr valign='top'><td>F4_10_6A_Z95_3_OT</td><td>String</td><td align='right'>80.0</td><td>.</td></tr>
+
+<tr valign='top'><td>F4_10_6B</td><td>Number</td><td align='right'>1.0</td><td>Have you done any of these in the last 12 months??</td></tr>
+
+<tr valign='top'><td>F4_10_6C</td><td>Number</td><td align='right'>1.0</td><td>Are you currently planning to do any of these in the next 12 months?</td></tr>
+
+<tr valign='top'><td>F4_10_6A_D13</td><td>Number</td><td align='right'>1.0</td><td>Seek advices from someone whose more experiences/knowledge</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_13</B><BR>(SECTION 13 (Mental model of returns to adoption))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_13A_01</td><td>Number</td><td align='right'>2.0</td><td>Using this card on which 1 means you are “completely dissatisfied” and 10 means you are “completely satisfied” where would you put your satisfaction with your life as a whole? SHOW CARD</td></tr>
+
+<tr valign='top'><td>F4_13A_02</td><td>Number</td><td align='right'>2.0</td><td>Using this card on which 1 means you are “completely dissatisfied” and 10 means you are “completely satisfied” How satisfied are you with the financial situation of your household? SHOW CARD</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_16</B><BR>(SECTION 16 ( Interviewer Assessment ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_16_04</td><td>Number</td><td align='right'>1.0</td><td>DOES THE BUSINESS HAVE A CLEAR AND VISIBLE SIGN OUTSIDE THE STORE</td></tr>
+
+<tr valign='top'><td>F4_16_05</td><td>Number</td><td align='right'>1.0</td><td>IS THIS SIGN BRIGHT AND COLORFUL</td></tr>
+
+<tr valign='top'><td>F4_16_06</td><td>Number</td><td align='right'>1.0</td><td>ARE PRICES OF THE PRODUCTS CLEARLY DISPLAYED?</td></tr>
+
+<tr valign='top'><td>F4_16_07</td><td>Number</td><td align='right'>1.0</td><td>ARE GOODS DISPLAYED IN GROUPS</td></tr>
+
+<tr valign='top'><td>F4_16_08</td><td>Number</td><td align='right'>1.0</td><td>DO THE SHELVES LOOK FULL?</td></tr>
+
+<tr valign='top'><td>F4_16_09</td><td>Number</td><td align='right'>1.0</td><td>ARE THERE ANY POSTERS OR SIGNS ADVERTISING PARTICULAR PRODUCTS?</td></tr>
+
+<tr valign='top'><td>F4_16_10</td><td>Number</td><td align='right'>1.0</td><td>ARE THE PRODUCTS AND THE ARE CLEAR OF DUST AND DIRT?</td></tr>
+
+<tr valign='top'><td>F4_16_11</td><td>Number</td><td align='right'>1.0</td><td>IS THE STORE WELL LIT?</td></tr>
+
+<tr valign='top'><td>F4_16_12A</td><td>String</td><td align='right'>60.0</td><td>IS THERE ANYTHING YOU WANT TO ADD</td></tr>
+
+<tr valign='top'><td>F4_16_12B</td><td>String</td><td align='right'>60.0</td><td>IS THERE ANYTHING YOU WANT TO ADD</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_CP</B><BR>(SECTION CP ( Interviewer note ))</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_17_02A</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02B</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02C</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02D</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02E</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02F</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02G</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02H</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02I</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_02J</td><td>String</td><td align='right'>60.0</td><td>Interviewer note</td></tr>
+
+<tr valign='top'><td>F4_17_03_DAY</td><td>Number</td><td align='right'>2.0</td><td>DATE OF INTERVIEW</td></tr>
+
+<tr valign='top'><td>F4_17_03_MTH</td><td>Number</td><td align='right'>2.0</td><td>MONTH OF INTERVIEW</td></tr>
+
+<tr valign='top'><td>F4_17_03_YR</td><td>Number</td><td align='right'>4.0</td><td>YEAR OF INTERVIEW</td></tr>
+
+<tr valign='top'><td>F4_17_04_BEGHR</td><td>Number</td><td align='right'>2.0</td><td>TIME BEGINS (HOUR)</td></tr>
+
+<tr valign='top'><td>F4_17_04_BEGMIN</td><td>Number</td><td align='right'>2.0</td><td>TIME BEGINS (MINUTE)</td></tr>
+
+<tr valign='top'><td>F4_17_05_ENDHR</td><td>Number</td><td align='right'>2.0</td><td>TIME ENDS  (HOUR)</td></tr>
+
+<tr valign='top'><td>F4_17_05_ENDMIN</td><td>Number</td><td align='right'>2.0</td><td>TIME ENDS (MINUTE)</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_INT</B><BR>(SECTION INTRO)</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_INT_1</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 1 : Information on selection of shops</td></tr>
+
+<tr valign='top'><td>F4_INT_2</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 2 :Firstly</td></tr>
+
+<tr valign='top'><td>F4_INT_3</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 3 : Now we are going to ask basic questions</td></tr>
+
+<tr valign='top'><td>F4_INT_4</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 4: Now we are going to ask about your employees</td></tr>
+
+<tr valign='top'><td>F4_INT_4A</td><td>Number</td><td align='right'>1.0</td><td>Next we are going to ask about how many more people have worked in your shop over the last 1 year</td></tr>
+
+<tr valign='top'><td>F4_INT_5</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 5 : Now we are going to ask about product and service in your shop</td></tr>
+
+<tr valign='top'><td>F4_INT_7</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 7 : Now we are going to ask about business practices and planning</td></tr>
+
+<tr valign='top'><td>F4_INT_8</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 8 : Now we are going to ask about  Profits</td></tr>
+
+<tr valign='top'><td>F4_INT_9</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 9 : Now we are going to ask about Finance and Credit (Cash)</td></tr>
+
+<tr valign='top'><td>F4_INT_10</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 10 : Now we are going to ask about Aspirations and Forward-Looking Behavior</td></tr>
+
+<tr valign='top'><td>F4_INT_10A</td><td>Number</td><td align='right'>1.0</td><td>INTRO : Now I would like you to imagine your shop in a year from now.</td></tr>
+
+<tr valign='top'><td>F4_INT_10B</td><td>Number</td><td align='right'>1.0</td><td>INTRO : The following questions concern your hopes and aspirations about your own business</td></tr>
+
+<tr valign='top'><td>F4_INT_16</td><td>Number</td><td align='right'>1.0</td><td>INTRO SECTION 16: Interviewer assessment</td></tr>
+
+<tr valign='top'><td>F4_INT_13_A</td><td>Number</td><td align='right'>1.0</td><td>Now we are going to ask you about your current satisfaction level</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_DUM</B><BR>(SECTION DUMMY)</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_MOVER</td><td>Number</td><td align='right'>2.0</td><td>MOVE BOOK F4</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_DUM_501</B><BR>(SECTION DUMMY F4_501)</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>TYPE_DUM501</td><td>Number</td><td align='right'>2.0</td><td>TYPE_DUM501</td></tr>
+
+<tr valign='top'><td>F4_DUM501_A1</td><td>String</td><td align='right'>60.0</td><td>What are 3 category of product that contribute the highest sales in your shop? Start from the highest to the less highest. CHOOSE ITEM  ENUMERATOR NOTE: SHOW RESPONDENT THE PRODUCT CATEGORIES ON THE SHOWCARD</td></tr>
+
+<tr valign='top'><td>F4_DUM501_A2</td><td>String</td><td align='right'>60.0</td><td>What are 3 category of product that contribute the highest sales in your shop? Start from the highest to the less highest. CHOOSE ITEM  ENUMERATOR NOTE: SHOW RESPONDENT THE PRODUCT CATEGORIES ON THE SHOWCARD</td></tr>
+
+<tr valign='top'><td>F4_DUM501_A3</td><td>String</td><td align='right'>60.0</td><td>What are 3 category of product that contribute the highest sales in your shop? Start from the highest to the less highest. CHOOSE ITEM  ENUMERATOR NOTE: SHOW RESPONDENT THE PRODUCT CATEGORIES ON THE SHOWCARD</td></tr>
+
+<tr valign='top'><td>F4_DUM501_CD</td><td>String</td><td align='right'>2.0</td><td>Code of Product / Product</td></tr>
+
+</table>
+<br><br><br>
+<table border=1><tr><td colspan=4 bgcolor='bec3c0'><font size=3><B>Section : F4_REC</B><BR>(SECTION RECFILE)</font></td></tr>
+
+<tr bgcolor='d4d9d6'><td><B>Name</B></td><td><B>Type</B></td><td align='right'><B>Length</B></td><td><B>Label</B></td></tr>
+
+<tr valign='top'><td>F4_EA</td><td>String</td><td align='right'>3.0</td><td>BOOKF4 identification ( EA ) / Enumeration area</td></tr>
+
+<tr valign='top'><td>F4_NOSHOP</td><td>String</td><td align='right'>2.0</td><td>Shop ID (Baseline)</td></tr>
+
+<tr valign='top'><td>F4_NO_RECFILE</td><td>Number</td><td align='right'>2.0</td><td>Order number</td></tr>
+
+<tr valign='top'><td>F4_RECFILE</td><td>String</td><td align='right'>40.0</td><td>Name of Recording File</td></tr>
+
+</table>

@@ -1,0 +1,467 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Anderson, Chandy, and Zia]{Anderson, Chandy, and
+  Zia}{2018}{Anderson2018}
+\textsc{Anderson, S.~J., R.~Chandy,  {\small and} B.~H. Zia}  (2018):
+  ``{Pathways to Profits : The Impact of Marketing vs. Finance Skills on
+  Business Performance},'' \emph{Management Science}, Articles i, 1--25.
+
+\harvarditem[Appadurai]{Appadurai}{2004}{Appadurai2004}
+\textsc{Appadurai, A.}  (2004): ``{The Capacity to Aspire: Culture and the
+  Terms of Recognition},'' in \emph{Culture and Public Action}, ed. by V.~Rao,
+  {\small and} M.~Walton, pp. 59--84. Stanford University Press, Palo Alto,
+  CAL.
+
+\harvarditem[Ashraf, Karlan, and Yin]{Ashraf, Karlan, and
+  Yin}{2006}{Ashraf2006}
+\textsc{Ashraf, N., D.~Karlan,  {\small and} W.~Yin}  (2006): ``{Tying Oyssey
+  to the Mast: Evidence from a Commitment Savings Product in the
+  Philippines},'' \emph{Quarterly Journal of Economics}, 121(2), 635--672.
+
+\harvarditem[Banerjee and Duflo]{Banerjee and Duflo}{2013}{Banerjee2014}
+\textsc{Banerjee, A.~V.,  {\small and} E.~Duflo}  (2013): ``{Do Firms Want to
+  Borrow More? Testing Credit Constraints Using a Directed Lending Program},''
+  \emph{Review of Economic Studies}, 81(2), 572--607.
+
+\harvarditem[Banerjee, Duflo, Glennester, and Kinnan]{Banerjee, Duflo,
+  Glennester, and Kinnan}{2015}{Banerjee2015a}
+\textsc{Banerjee, A.~V., E.~Duflo, R.~Glennester,  {\small and} C.~Kinnan}
+  (2015): ``{The Miracle of Microfinance? Evidence from a Randomized
+  Evaluation},'' \emph{American Economic Journal: Applied Economics}, 7(1),
+  22--53.
+
+\harvarditem[Banerjee, Duflo, and Hornbeck]{Banerjee, Duflo, and
+  Hornbeck}{2018}{Banerjee2018}
+\textsc{Banerjee, A.~V., E.~Duflo,  {\small and} R.~Hornbeck}  (2018): ``{How
+  Much Do Existing Borrowers Value Microfinance? Evidence from an Experiment on
+  Bundling Microcredit adn Insurance},'' \emph{Economica}.
+
+\harvarditem[Banerjee and Mullainathan]{Banerjee and
+  Mullainathan}{2008}{Banerjee2008}
+\textsc{Banerjee, A.~V.,  {\small and} S.~Mullainathan}  (2008): ``{Limited
+  Attention and Income Distribution},'' \emph{American Economic Review}, 98(2),
+  489--493.
+
+\harvarditem[Bardhan]{Bardhan}{1997}{Bardhan1997}
+\textsc{Bardhan, P.}  (1997): ``{Corruption and Development: A Review of
+  Issues},'' \emph{Journal of Economic Literature}, 35(3), 1320--1346.
+
+\harvarditem[Beaman, Duflo, Pande, and Topalova]{Beaman, Duflo, Pande, and
+  Topalova}{2012}{Beaman2012}
+\textsc{Beaman, L., E.~Duflo, R.~Pande,  {\small and} P.~Topalova}  (2012):
+  ``{Female Leadership Raises Aspirations and Educational Attainment for Girls:
+  A Policy Experiment in India},'' \emph{Science}, 335(6068), 582--586.
+
+\harvarditem[Berg and Zia]{Berg and Zia}{2017}{Berg2017}
+\textsc{Berg, G.,  {\small and} B.~H. Zia}  (2017): ``{Harnessing Emotional
+  Connections to Improve Financial Decisions:Evaluating the Impact of Financial
+  Education in Mainstream Media},'' \emph{Journal of the European Economic
+  Association}, 15(5), 1025--1055.
+
+\harvarditem[Bernard, Dercon, Orkin, and Taffesse]{Bernard, Dercon, Orkin, and
+  Taffesse}{2014}{Bernard2014}
+\textsc{Bernard, T., S.~Dercon, K.~Orkin,  {\small and} A.~S. Taffesse}
+  (2014): ``{The Future in Mind: Aspirations and Forward-looking Behaviour in
+  Rural Ethiopia},'' .
+
+\harvarditem[Bernheim, Ray, and Yeltekin]{Bernheim, Ray, and
+  Yeltekin}{2015}{Bernheim2015}
+\textsc{Bernheim, B.~D., D.~Ray,  {\small and} S.~Yeltekin}  (2015): ``{Poverty
+  and Self-Control},'' \emph{Econometrica}, 83(5), 1877--1911.
+
+\harvarditem[Bertrand, Mullainathan, and Shafir]{Bertrand, Mullainathan, and
+  Shafir}{2004}{Bertrand2004}
+\textsc{Bertrand, M., S.~Mullainathan,  {\small and} E.~Shafir}  (2004): ``{A
+  Behavioral-Economics View of Poverty},'' \emph{American Economic Association:
+  Papers and Proceedings}, 94(2), 419--423.
+
+\harvarditem[Bjorvatn, Cappelen, {Helgesson Sekei}, S{\o}rensen, and
+  Tungodden]{Bjorvatn, Cappelen, {Helgesson Sekei}, S{\o}rensen, and
+  Tungodden}{2015}{Bjorvatn2015}
+\textsc{Bjorvatn, K., A.~W. Cappelen, L.~{Helgesson Sekei}, E.~{\O}.
+  S{\o}rensen,  {\small and} B.~Tungodden}  (2015): ``{Teaching Through
+  Television: Experimental Evidence on Entrepreneurship Education in
+  Tanzania},'' .
+
+\harvarditem[Bogliacino and Ortoleva]{Bogliacino and
+  Ortoleva}{2014}{Bogliacino2014}
+\textsc{Bogliacino, F.,  {\small and} P.~Ortoleva}  (2014): ``{The Behavior of
+  Others as a Reference Point},'' .
+
+\harvarditem[Brooks, Donovan, and Johnson]{Brooks, Donovan, and
+  Johnson}{2018}{Brooks2018}
+\textsc{Brooks, W., K.~Donovan,  {\small and} T.~R. Johnson}  (2018):
+  ``{Mentors or Teachers? Microenterprise Training in Kenya},'' \emph{American
+  Economic Journal: Applied Economics}.
+
+\harvarditem[Bruhn, Karlan, and Schoar]{Bruhn, Karlan, and
+  Schoar}{2017}{Bruhn2017}
+\textsc{Bruhn, M., D.~Karlan,  {\small and} A.~Schoar}  (2017): ``{The Impact
+  of Consulting Services on Small and Medium Enterprises: Evidence from a
+  Randomized Trial in Mexico},'' \emph{Journal of Political Economy}.
+
+\harvarditem[Bruhn and McKenzie]{Bruhn and McKenzie}{2009}{Bruhn2009}
+\textsc{Bruhn, M.,  {\small and} D.~McKenzie}  (2009): ``{In Pursuit of
+  Balance: Randomisation in Practice in Development Field Experiments},''
+  \emph{American Economic Journal: Applied Economics}, 1(4), 200--232.
+
+\harvarditem[Bruhn and Zia]{Bruhn and Zia}{2013}{Bruhn2013}
+\textsc{Bruhn, M.,  {\small and} B.~H. Zia}  (2013): ``{Stimulating Managerial
+  Capital in Emerging Markets: The Impact of Business and Financial Literacy
+  Training for Young Entrepreneurs},'' \emph{Journal of Development
+  Effectiveness}, 5(2), 232--266.
+
+\harvarditem[Cai and Szeidl]{Cai and Szeidl}{2018}{Cai2017}
+\textsc{Cai, J.,  {\small and} A.~Szeidl}  (2018): ``{Interfirm Relationships
+  and Business Performance},'' \emph{Quarterly Journal of Economics}, pp.
+  1--54.
+
+\harvarditem[Calder{\'{o}}n, Cunha, and {De Giorgi}]{Calder{\'{o}}n, Cunha, and
+  {De Giorgi}}{2013}{Calderon2013}
+\textsc{Calder{\'{o}}n, G., J.~M. Cunha,  {\small and} G.~{De Giorgi}}  (2013):
+  ``{Business Literacy and Development: Evidence from a Randomized Controlled
+  Trial in Rural Mexico},'' .
+
+\harvarditem[Carpena, Cole, Shapiro, and Zia]{Carpena, Cole, Shapiro, and
+  Zia}{2017}{Carpena2017}
+\textsc{Carpena, F., S.~Cole, J.~Shapiro,  {\small and} B.~H. Zia}  (2017):
+  ``{The ABCs of Financial Education: Experimental Evidence on Attitudes,
+  Behavior, and Cognitive Biases},'' \emph{Management Science}, pp. 1--24.
+
+\harvarditem[Chong and {La Ferrara}]{Chong and {La Ferrara}}{2009}{Chong2009}
+\textsc{Chong, A.,  {\small and} E.~{La Ferrara}}  (2009): ``{Television and
+  Divorce: Evidence from Brazilian Novelas},'' \emph{Journal of the European
+  Economic Association}, 7(2-3), 458--468.
+
+\harvarditem[Chudek, Brosseau-Liard, Birch, and Henrich]{Chudek,
+  Brosseau-Liard, Birch, and Henrich}{2013}{Chudek2013}
+\textsc{Chudek, M., P.~Brosseau-Liard, S.~Birch,  {\small and} J.~Henrich}
+  (2013): ``{Culture-Gene Coevolutionary Theory and Children's Selective Social
+  Learning},'' in \emph{Navigating the Social World: What Infants, Children,
+  and Other Species Can Teach Us}, ed. by M.~Banaji,  {\small and} S.~Gelman,
+  pp. 1--10. Oxford University Press, Oxford, UK.
+
+\harvarditem[Clark, Frijters, and Shields]{Clark, Frijters, and
+  Shields}{2008}{Clark2008}
+\textsc{Clark, A.~E., P.~Frijters,  {\small and} M.~A. Shields}  (2008):
+  ``{Relative Income, Happiness, and Utility: An Explanation for the Easterlin
+  Paradox and Other Puzzles},'' \emph{Journal of Economic Literature}, 46(1),
+  95--144.
+
+\harvarditem[Clark and Oswald]{Clark and Oswald}{1994}{Clark1994}
+\textsc{Clark, A.~E.,  {\small and} A.~J. Oswald}  (1994): ``{Unhappiness and
+  Unemployment},'' \emph{The Economic Journal}, 104(424), 648--659.
+
+\harvarditem[Clark and Senik]{Clark and Senik}{2010}{Clark2010}
+\textsc{Clark, A.~E.,  {\small and} C.~Senik}  (2010): ``{Who Compares To Whom?
+  The Anatomy of Income Comparisons in Europe},'' \emph{The Economic Journal},
+  120, 573--594.
+
+\harvarditem[Corriveau and Harris]{Corriveau and Harris}{2009}{Corriveau2009}
+\textsc{Corriveau, K.~H.,  {\small and} P.~L. Harris}  (2009): ``{Choosing Your
+  Informant: Weighing Familiarity and Recent Accuracy},'' \emph{Developmental
+  Science}, 12(3), 426--437.
+
+\harvarditem[Dalton, Ghosal, and Mani]{Dalton, Ghosal, and
+  Mani}{2016}{Dalton2016}
+\textsc{Dalton, P.~S., S.~Ghosal,  {\small and} A.~Mani}  (2016): ``{Poverty
+  and Aspirations Failure},'' \emph{The Economic Journal}, 126(590), 165--188.
+
+\harvarditem[Dalton, R{\"{u}}schenp{\"{o}}hler, and Zia]{Dalton,
+  R{\"{u}}schenp{\"{o}}hler, and Zia}{2018}{Dalton2018}
+\textsc{Dalton, P.~S., J.~R{\"{u}}schenp{\"{o}}hler,  {\small and} B.~H. Zia}
+  (2018): ``{Determinants and Dynamics of Business Aspirations: Evidence from
+  Small-scale Entrepreneurs in an Emerging Market},'' .
+
+\harvarditem[de~Mel, McKenzie, and Woodruff]{de~Mel, McKenzie, and
+  Woodruff}{2008}{deMel2008}
+\textsc{de~Mel, S., D.~McKenzie,  {\small and} C.~Woodruff}  (2008): ``{Returns
+  to Capital in Microenterprises: Evidence from a Field Experiment},''
+  \emph{Quarterly Journal of Economics}, 123(November 2008), 1329--1372.
+
+\harvarditem[Drexler, Fischer, and Schoar]{Drexler, Fischer, and
+  Schoar}{2014}{Drexler2014}
+\textsc{Drexler, A., G.~Fischer,  {\small and} A.~Schoar}  (2014): ``{Keeping
+  It Simple: Financial Literacy and Rules of Thumb},'' \emph{American Economic
+  Journal: Applied Economics}, 6(2), 1--31.
+
+\harvarditem[Duflo]{Duflo}{2012}{Duflo2012}
+\textsc{Duflo, E.}  (2012): ``{Human Values and the Design of the Fight Against
+  Poverty},'' \emph{Tanner Lectures}, pp. 1--55.
+
+\harvarditem[Dupas and Robinson]{Dupas and Robinson}{2013a}{Dupas2013}
+\textsc{Dupas, P.,  {\small and} J.~Robinson}  (2013a): ``{Savings Constraints
+  and Microenterprise Development: Evidence from a Field Experiment in
+  Kenya},'' \emph{American Economic Journal: Applied Economics}, 5(1),
+  163--192.
+
+\harvarditem[Dupas and Robinson]{Dupas and Robinson}{2013b}{Dupas2013a}
+\textsc{\BySame{}}  (2013b): ``{Why Don't the Poor Save More? Evidence from
+  Health Savings Experiments},'' \emph{American Economic Review}, 103(4),
+  1138--1171.
+
+\harvarditem[Easterlin]{Easterlin}{1995}{Easterlin1995}
+\textsc{Easterlin, R.~A.}  (1995): ``{Will Raising the Incomes of all Raise the
+  Happiness of All},'' \emph{Journal of Economic Behavior and Organization},
+  27, 35--47.
+
+\harvarditem[Easterlin]{Easterlin}{2001}{Easterlin2001}
+\textsc{\BySame{}}  (2001): ``{Income and Happiness: Towards a Unified
+  Theory},'' \emph{The Economic Journal}, 111, 465--484.
+
+\harvarditem[Easterlin]{Easterlin}{2003}{Easterlin2003}
+\textsc{\BySame{}}  (2003): ``{Explaining Happiness},'' \emph{Proceedings of
+  the National Academy of Sciences}, 100(19), 11176--11183.
+
+\harvarditem[Efferson, Lalive, and Fehr]{Efferson, Lalive, and
+  Fehr}{2008}{Efferson2008}
+\textsc{Efferson, C., R.~Lalive,  {\small and} E.~Fehr}  (2008): ``{The
+  Coevolution of Cultural Groups and Ingroup Favoritism},'' \emph{Science},
+  321, 1844--1849.
+
+\harvarditem[Fafchamps and Quinn]{Fafchamps and Quinn}{2016}{Fafchamps2016}
+\textsc{Fafchamps, M.,  {\small and} S.~Quinn}  (2016): ``{Aspire},'' \emph{The
+  Journal of Development Studies}, 53(10), 1615--1633.
+
+\harvarditem[Fafchamps and Shilpi]{Fafchamps and Shilpi}{2008}{Fafchamps2008}
+\textsc{Fafchamps, M.,  {\small and} F.~Shilpi}  (2008): ``{Subjective Welfare,
+  Isolation, and Relative Consumption},'' \emph{Journal of Development
+  Economics}, 86, 43--60.
+
+\harvarditem[Fafchamps and Woodruff]{Fafchamps and
+  Woodruff}{2017}{Fafchamps2017}
+\textsc{Fafchamps, M.,  {\small and} C.~Woodruff}  (2017): ``{Identifying
+  Gazelles: Expert Panels vs. Surveys as a Means to Identify Firms with Rapid
+  Growth Potential},'' \emph{World Bank Economic Review}, 31(3), 670--686.
+
+\harvarditem[Favara]{Favara}{2017}{Favara2017}
+\textsc{Favara, M.}  (2017): ``{Do Dreams Come True? Aspirations and
+  Educational Attainments of Ethiopian Boys and Girls},'' \emph{Journal of
+  African Economies}, 26(5), 561--583.
+
+\harvarditem[Ferrer-i Carbonell]{Ferrer-i
+  Carbonell}{2005}{Ferrer-i-Carbonell2005}
+\textsc{Ferrer-i Carbonell, A.}  (2005): ``{Income and Well-being: An Empirical
+  Analysis of the Comparison Income Effect},'' \emph{Journal of Public
+  Economics}, 89(5-6), 997--1019.
+
+\harvarditem[Frey and Stutzer]{Frey and Stutzer}{2000}{Frey2000}
+\textsc{Frey, B.~S.,  {\small and} A.~Stutzer}  (2000): ``{Happiness, Economy
+  and Institutions},'' \emph{The Economic Journal}, 110(466), 918--938.
+
+\harvarditem[Frey and Stutzer]{Frey and Stutzer}{2002}{Frey2002}
+\textsc{\BySame{}}  (2002): ``{What Can Economists Learn from Happiness
+  Research?},'' \emph{Journal of Economic Literature}, 40(2), 402--435.
+
+\harvarditem[Galiani, Gertler, and Undurraga]{Galiani, Gertler, and
+  Undurraga}{2018}{Galiani2018}
+\textsc{Galiani, S., P.~J. Gertler,  {\small and} R.~Undurraga}  (2018):
+  ``{Aspiration Adaptation in Resource-Constrained Environments},'' .
+
+\harvarditem[Genicot and Ray]{Genicot and Ray}{2017}{Genicot2017}
+\textsc{Genicot, G.,  {\small and} D.~Ray}  (2017): ``{Aspirations and
+  Inequality},'' \emph{Econometrica}, 85(2), 489--519.
+
+\harvarditem[Gin{\'{e}} and Mansuri]{Gin{\'{e}} and Mansuri}{2014}{Gine2014}
+\textsc{Gin{\'{e}}, X.,  {\small and} G.~Mansuri}  (2014): ``{Money or
+  Management? A Field Experiment on Constraints to Entrepreneurship in Rural
+  Pakistan},'' .
+
+\harvarditem[Gollin]{Gollin}{2008}{Gollin2008}
+\textsc{Gollin, D.}  (2008): ``{Nobody's Business but my Own: Self-employment
+  and Small Enterprise in Economic Development},'' \emph{Journal of Monetary
+  Economics}, 55, 219--233.
+
+\harvarditem[Henrich and Gil-White]{Henrich and Gil-White}{2001}{Henrich2001}
+\textsc{Henrich, J.,  {\small and} F.~J. Gil-White}  (2001): ``{The evolution
+  of prestige: Freely conferred deference as a mechanism for enhancing the
+  benefits of cultural transmission},'' \emph{Evolution and Human Behavior},
+  22, 165--196.
+
+\harvarditem[{Indonesian Ministry of Cooperatives and SMEs
+  Indonesia}]{{Indonesian Ministry of Cooperatives and SMEs
+  Indonesia}}{2011}{StatistikUMKM2011}
+\textsc{{Indonesian Ministry of Cooperatives and SMEs Indonesia}}  (2011):
+  ``{Statistik Usaha Mikro, Kecil dan Menengah},'' Discussion paper,
+  Kementerian Koperasi dan UMKM.
+
+\harvarditem[Janzen, Magnan, Sharma, and Thompson]{Janzen, Magnan, Sharma, and
+  Thompson}{2017}{Janzen2017}
+\textsc{Janzen, S.~A., N.~P. Magnan, S.~Sharma,  {\small and} W.~M. Thompson}
+  (2017): ``{Aspirations Failure and Formation in Rural Nepal},'' \emph{Journal
+  of Economic Behavior {\&} Organization}, 139, 1--25.
+
+\harvarditem[Karlan and Zinman]{Karlan and Zinman}{2010}{Karlan2010}
+\textsc{Karlan, D.,  {\small and} J.~Zinman}  (2010): ``{Expanding Credit
+  Access: Using Randomized Supply Decisions to Estimate the Impacts},''
+  \emph{Review of Financial Studies}, 23(1), 433--464.
+
+\harvarditem[Kearney and Levine]{Kearney and Levine}{2015}{Kearney2015}
+\textsc{Kearney, M.~S.,  {\small and} P.~B. Levine}  (2015): ``{Media
+  Influences and Social Outcomes: The Impact of MTV's 16 and Pregnant on Teen
+  Childbearing},'' \emph{American Economic Review}, 105(12), 3597--3632.
+
+\harvarditem[Knight and Gunatilaka]{Knight and Gunatilaka}{2012}{Knight2012}
+\textsc{Knight, J.,  {\small and} R.~Gunatilaka}  (2012): ``{Income,
+  Aspirations and the Hedonic Treadmill in a Poor Society},'' \emph{Journal of
+  Economic Behavior and Organization}, 82, 67--81.
+
+\harvarditem[Kosec and Mo]{Kosec and Mo}{2017}{Kosec2017}
+\textsc{Kosec, K.,  {\small and} C.~H. Mo}  (2017): ``{Aspirations and the Role
+  of Social Protection: Evidence from a Natural Disaster in Rural Pakistan},''
+  \emph{World Development}, 97, 49--66.
+
+\harvarditem[{La Ferrara}, Chong, and Duryea]{{La Ferrara}, Chong, and
+  Duryea}{2012}{Ferrara2012}
+\textsc{{La Ferrara}, E., A.~Chong,  {\small and} S.~Duryea}  (2012): ``{Soap
+  Operas and Fertility: Evidence from Brazil},'' \emph{American Economic
+  Journal: Applied Economics}, 4(4), 1--31.
+
+\harvarditem[Luttmer]{Luttmer}{2005}{Luttmer2005}
+\textsc{Luttmer, E.~F.}  (2005): ``{Neighbors as Negatives: Relative Earnings
+  and Well-Being},'' \emph{Quarterly Journal of Economics}, 120(3), 963--1002.
+
+\harvarditem[Lybbert and Wydick]{Lybbert and Wydick}{2018}{Lybbert2018}
+\textsc{Lybbert, T.~J.,  {\small and} B.~Wydick}  (2018): ``{Poverty,
+  Aspirations, and the Economics of Hope},'' \emph{Economic Development and
+  Cultural Change}, 6(4).
+
+\harvarditem[Macours and Vakis]{Macours and Vakis}{2014}{Macours2014}
+\textsc{Macours, K.,  {\small and} R.~Vakis}  (2014): ``{Changing Households'
+  Investment Behaviour Through Social Interactions with Local Leaders: Evidence
+  from a Randomised Transfer Programme},'' \emph{The Economic Journal},
+  124(576), 607--633.
+
+\harvarditem[Maloney]{Maloney}{2004}{Maloney2004}
+\textsc{Maloney, W.~F.}  (2004): ``{Informality Revisited},'' \emph{World
+  Development}, 32(7), 1159--1178.
+
+\harvarditem[McBride]{McBride}{2010}{McBride2010}
+\textsc{McBride, M.}  (2010): ``{Money, Happiness, and Aspirations: An
+  Experimental Study},'' \emph{Journal of Economic Behavior and Organization},
+  74(3), 262--276.
+
+\harvarditem[McElreath, Bell, Efferson, Lubell, Richerson, and
+  Waring]{McElreath, Bell, Efferson, Lubell, Richerson, and
+  Waring}{2008}{McElreath2008}
+\textsc{McElreath, R., A.~V. Bell, C.~Efferson, M.~Lubell, P.~J. Richerson,
+  {\small and} T.~Waring}  (2008): ``{Beyond existence and aiming outside the
+  laboratory: estimating frequency-dependent and pay-off-biased social learning
+  strategies},'' \emph{Philosophical Transactions of the Royal Society B:
+  Biological Sciences}, 363, 3515--3528.
+
+\harvarditem[McKenzie]{McKenzie}{2017}{McKenzie2017a}
+\textsc{McKenzie, D.}  (2017): ``{Identifying and Spurring High-Growth
+  Entrepreneurship: Experimental Evidence from a Business Plan Competition},''
+  \emph{American Economic Review}, 107(8), 2278--2307.
+
+\harvarditem[McKenzie and Woodruff]{McKenzie and Woodruff}{2008}{McKenzie2008}
+\textsc{McKenzie, D.,  {\small and} C.~Woodruff}  (2008): ``{Experimental
+  Evidence on Returns to Capital and Access to Finance in Mexico},''
+  \emph{World Bank Economic Review}, 22(3), 457--482.
+
+\harvarditem[McKenzie and Woodruff]{McKenzie and Woodruff}{2014}{McKenzie2014}
+\textsc{\BySame{}}  (2014): ``{What Are We Learning from Business Training and
+  Entrepreneurship Evaluations Around the Developing World?},'' \emph{World
+  Bank Research Observer}, 29(1), 48--82.
+
+\harvarditem[McKenzie and Woodruff]{McKenzie and Woodruff}{2017}{McKenzie2017}
+\textsc{\BySame{}}  (2017): ``{Business Practices in Small Firms in Developing
+  Countries},'' \emph{Management Science}, 63(9), 2967--2981.
+
+\harvarditem[Ng]{Ng}{1997}{Ng1997}
+\textsc{Ng, Y.-K.}  (1997): ``{A Case for Happiness, Cardinalism, and
+  Interpersonal Comparability},'' \emph{The Economic Journal}, 107(445),
+  1848--1858.
+
+\harvarditem[Nichter and Goldmark]{Nichter and Goldmark}{2009}{Nichter2009}
+\textsc{Nichter, S.,  {\small and} L.~Goldmark}  (2009): ``{Small Firm Growth
+  in Developing Countries},'' \emph{World Development}, 37(9), 1453--1464.
+
+\harvarditem[Oswald]{Oswald}{2016}{Oswald1997}
+\textsc{Oswald, A.~J.}  (2016): ``{Happiness and Economic Performance},''
+  \emph{The Economic Journal}, 107(445), 1815--1831.
+
+\harvarditem[Premand, Brodmann, Almeida, Grun, and Barouni]{Premand, Brodmann,
+  Almeida, Grun, and Barouni}{2016}{Premand2016}
+\textsc{Premand, P., S.~Brodmann, R.~Almeida, R.~Grun,  {\small and}
+  M.~Barouni}  (2016): ``{Entrepreneurship Education and Entry into
+  Self-Employment Among University Graduates},'' \emph{World Development}, 77,
+  311--327.
+
+\harvarditem[Ray]{Ray}{2003}{Ray2003}
+\textsc{Ray, D.}  (2003): ``{Asipirations, Poverty and Economic Change},'' .
+
+\harvarditem[Ray]{Ray}{2006}{Ray2006}
+\textsc{\BySame{}}  (2006): ``{Aspirations, Poverty, and Economic Change},'' in
+  \emph{Understanding Poverty}, ed. by A.~Banerjee, R.~Benabou,  {\small and}
+  D.~Mookherjee, pp. 409--422. Oxford University Press, Oxford, UK.
+
+\harvarditem[Rendell, Fogarty, Hoppitt, Morgan, Webster, and Laland]{Rendell,
+  Fogarty, Hoppitt, Morgan, Webster, and Laland}{2011}{Rendell2011}
+\textsc{Rendell, L.~E., L.~Fogarty, W.~J.~E. Hoppitt, T.~J.~H. Morgan, M.~M.
+  Webster,  {\small and} K.~N. Laland}  (2011): ``{Cognitive Culture:
+  Theoretical and Empirical Insights into Social Learning Strategies},''
+  \emph{Trends in Cognitive Sciences}, 15(2), 68--76.
+
+\harvarditem[Riley]{Riley}{2017}{Riley2017}
+\textsc{Riley, E.}  (2017): ``{Increasing Students' Aspirations: The Impact of
+  Queen of Katwe on Students' Educational Attainment},'' .
+
+\harvarditem[Ross]{Ross}{2017}{Ross2017}
+\textsc{Ross, P.~H.}  (2017): ``{The Aspirations Gap and Human Capital
+  Investment: Evidence from Indian Adolescents},'' .
+
+\harvarditem[Selten]{Selten}{1998}{Selten1998}
+\textsc{Selten, R.}  (1998): ``{Features of Experimentally Observed Bounded
+  Rationality},'' \emph{European Economic Review}, 42, 413--436.
+
+\harvarditem[Senik]{Senik}{2004}{Senik2004}
+\textsc{Senik, C.}  (2004): ``{When Information Dominates Comparison: Learning
+  from Russian Subjective Panel Data},'' \emph{Journal of Public Economics},
+  88(9-10), 2099--2123.
+
+\harvarditem[Senik]{Senik}{2009}{Senik2009}
+\textsc{\BySame{}}  (2009): ``{Direct Evidence on Income Comparisons and Their
+  Welfare Effects},'' \emph{Journal of Economic Behavior and Organization},
+  72(1), 408--424.
+
+\harvarditem[Serneels and Dercon]{Serneels and Dercon}{2014}{Serneels2014}
+\textsc{Serneels, P.,  {\small and} S.~Dercon}  (2014): ``{Aspirations, Poverty
+  and Education: Evidence from India},'' .
+
+\harvarditem[Simon]{Simon}{1955}{Simon1955}
+\textsc{Simon, H.~A.}  (1955): ``{A Behavioral Model of Rational Choice},''
+  \emph{The Quarterly Journal of Economics}, 69(1), 99--118.
+
+\harvarditem[Smith, Diener, and Wedell]{Smith, Diener, and
+  Wedell}{1989}{Smith1989}
+\textsc{Smith, R.~H., E.~Diener,  {\small and} D.~H. Wedell}  (1989):
+  ``{Intrapersonal and Social Comparison Determinants of Happiness: A
+  Range-Frequency Analysis},'' \emph{Journal of Personality and Social
+  Psychology}, 56(3), 317--325.
+
+\harvarditem[Stutzer]{Stutzer}{2004}{Stutzer2004}
+\textsc{Stutzer, A.}  (2004): ``{The Role of Income Aspirations in Individual
+  Happiness},'' \emph{Journal of Economic Behavior and Organization}, 54(1),
+  89--109.
+
+\harvarditem[Tversky and Griffin]{Tversky and Griffin}{1991}{Tversky1991}
+\textsc{Tversky, A.,  {\small and} D.~Griffin}  (1991): ``{Endowment and
+  Contrast in Judgments of Well-Being},'' in \emph{Strategy and Choice}, ed. by
+  R.~J. Zeckhauser, pp. 297--318. MIT Press, Cambridge and London.
+
+\harvarditem[{World Values Survey}]{{World Values Survey}}{2014}{Inglehart2014}
+\textsc{{World Values Survey}}  (2014): \emph{{World Values Survey: Round
+  Six}}. JD Systems Institute, Madrid.
+
+\end{thebibliography}

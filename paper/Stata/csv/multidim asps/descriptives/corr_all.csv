@@ -1,0 +1,35 @@
+	Respondent's gender (Male=1)	Respondent's age (Years)	Formal education (Years)	Digit Span (0-8 Scale)	Risk Preference (0-10 Scale)	Time preference (0-10 Scale)	Business age (Years)	Total number of employees	Number of full-time employees formally employed	Total sales last month (USD PPP)	Total profits last month (USD PPP)	Business Has Tax ID (Yes=1)	Business Has Outstanding Loan (Yes=1)	Business size (square meters)	Marketing Subscore	Stocking-up Subscore	Record-keeping Subscore	Financial Planning Subscore	12mth aspirations for daily sales (USD PPP)	12mth aspirations gap for daily sales	Importance to reach sales asps	Subj likelihood to reach sales asps	Self-efficacy to reach sales asps	Locus of control to reach sales asps	Aspired educ for son (Years)	Aspired educ for daughter (Years)	Aspirations gap for son's educ	Aspirations gap for daughter's educ	Aspired educ for son at least MA (Yes=1)	Aspired educ for daughter at least MA (yes=1)	Aspired occupation for son (ranked)	Aspired occupation for daughter (ranked)	Gov't job aspired for son (yes=1)	Gov't job aspired for either daughter (yes=1)	
+Respondent's gender (Male=1)	1.00	
+Respondent's age (Years)	0.11	1.00	
+Formal education (Years)	0.13	-0.28	1.00	
+Digit Span (0-8 Scale)	0.03	-0.23	0.26	1.00	
+Risk Preference (0-10 Scale)	0.03	-0.05	-0.02	-0.03	1.00	
+Time preference (0-10 Scale)	-0.02	0.08	-0.09	-0.09	0.15	1.00	
+Business age (Years)	0.04	0.35	-0.05	-0.05	-0.04	0.05	1.00	
+Total number of employees	-0.06	-0.04	0.03	0.03	0.01	-0.03	0.05	1.00	
+Number of full-time employees formally employed	0.05	-0.05	0.01	0.01	-0.00	-0.01	0.02	0.19	1.00	
+Total sales last month (USD PPP)	0.11	-0.09	0.05	0.01	0.09	0.06	0.02	0.18	0.36	1.00	
+Total profits last month (USD PPP)	0.16	-0.10	0.09	0.04	-0.01	0.02	0.01	0.04	0.22	0.38	1.00	
+Business Has Tax ID (Yes=1)	0.14	-0.00	0.18	0.05	0.01	0.02	-0.02	0.05	0.10	0.07	0.07	1.00	
+Business Has Outstanding Loan (Yes=1)	0.02	-0.07	-0.00	-0.01	0.06	-0.07	-0.04	0.00	0.01	-0.03	-0.01	0.00	1.00	
+Business size (square meters)	0.17	0.01	0.15	0.06	0.02	0.01	0.13	0.11	0.26	0.29	0.15	0.17	-0.02	1.00	
+Marketing Subscore	0.04	-0.17	0.19	0.08	0.09	-0.06	-0.08	0.05	-0.00	-0.00	0.02	0.15	0.05	0.05	1.00	
+Stocking-up Subscore	0.06	-0.21	0.14	0.11	0.06	-0.02	-0.07	0.02	0.04	0.05	0.10	0.01	0.05	0.06	0.37	1.00	
+Record-keeping Subscore	0.04	-0.26	0.22	0.11	0.02	-0.07	-0.18	0.04	0.05	0.06	0.10	0.07	0.09	0.10	0.30	0.17	1.00	
+Financial Planning Subscore	0.04	-0.25	0.16	0.07	0.06	-0.02	-0.20	0.06	0.01	0.02	0.15	0.12	0.09	0.05	0.34	0.28	0.55	1.00	
+12mth aspirations for daily sales (USD PPP)	0.23	-0.20	0.08	0.10	0.04	-0.01	-0.01	0.06	0.23	0.68	0.47	0.09	-0.02	0.34	0.08	0.12	0.14	0.11	1.00	
+12mth aspirations gap for daily sales	0.01	-0.05	0.02	0.10	-0.03	-0.03	-0.08	0.02	-0.04	-0.17	-0.12	0.03	0.02	-0.06	0.05	0.04	-0.03	0.01	0.17	1.00	
+Importance to reach sales asps	-0.00	-0.10	-0.02	-0.02	0.03	-0.04	-0.09	0.03	0.02	-0.01	0.00	0.02	0.09	-0.02	0.10	0.09	0.07	0.15	-0.01	0.07	1.00	
+Subj likelihood to reach sales asps	0.00	-0.08	0.08	0.02	0.07	-0.05	-0.03	0.02	0.03	0.05	0.06	0.06	0.01	0.05	0.09	0.01	0.10	0.13	0.05	-0.05	0.28	1.00	
+Self-efficacy to reach sales asps	0.04	-0.07	0.09	-0.02	0.10	-0.03	-0.04	0.01	0.01	0.04	0.06	0.11	0.04	0.05	0.16	0.10	0.11	0.15	0.05	-0.05	0.23	0.54	1.00	
+Locus of control to reach sales asps	0.00	-0.07	0.00	0.03	0.01	0.00	-0.07	0.02	0.02	-0.01	-0.03	0.08	0.08	0.00	0.11	0.07	0.09	0.13	-0.00	0.04	0.33	0.25	0.21	1.00	
+Aspired educ for son (Years)	-0.01	-0.14	0.07	0.08	0.10	-0.00	-0.08	0.01	0.06	0.17	0.04	0.11	-0.00	0.09	0.02	-0.02	-0.03	-0.03	0.18	0.08	0.01	0.13	0.14	0.01	1.00	
+Aspired educ for daughter (Years)	0.01	-0.09	0.07	-0.01	0.10	0.05	0.01	0.08	0.10	0.15	0.08	0.04	-0.03	0.15	0.01	0.03	-0.03	-0.02	0.08	0.01	0.07	0.14	0.08	0.00	0.64	1.00	
+Aspirations gap for son's educ	-0.02	0.12	-0.84	-0.20	0.11	0.07	-0.05	-0.01	-0.00	-0.00	-0.09	-0.13	0.04	-0.13	-0.12	-0.04	-0.13	-0.08	-0.01	0.01	-0.00	-0.02	0.01	0.01	0.23	0.02	1.00	
+Aspirations gap for daughter's educ	0.05	0.21	-0.85	-0.17	0.04	0.06	-0.03	0.08	0.05	-0.00	-0.07	-0.07	-0.04	-0.02	-0.12	-0.09	-0.19	-0.10	-0.03	0.09	0.06	-0.09	-0.10	0.03	0.15	0.27	0.95	1.00	
+Aspired educ for son at least MA (Yes=1)	0.01	-0.12	0.04	0.12	0.06	0.01	-0.11	0.02	0.04	0.12	0.07	0.08	0.01	0.06	0.04	-0.03	0.01	0.01	0.16	0.05	0.02	0.12	0.13	-0.02	0.73	0.54	0.20	0.17	1.00	
+Aspired educ for daughter at least MA (yes=1)	-0.05	-0.07	0.01	-0.06	0.07	0.00	0.01	0.08	0.02	0.11	0.05	-0.01	0.01	0.14	0.03	0.07	-0.01	0.01	0.06	-0.05	0.09	0.12	0.10	-0.01	0.54	0.70	0.15	0.19	0.75	1.00	
+Aspired occupation for son (ranked)	0.07	0.05	0.08	0.15	0.03	-0.03	-0.06	-0.02	-0.02	-0.01	-0.09	-0.06	0.04	-0.02	-0.04	-0.04	0.06	-0.01	-0.01	0.10	0.05	0.01	-0.01	0.14	0.16	0.10	0.03	0.01	0.21	0.24	1.00	
+Aspired occupation for daughter (ranked)	-0.08	0.01	0.06	0.00	0.13	-0.10	-0.04	-0.06	0.10	0.08	0.03	-0.06	0.07	0.06	-0.07	-0.01	-0.00	0.00	0.13	0.04	0.03	-0.01	-0.04	-0.03	0.25	0.22	-0.05	0.03	0.29	0.18	0.39	1.00	
+Gov't job aspired for son (yes=1)	0.01	0.15	-0.02	-0.01	-0.01	0.05	0.08	0.04	0.02	-0.05	-0.07	0.07	-0.06	-0.05	-0.02	-0.03	-0.05	0.03	-0.03	-0.04	-0.15	-0.05	-0.06	-0.05	-0.10	-0.04	-0.02	-0.02	-0.13	-0.13	-0.29	-0.10	1.00	
+Gov't job aspired for either daughter (yes=1)	-0.01	0.10	0.01	0.09	-0.04	0.08	-0.02	0.08	-0.10	-0.07	-0.01	-0.00	-0.08	-0.01	-0.04	-0.05	-0.03	-0.05	-0.10	-0.06	-0.06	-0.01	-0.05	-0.03	-0.16	-0.04	0.01	-0.01	-0.21	-0.07	-0.09	-0.46	0.34	1.00	

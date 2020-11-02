@@ -1,0 +1,17 @@
+	12mth aspirations for daily sales (USD PPP)	12mth aspirations gap for daily sales (norm'ed by current level)	Importance to reach aspired sales in 12 mth	Subj likelihood to reach aspired sales in 12 mth	Self-efficacy to reach aspired sales in 12 mth	Locus of control to reach aspired sales in 12 mth	Aspired education for son (years)	Aspired education for daughter (years)	Aspirations gap for education for son (norm'ed by resp's educ)	Aspirations gap for education for daughter (norm'ed by resp's educ)	Aspired education for son at least MA (yes=1)	Aspired education for son at least MA (yes=1)	Aspired occupation for son (ranked)	Aspired occupation for daughter (ranked)	Gov't job aspired for son (yes=1)	Gov't job aspired for either daughter (yes=1)	
+12mth aspirations for daily sales (USD PPP)	1.00	
+12mth aspirations gap for daily sales (norm'ed by current level)	0.17	1.00	
+Importance to reach aspired sales in 12 mth	-0.01	0.07	1.00	
+Subj likelihood to reach aspired sales in 12 mth	0.05	-0.05	0.28	1.00	
+Self-efficacy to reach aspired sales in 12 mth	0.05	-0.05	0.23	0.54	1.00	
+Locus of control to reach aspired sales in 12 mth	-0.00	0.04	0.33	0.25	0.21	1.00	
+Aspired education for son (years)	0.18	0.08	0.01	0.13	0.14	0.01	1.00	
+Aspired education for daughter (years)	0.08	0.01	0.07	0.14	0.08	0.00	0.64	1.00	
+Aspirations gap for education for son (norm'ed by resp's educ)	0.04	-0.01	0.00	0.02	0.03	0.02	0.34	0.11	1.00	
+Aspirations gap for education for daughter (norm'ed by resp's educ)	-0.02	0.08	0.08	-0.07	-0.10	0.02	0.18	0.31	0.92	1.00	
+Aspired education for son at least MA (yes=1)	0.16	0.05	0.02	0.12	0.13	-0.02	0.73	0.54	0.25	0.21	1.00	
+Aspired education for son at least MA (yes=1)	0.06	-0.05	0.09	0.12	0.10	-0.01	0.54	0.70	0.23	0.27	0.75	1.00	
+Aspired occupation for son (ranked)	-0.01	0.10	0.05	0.01	-0.01	0.14	0.16	0.10	0.01	-0.07	0.21	0.24	1.00	
+Aspired occupation for daughter (ranked)	0.13	0.04	0.03	-0.01	-0.04	-0.03	0.25	0.22	0.01	0.03	0.29	0.18	0.39	1.00	
+Gov't job aspired for son (yes=1)	-0.03	-0.04	-0.15	-0.05	-0.06	-0.05	-0.10	-0.04	-0.03	0.04	-0.13	-0.13	-0.29	-0.10	1.00	
+Gov't job aspired for either daughter (yes=1)	-0.10	-0.06	-0.06	-0.01	-0.05	-0.03	-0.16	-0.04	-0.02	-0.02	-0.21	-0.07	-0.09	-0.46	0.34	1.00	
